@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.test {
+  font-size: re(20);
+  background-color: $black;
+  color: $white;
+  text-align: center;
+}
