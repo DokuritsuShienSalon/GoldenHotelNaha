@@ -2,7 +2,6 @@
 
 * CodeUpsのリニューアルキャンペーンの特典で入手した初期フォルダをFLOCSS/WEBP用にモディファイしたものです *
 
-
 ## 使い方
 - ターミナルを開き、 npm i とコマンドを入力
 - node_modulesとpackage-lock.jsonが生成されるのを確認する
