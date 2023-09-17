@@ -1,5 +1,7 @@
 # 【DartSass】CodeUps課題用Gulp環境（スマホファースト）
 
+* remark by にし(Sharl):  CodeUpsのリニューアルキャンペーンの特典で入手した初期フォルダをFLOCSS用にモディファイしたものです*
+
 ## 環境
 - Gulpが使える環境が前提（4系）
 - Nodeはバージョン14以降
