@@ -67,10 +67,10 @@ const cssSass = () => {
         .pipe(postcss([cssnext(browsers)]))
         .pipe(sourcemaps.write('./'))
         .pipe(dest(destPath.css))
-        .pipe(notify({
-            message: 'コンパイル出来たよ！',//文字は好きなものに変更してね！
-            onLast: true
-        }))
+        // .pipe(notify({
+        //     message: 'コンパイル出来たよ！',
+        //     onLast: true
+        // }))
 }
 
 // 画像圧縮
