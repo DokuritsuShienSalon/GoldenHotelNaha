@@ -35,22 +35,30 @@
   </div>
 
   <div class="inner u-mt50">
-    <ul class="p-tab">
+    <ul class="c-tab">
       <li>
-        <input class="p-tab__toggle" id="tab-1" type="radio" name="toggle" checked /> 
-        <label data-title="Tab 1" class="p-tab__label p-tab__label--borderleft" for="tab-1">宿泊</label>            
-        <div class="p-tab__content">
-          <div class="tab-content">
-            This is a testing text to test the tab content container. Lorem Ipsum dolor sit amet! Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            This is a testing text to test the tab content container. Lorem Ipsum dolor sit amet! 
-
-          </div>
+        <input class="c-tab__toggle" id="tab-1" type="radio" name="toggle" checked /> 
+        <label data-title="Tab 1" class="c-tab__label c-tab__label--borderleft" for="tab-1">宿泊</label>            
+        <div class="c-tab__content">
+          <ul class="c-stay">
+            <li class="stay__checkin">
+              <label for="stay-today">チェックイン</label>
+              <div class="calendar-container">
+                <input
+                type="date"
+                name="checkin"
+                id="stay-today"
+                class="stay__calendar"
+              />
+              </div>
+            </li>
+          </ul>
         </div>
       </li>
       <li>
-        <input class="p-tab__toggle" id="tab-2" type="radio" name="toggle" />
-        <label class="p-tab__label" for="tab-2">航空券付き</label> 
-        <div class="p-tab__content">
+        <input class="c-tab__toggle" id="tab-2" type="radio" name="toggle" />
+        <label class="c-tab__label" for="tab-2">航空券付き</label> 
+        <div class="c-tab__content">
           <div class="tab-content">
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -58,9 +66,9 @@
         </div>
       </li>
       <li>
-        <input class="p-tab__toggle" id="tab-3" type="radio" name="toggle"/>        
-        <label class="p-tab__label" for="tab-3">レストラン</label> 
-        <div class="p-tab__content">
+        <input class="c-tab__toggle" id="tab-3" type="radio" name="toggle"/>        
+        <label class="c-tab__label" for="tab-3">レストラン</label> 
+        <div class="c-tab__content">
           <div class="tab-content">
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
