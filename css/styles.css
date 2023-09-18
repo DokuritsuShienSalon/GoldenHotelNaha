@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* リキッドレイアウト対応 */
 body {
-  font-family: "";
+  font-family: "Noto Serif JP', serif";
 }
 
 html {
@@ -150,7 +150,7 @@ button {
   }
 }
 
-.button {
+.c-button {
   color: #333;
   font-size: 16px;
   font-weight: bold;
@@ -162,9 +162,11 @@ button {
   line-height: 40px;
   border: 2px solid #333;
   position: relative;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
-.button::after {
+.c-button::after {
   content: "";
   width: 45px;
   height: 1px;
@@ -174,7 +176,7 @@ button {
   right: -7.5%;
 }
 
-.button__tag {
+.c-button__tag {
   position: relative;
   z-index: 1;
   display: block;
@@ -183,8 +185,8 @@ button {
   transition: 0.3s;
 }
 
-.button__tag::before,
-.button__tag::after {
+.c-button__tag::before,
+.c-button__tag::after {
   content: "";
   width: 100%;
   position: absolute;
@@ -198,7 +200,7 @@ button {
           box-sizing: content-box;
 }
 
-.button__tag::before {
+.c-button__tag::before {
   right: -60px;
   border-right: 60px solid transparent;
   border-bottom: 60px solid #333;
@@ -206,7 +208,7 @@ button {
           transform: translateX(-100%);
 }
 
-.button__tag::after {
+.c-button__tag::after {
   left: -60px;
   border-left: 60px solid transparent;
   border-top: 60px solid #333;
@@ -214,18 +216,79 @@ button {
           transform: translateX(100%);
 }
 
-.button__tag:hover {
+.c-button__tag:hover {
   color: #fff;
 }
 
-.button__tag:hover::before {
+.c-button__tag:hover::before {
   -webkit-transform: translateX(-49%);
           transform: translateX(-49%);
 }
 
-.button__tag:hover::after {
+.c-button__tag:hover::after {
   -webkit-transform: translateX(49%);
           transform: translateX(49%);
+}
+
+.p-tab {
+  list-style-type: none;
+  padding: 0;
+  margin: 60px auto;
+  max-width: 375px;
+  position: relative;
+  background: #29415f;
+}
+.p-tab .p-tab__content {
+  list-style-type: none;
+  padding: 0;
+}
+.p-tab .p-tab__content {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  min-height: 350px;
+  display: none;
+  overflow: hidden;
+  line-height: 22px;
+  background: #29415f;
+  position: absolute;
+  top: 22px;
+  padding: 0px 40px 0 20px;
+  border: 2px solid #29415f;
+  border-top: 0;
+  color: #fff;
+}
+.p-tab .p-tab__label {
+  outline: 0;
+  float: left;
+  cursor: pointer;
+  width: 33.33%;
+  line-height: 20px;
+  display: block;
+  margin: 0;
+  position: relative;
+  background: #fff;
+  color: #29415f;
+  font-size: 14px;
+  text-align: center;
+  border-top: 2px solid #29415f;
+  border-right: 2px solid #29415f;
+}
+.p-tab .p-tab__label.p-tab__label--borderleft {
+  border-left: 2px solid #29415f;
+}
+.p-tab .p-tab__label:hover {
+  background: #365690;
+}
+.p-tab .p-tab__toggle {
+  display: none;
+}
+.p-tab .p-tab__toggle.active + .p-tab__label, .p-tab .p-tab__toggle:checked + .p-tab__label {
+  background: #29415f;
+  color: #fff;
+}
+.p-tab .p-tab__toggle.active ~ .p-tab__content, .p-tab .p-tab__toggle:checked ~ .p-tab__content {
+  height: auto;
+  display: block;
 }
 
 .test {

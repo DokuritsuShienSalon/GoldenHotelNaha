@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.button {
+.c-button {
   color: #333;
   font-size: 16px;
   font-weight: bold;
@@ -12,8 +12,9 @@
   line-height: 40px;
   border: 2px solid #333;
   position: relative;
+  box-sizing: content-box;
 }
-.button::after {
+.c-button::after {
   content: "";
   width: 45px;
   height: 1px;
@@ -22,15 +23,15 @@
   top: 50%;
   right: -7.5%;
 }
-.button__tag {
+.c-button__tag {
   position: relative;
   z-index: 1;
   display: block;
   overflow: hidden;
   transition: .3s;
 }
-.button__tag::before,
-.button__tag::after {
+.c-button__tag::before,
+.c-button__tag::after {
   content: "";
   width: 100%;
   position: absolute;
@@ -39,25 +40,25 @@
   transition: transform ease .3s;
   box-sizing: content-box;
 }
-.button__tag::before {
+.c-button__tag::before {
   right: -60px;
   border-right: 60px solid transparent;
   border-bottom: 60px solid #333;
   transform: translateX(-100%);
 }
-.button__tag::after {
+.c-button__tag::after {
   left: -60px;
   border-left: 60px solid transparent;
   border-top: 60px solid #333;
   transform: translateX(100%);
 }
-.button__tag:hover {
+.c-button__tag:hover {
   color: #fff;
 }
-.button__tag:hover::before {
+.c-button__tag:hover::before {
   transform: translateX(-49%);
 }
-.button__tag:hover::after {
+.c-button__tag:hover::after {
   transform: translateX(49%);
 }
 
