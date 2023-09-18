@@ -40,17 +40,50 @@
         <input class="c-tab__toggle" id="tab-1" type="radio" name="toggle" checked /> 
         <label data-title="Tab 1" class="c-tab__label c-tab__label--borderleft" for="tab-1">宿泊</label>            
         <div class="c-tab__content">
-          <ul class="c-stay">
-            <li class="stay__checkin">
-              <label for="stay-today">チェックイン</label>
-              <div class="calendar-container">
-                <input
-                type="date"
-                name="checkin"
-                id="stay-today"
-                class="stay__calendar"
-              />
-              </div>
+          <ul class="p-stay">
+            <li class="p-stay__checkin c-dropdown">
+              <label for="stay-checkin">チェックイン</label>
+              <input
+              type="date"
+              name="checkin"
+              id="stay-today"
+              class="p-stay__calendar"
+            />
+            </li>
+            <li class="p-stay__checkout c-dropdown">
+              <label for="stay-checkout">チェックアウト</label>
+              <input
+              type="date"
+              name="checkout"
+              id="stay-checkout"
+              class="p-stay__calendar"
+            />
+            </li>
+            <li class="p-stay__adults">
+              <label for="stay__adults">大人</label>
+              <select name="stay__adults" id="stay__adults" class="c-dropdown stay__adults--dropdown">
+                <option value="1">１人</option>
+                <option value="2">２人</option>
+                <option value="3">３人</option>
+                <option value="4">４人</option>
+              </select>
+            </li>
+            <li class="p-stay__adults">
+              <label for="stay__adults">お子様（12歳以下）</label>
+              <select name="stay__adults" id="stay__adults" class="c-dropdown stay__adults--dropdown">
+                <option value="1">０人</option>
+                <option value="2">１人</option>
+                <option value="3">２人</option>
+                <option value="4">３人</option>
+              </select>
+            </li>
+            <li class="p-stay__rooms">
+              <label for="stay__rooms">室数</label>
+              <select name="stay__rooms" id="stay__rooms" class="c-dropdown p-stay__rooms--dropdown">
+                <option value="1">１室</option>
+                <option value="2">２室</option>
+                <option value="3">３室</option>
+              </select>
             </li>
           </ul>
         </div>

@@ -230,7 +230,15 @@ button {
           transform: translateX(49%);
 }
 
-.p-tab {
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-style: none;
+  text-transform: none;
+}
+
+.c-tab {
   list-style-type: none;
   padding: 0;
   margin: 60px auto;
@@ -238,14 +246,15 @@ button {
   position: relative;
   background: #29415f;
 }
-.p-tab .p-tab__content {
+.c-tab .c-tab__content {
   list-style-type: none;
   padding: 0;
 }
-.p-tab .p-tab__content {
+.c-tab .c-tab__content {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   min-height: 350px;
+  width: 100%;
   display: none;
   overflow: hidden;
   line-height: 22px;
@@ -257,7 +266,7 @@ button {
   border-top: 0;
   color: #fff;
 }
-.p-tab .p-tab__label {
+.c-tab .c-tab__label {
   outline: 0;
   float: left;
   cursor: pointer;
@@ -273,20 +282,20 @@ button {
   border-top: 2px solid #29415f;
   border-right: 2px solid #29415f;
 }
-.p-tab .p-tab__label.p-tab__label--borderleft {
+.c-tab .c-tab__label.c-tab__label--borderleft {
   border-left: 2px solid #29415f;
 }
-.p-tab .p-tab__label:hover {
+.c-tab .c-tab__label:hover {
   background: #365690;
 }
-.p-tab .p-tab__toggle {
+.c-tab .c-tab__toggle {
   display: none;
 }
-.p-tab .p-tab__toggle.active + .p-tab__label, .p-tab .p-tab__toggle:checked + .p-tab__label {
+.c-tab .c-tab__toggle.active + .c-tab__label, .c-tab .c-tab__toggle:checked + .c-tab__label {
   background: #29415f;
   color: #fff;
 }
-.p-tab .p-tab__toggle.active ~ .p-tab__content, .p-tab .p-tab__toggle:checked ~ .p-tab__content {
+.c-tab .c-tab__toggle.active ~ .c-tab__content, .c-tab .c-tab__toggle:checked ~ .c-tab__content {
   height: auto;
   display: block;
 }
