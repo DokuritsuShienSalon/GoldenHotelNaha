@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* リキッドレイアウト対応 */
 body {
-  font-family: "Noto Serif JP', serif";
+  font-family: Noto Serif JP, serif;
 }
 
 html {
@@ -21,6 +21,17 @@ html {
   html {
     font-size: 16px;
   }
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+li {
+  list-style: none;
 }
 
 /* pcの電話番号発信対応 */
@@ -150,6 +161,11 @@ button {
   }
 }
 
+.inner-sp {
+  width: 375px;
+  margin-inline: auto;
+}
+
 .c-button {
   color: #333;
   font-size: 16px;
@@ -230,6 +246,36 @@ button {
           transform: translateX(49%);
 }
 
+.c-card {
+  width: 58.4%;
+  aspect-ratio: 219/115.9;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(25%, #29415f));
+  background-image: linear-gradient(90deg, transparent 0% 25%, #29415f 25% 100%);
+}
+.c-card img {
+  width: 70%;
+  height: auto;
+  margin-bottom: 4.26%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+}
+.c-card h3 {
+  color: #fff;
+  margin-left: -68%;
+  margin-bottom: 0.15em;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
 select {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -298,6 +344,10 @@ select {
 .c-tab .c-tab__toggle.active ~ .c-tab__content, .c-tab .c-tab__toggle:checked ~ .c-tab__content {
   height: auto;
   display: block;
+}
+
+.p-tab__content li {
+  margin-top: 10px;
 }
 
 .test {
