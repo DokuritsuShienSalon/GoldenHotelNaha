@@ -168,15 +168,17 @@ button {
 
 .c-button {
   color: #333;
-  font-size: 16px;
-  font-weight: bold;
-  font-family: "Julius Sans One", sans-serif;
   background: transparent;
+  font-size: 16px;
   width: 200px;
   height: 40px;
-  text-align: center;
   line-height: 40px;
-  border: 2px solid #333;
+}
+
+.c-button {
+  font-family: "Julius Sans One", sans-serif;
+  text-align: center;
+  border: 1px solid #333;
   position: relative;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -184,12 +186,13 @@ button {
 
 .c-button::after {
   content: "";
-  width: 45px;
+  width: 22.5%;
   height: 1px;
-  background-color: black;
+  background-color: #333;
   position: absolute;
   top: 50%;
   right: -7.5%;
+  z-index: 1;
 }
 
 .c-button__tag {
@@ -219,7 +222,7 @@ button {
 .c-button__tag::before {
   right: -60px;
   border-right: 60px solid transparent;
-  border-bottom: 60px solid #333;
+  border-bottom: 60px solid #cfab6e;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
 }
@@ -227,7 +230,7 @@ button {
 .c-button__tag::after {
   left: -60px;
   border-left: 60px solid transparent;
-  border-top: 60px solid #333;
+  border-top: 60px solid #cfab6e;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
 }
@@ -276,14 +279,13 @@ button {
   font-weight: 400;
 }
 
-select {
+.c-dropdown select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   border-style: none;
   text-transform: none;
 }
-
 .c-tab {
   list-style-type: none;
   padding: 0;
@@ -297,8 +299,6 @@ select {
   padding: 0;
 }
 .c-tab .c-tab__content {
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
   min-height: 350px;
   width: 100%;
   display: none;
@@ -306,33 +306,39 @@ select {
   line-height: 22px;
   background: #29415f;
   position: absolute;
-  top: 22px;
+  top: 21px;
   padding: 0px 40px 0 20px;
-  border: 2px solid #29415f;
-  border-top: 0;
   color: #fff;
+  z-index: -1;
 }
 .c-tab .c-tab__label {
-  outline: 0;
+  outline: 2px;
   float: left;
   cursor: pointer;
-  width: 33.33%;
+  width: 33%;
   line-height: 20px;
   display: block;
   margin: 0;
+  margin-top: 2px;
   position: relative;
   background: #fff;
   color: #29415f;
   font-size: 14px;
   text-align: center;
-  border-top: 2px solid #29415f;
-  border-right: 2px solid #29415f;
+  border-top: 1px solid #29415f;
+  border-right: 1px solid #29415f;
 }
 .c-tab .c-tab__label.c-tab__label--borderleft {
   border-left: 2px solid #29415f;
 }
 .c-tab .c-tab__label:hover {
-  background: #365690;
+  margin-top: 0;
+}
+.c-tab .c-tab__space2 {
+  width: 2px;
+  height: 23px;
+  float: left;
+  background-color: #fff;
 }
 .c-tab .c-tab__toggle {
   display: none;
@@ -340,6 +346,7 @@ select {
 .c-tab .c-tab__toggle.active + .c-tab__label, .c-tab .c-tab__toggle:checked + .c-tab__label {
   background: #29415f;
   color: #fff;
+  margin-top: 1px;
 }
 .c-tab .c-tab__toggle.active ~ .c-tab__content, .c-tab .c-tab__toggle:checked ~ .c-tab__content {
   height: auto;

@@ -2,26 +2,31 @@
 
 .c-button {
   color: #333;
-  font-size: 16px;
-  font-weight: bold;
-  font-family: 'Julius Sans One', sans-serif;
   background: transparent;
+  font-size: 16px;
+  // font-weight: bold;
   width: 200px;
   height: 40px;
-  text-align: center;
   line-height: 40px;
-  border: 2px solid #333;
+}
+
+.c-button {
+  font-family: 'Julius Sans One', sans-serif;
+  text-align: center;
+  border: 1px solid #333;
   position: relative;
   box-sizing: content-box;
 }
 .c-button::after {
   content: "";
-  width: 45px;
+  // width: 45px;
+  width: 22.5%;
   height: 1px;
-  background-color: black ;
+  background-color: #333;
   position: absolute;
   top: 50%;
   right: -7.5%;
+  z-index: 1;
 }
 .c-button__tag {
   position: relative;
@@ -43,13 +48,13 @@
 .c-button__tag::before {
   right: -60px;
   border-right: 60px solid transparent;
-  border-bottom: 60px solid #333;
+  border-bottom: 60px solid $gold;
   transform: translateX(-100%);
 }
 .c-button__tag::after {
   left: -60px;
   border-left: 60px solid transparent;
-  border-top: 60px solid #333;
+  border-top: 60px solid $gold;
   transform: translateX(100%);
 }
 .c-button__tag:hover {

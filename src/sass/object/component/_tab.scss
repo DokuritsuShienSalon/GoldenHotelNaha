@@ -10,8 +10,8 @@
   .c-tab__content { list-style-type: none; padding: 0; }
 
   .c-tab__content { 
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px; 
+    // border-bottom-left-radius: 4px;
+    // border-bottom-right-radius: 4px; 
     min-height: 350px; 
     width: 100%;
     // opacity: 0; 
@@ -20,31 +20,42 @@
     line-height: 22px;
     background: $blue;
     position: absolute;
-    top: 22px;
+    top: 21px;
     padding: 0px 40px 0 20px;
-    border: 2px solid $blue;
-    border-top: 0;
+    // border: 2px solid $blue;
+    // border-top: 0;
     // box-shadow: 0 5px 5px -5px #333;  
     color: $white;
+    z-index: -1;
   }
   .c-tab__label{
-    outline: 0;
+    outline: 2px;
     float: left;
     cursor: pointer;    
     // opacity: 1;
-    width: 33.33%;
+    width: 33%;
     line-height: 20px;
     display: block;
     margin: 0;
+    margin-top: 2px;
     position: relative;
     background: $white;
     color: $blue;
     font-size: 14px;
     text-align: center;    
-    border-top: 2px solid $blue;
-    border-right: 2px solid $blue;
+    border-top: 1px solid $blue;
+    border-right: 1px solid $blue;
     &.c-tab__label--borderleft { border-left: 2px solid $blue }
-    &:hover { background: #365690; }          
+    &:hover {
+      // background: #365690; 
+      margin-top: 0;
+    }      
+  }
+  .c-tab__space2 {
+    width: 2px;
+    height: 23px;
+    float: left;
+    background-color: $white;
   }
   .c-tab__toggle {
     display: none;
@@ -52,6 +63,9 @@
     &:checked + .c-tab__label{ 
       background: $blue; 
       color: $white; 
+      margin-top: 1px;
+      // border-top: 2px solid red;
+      // overflow: visible;
     }
     &.active ~ .c-tab__content,
     &:checked ~ .c-tab__content { 
