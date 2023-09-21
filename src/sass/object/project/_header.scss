@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.p-header {
+  width: 100%;
+  height: 29px;
+  background-color: $gold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.p-header__language {
+  width: 50.787px;
+height: 17.672px;
+flex-shrink: 0;
+  font-size: 14px;
+}
+.p-header__language--icon {
+  width: 13px;
+height: 13px;
+flex-shrink: 0;
+
+}
+.p-header__language--check {
+
+}
+
+
+
+
+
