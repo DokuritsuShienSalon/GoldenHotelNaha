@@ -66,7 +66,7 @@ function menuAnimation() {
           $(".header_button").addClass("header_button_pause")
       }
       $(".header_button").addClass("header_button_on");
-      $(".menu").removeClass("none");
+      $(".menu").removeClass("u-none");
       $(".menu").removeClass("menu_off");
       $(".menu").addClass("menu_on")
   } else {
@@ -87,7 +87,7 @@ function menuAnimation() {
           }
       }
       $(".menu").delay(500).queue(function() {
-          $(this).addClass("none").dequeue()
+          $(this).addClass("u-none").dequeue()
       })
   }
 }

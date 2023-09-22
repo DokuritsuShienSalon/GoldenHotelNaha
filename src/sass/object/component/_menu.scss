@@ -2,25 +2,26 @@
 
 
 .header {
-  width: 70px;
-  height: 70px;
-  position: fixed;
-  top: 30px;
-  right: 30px;
-  z-index: 110
+  // width: 70px;
+  // height: 70px;
+  // position: fixed;
+  // top: 30px;
+  // right: 30px;
+  // z-index: 110
 }
 
 .header_button {
   display: block;
   width: 100%;
   height: 100%;
+  cursor: pointer;
   position: relative
 }
 
 .header_button_bg {
   width: 100%;
   height: 100%;
-  background: #093753;
+  background: $blue;
   position: absolute;
   top: 0;
   left: 0
@@ -89,7 +90,8 @@
   margin: -14px 0 0 -14px;
   position: absolute;
   top: 50%;
-  left: 50%
+  left: 50%;
+  z-index: 1000;
 }
 
 .header_button_on .header_button_inner div {
@@ -122,34 +124,34 @@
   opacity: 0
 }
 
-@media (min-width: 641px) and (max-width:768px) {
-  .header {
-      top:30px
-  }
+// @media (min-width: 641px) and (max-width:768px) {
+//   .header {
+//       top:30px
+//   }
 
-  .header_button_inner div span {
-      background: #093753
-  }
+//   .header_button_inner div span {
+//       background: #093753
+//   }
 
-  .header_button_fix div span,.header_button_on div span {
-      background: #fff
-  }
-}
+//   .header_button_fix div span,.header_button_on div span {
+//       background: #fff
+//   }
+// }
 
-@media (max-width: 640px) {
-  .header {
-      top:0;
-      right: 0
-  }
+// @media (max-width: 640px) {
+//   .header {
+//       top:0;
+//       right: 0
+//   }
 
-  .header_button_inner div span {
-      background: #093753
-  }
+//   .header_button_inner div span {
+//       background: #093753
+//   }
 
-  .header_button_fix div span,.header_button_on div span {
-      background: #fff
-  }
-}
+//   .header_button_fix div span,.header_button_on div span {
+//       background: #fff
+//   }
+// }
 
 .menu {
   width: 33.333332%;

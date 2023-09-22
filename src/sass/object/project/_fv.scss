@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.FV {
+  position: relative;
+}
+
+.FV__anime {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 2732 / 1536;
+  opacity: 0;
+  animation: change-img-anime 9s infinite;
+}
+.FV__img1 {
+  animation-delay: 0s;
+}
+.FV__img2 {
+  animation-delay: 3s;
+}
+.FV__img3 {
+  animation-delay: 6s;
+}
+@keyframes change-img-anime {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  36% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+  }
+}

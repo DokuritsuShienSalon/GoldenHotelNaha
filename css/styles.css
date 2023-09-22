@@ -42,18 +42,6 @@ li {
 }
 
 /* ホバー */
-a {
-  text-decoration: none;
-  color: inherit;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-}
-@media screen and (min-width: 768px) {
-  a:hover {
-    opacity: 0.8;
-  }
-}
-
 /*****************************
 * A Modern CSS Reset (https://github.com/hankchizljaw/modern-css-reset)
 * 上記に、ul要素,ol要素,a要素への記述追加
@@ -252,6 +240,7 @@ button {
 .c-beforeIconBtn {
   position: relative;
   display: block;
+  padding-inline: 0.1em;
   border: 1px solid currentColor;
   color: #fff;
   text-decoration: none;
@@ -269,7 +258,7 @@ button {
 
 .c-beforeIconBtn img {
   display: inline-block;
-  margin-right: 0.2em;
+  margin-inline: 0.1em;
 }
 
 .c-check {
@@ -279,7 +268,7 @@ button {
   border-right: 1px solid #fff;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  margin-left: 0.2em;
+  margin-inline: 0.2em;
   pointer-events: none;
 }
 
@@ -289,11 +278,101 @@ button {
   border-color: #29415f;
   color: #29415f;
 }
-.c-beforeIconBtn img:focus,
-.c-beforeIconBtn img:hover {
+.c-beforeIconBtn:focus img,
+.c-beforeIconBtn:hover img {
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1" /><feFuncG type="linear" slope="1" /><feFuncB type="linear" slope="1" /></feComponentTransfer><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="1 0 0 0 0 0 1.01 0 0 0 0 0 1 0 0 0 0 0 1 0" /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.21 0.79" /><feFuncG type="table" tableValues="0.21 0.79" /><feFuncB type="table" tableValues="0.21 0.79" /></feComponentTransfer><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.90288 0.12304000000000004 0.030240000000000017 0 0 0.05584 0.94976 0.026880000000000015 0 0 0.04352 0.08544000000000002 0.86096 0 0 0 0 0 1 0" /><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="13.79662 -11.625900000000001 -1.17072 0 0 -3.4633800000000003 5.8067 -1.17072 0 0 -3.4633800000000003 -11.625900000000001 16.089280000000002 0 0 0 0 0 1 0" /><feColorMatrix type="hueRotate" color-interpolation-filters="sRGB" values="173" /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.94" /><feFuncG type="linear" slope="0.94" /><feFuncB type="linear" slope="0.94" /></feComponentTransfer><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.87" intercept="0.065" /><feFuncG type="linear" slope="0.87" intercept="0.065" /><feFuncB type="linear" slope="0.87" intercept="0.065" /></feComponentTransfer></filter></svg>#filter');
   -webkit-filter: brightness(0) saturate(100%) invert(21%) sepia(16%) saturate(1726%) hue-rotate(173deg) brightness(94%) contrast(87%);
           filter: brightness(0) saturate(100%) invert(21%) sepia(16%) saturate(1726%) hue-rotate(173deg) brightness(94%) contrast(87%);
+}
+.c-beforeIconBtn:focus .c-check,
+.c-beforeIconBtn:hover .c-check {
+  border-color: #29415f;
+}
+
+.c-language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.c-language__lists {
+  display: none; /*デフォルトでは非表示の状態にしておく*/
+}
+
+.c-gnavi__list:hover .c-language__lists {
+  display: block; /*Gナビメニューにホバーしたら表示*/
+}
+
+.c-language__list {
+  background-color: #29415f;
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+  color: #fff;
+  text-align: right;
+  padding-right: 1em;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.c-language__list::before {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  width: 7px;
+  height: 5px;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
+          clip-path: polygon(0 0, 0% 100%, 100% 50%);
+}
+
+.c-language__list:not(:first-child)::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #3492d1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.c-language__list:hover {
+  background-color: #2e648a;
+}
+
+.c-language__list a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+.c-language__list a::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  position: absolute;
+  right: 15px;
+  top: calc(50% - 5px);
 }
 
 .c-card {
@@ -326,26 +405,18 @@ button {
   font-weight: 400;
 }
 
-.header {
-  width: 70px;
-  height: 70px;
-  position: fixed;
-  top: 30px;
-  right: 30px;
-  z-index: 110;
-}
-
 .header_button {
   display: block;
   width: 100%;
   height: 100%;
+  cursor: pointer;
   position: relative;
 }
 
 .header_button_bg {
   width: 100%;
   height: 100%;
-  background: #093753;
+  background: #29415f;
   position: absolute;
   top: 0;
   left: 0;
@@ -421,6 +492,7 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 1000;
 }
 
 .header_button_on .header_button_inner div {
@@ -455,29 +527,6 @@ button {
   opacity: 0;
 }
 
-@media (min-width: 641px) and (max-width: 768px) {
-  .header {
-    top: 30px;
-  }
-  .header_button_inner div span {
-    background: #093753;
-  }
-  .header_button_fix div span, .header_button_on div span {
-    background: #fff;
-  }
-}
-@media (max-width: 640px) {
-  .header {
-    top: 0;
-    right: 0;
-  }
-  .header_button_inner div span {
-    background: #093753;
-  }
-  .header_button_fix div span, .header_button_on div span {
-    background: #fff;
-  }
-}
 .menu {
   width: 33.333332%;
   width: 33.33333%;
@@ -1244,6 +1293,79 @@ button {
   margin-top: 10px;
 }
 
+.FV {
+  position: relative;
+}
+
+.FV__anime {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 2732/1536;
+  opacity: 0;
+  -webkit-animation: change-img-anime 9s infinite;
+          animation: change-img-anime 9s infinite;
+}
+
+.FV__img1 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.FV__img2 {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.FV__img3 {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+@-webkit-keyframes change-img-anime {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  36% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes change-img-anime {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  36% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .p-header {
   width: 100%;
   height: 29px;
@@ -1254,16 +1376,11 @@ button {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  gap: 10px;
+  padding-top: 4px;
 }
 
 .p-header__language {
-  width: 50.787px;
-  height: 17.672px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   font-size: 14px;
 }
 
@@ -1272,6 +1389,12 @@ button {
   height: 13px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+.p-header__hamburger {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
 
 .test {
@@ -1310,5 +1433,11 @@ button {
 }
 .u-bd {
   border: 3px solid red;
+}
+.u-opa {
+  opacity: 0;
+}
+.u-none {
+  display: none !important;
 }
 /*# sourceMappingURL=styles.css.map */

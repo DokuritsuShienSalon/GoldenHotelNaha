@@ -11,4 +11,10 @@
     &bd {
       border: 3px solid red;
     }
+    &opa {
+      opacity: 0;
+    }
+    &none {
+      display: none !important;
+    }
 }
