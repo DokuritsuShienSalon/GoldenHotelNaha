@@ -1295,6 +1295,26 @@ button {
 
 .FV {
   position: relative;
+  width: 100%;
+  height: calc(100vh - 29px);
+  overflow: hidden;
+  position: relative;
+}
+
+.FV__mask {
+  width: 274.524px;
+  height: 82.357px;
+  background: rgba(41, 65, 95, .5);
+  position: absolute;
+  top: 111.18px;
+  left: 18.67px;
+  z-index: 10;
+}
+
+.FV__title {
+  color: #cfab6e;
+  font-size: 24px;
+  font-weight: 200;
 }
 
 .FV__anime {
@@ -1302,13 +1322,14 @@ button {
   top: 0;
   left: 0;
   width: 100%;
-  aspect-ratio: 2732/1536;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
   opacity: 0;
-  -webkit-animation: change-img-anime 9s infinite;
-          animation: change-img-anime 9s infinite;
 }
 
 .FV__img1 {
+  opacity: 1;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
 }
@@ -1319,6 +1340,11 @@ button {
 }
 
 .FV__img3 {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.FV__img4 {
   -webkit-animation-delay: 6s;
           animation-delay: 6s;
 }
