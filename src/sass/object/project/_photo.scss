@@ -1,0 +1,53 @@
+@use "global" as *;
+
+.p-photo {
+  margin-top: 50px;
+  display: flex;
+
+
+  &__image {
+    margin-left: 44px;
+    width: 263px;
+    height: 314px;
+    position: relative;
+  }
+  &__text {
+    position: absolute;
+    top: 164px;
+    left: 20px;
+    color: $blue;
+    font-family: inherit;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__subtext {
+    position: absolute;
+    top: 264px;
+    left: 20px;
+    color: $blue;
+    font-family: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+  }
+  &__scroll {
+    font-size: 14px;
+    writing-mode: vertical-lr;
+    text-align: right;
+    padding-bottom: 20px;
+    transform: rotate(180deg);
+    position: relative;
+  }
+  &__scroll::before {
+    content: "";
+    width: 1px;
+    height:65px;
+    background-color: $blue;
+    position: absolute;
+    top: 170px;
+    left: 10px;
+  }
+}

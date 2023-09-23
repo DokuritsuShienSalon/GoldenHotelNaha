@@ -1263,7 +1263,7 @@ button {
 .FV {
   position: relative;
   width: 100%;
-  height: calc(100vh - 29px);
+  aspect-ratio: 750/422;
   overflow: hidden;
   z-index: -1;
 }
@@ -1388,6 +1388,61 @@ button {
   width: 20px;
   height: 20px;
   margin-right: 10px;
+}
+
+.p-photo {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.p-photo__image {
+  margin-left: 44px;
+  width: 263px;
+  height: 314px;
+  position: relative;
+}
+.p-photo__text {
+  position: absolute;
+  top: 164px;
+  left: 20px;
+  color: #29415f;
+  font-family: inherit;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.p-photo__subtext {
+  position: absolute;
+  top: 264px;
+  left: 20px;
+  color: #29415f;
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+.p-photo__scroll {
+  font-size: 14px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  text-align: right;
+  padding-bottom: 20px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: relative;
+}
+.p-photo__scroll::before {
+  content: "";
+  width: 1px;
+  height: 65px;
+  background-color: #29415f;
+  position: absolute;
+  top: 170px;
+  left: 10px;
 }
 
 .test {

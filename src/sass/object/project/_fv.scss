@@ -3,7 +3,8 @@
 .FV {
   position: relative;
   width: 100%;
-  height: calc(100vh - 29px);
+  // height: calc(100vh - 29px);
+  aspect-ratio: 750 / 422;
   overflow: hidden;
   z-index: -1;
 }
