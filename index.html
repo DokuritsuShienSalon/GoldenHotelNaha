@@ -28,43 +28,53 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Julius+Sans+One&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_blue.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </head>
 <body>
 
 	<!--/HEADER/-->
 <div class="inner-sp">
-  <header class="p-header inner-sp">
-    <a class="p-header__language c-beforeIconBtn" href="#">
-      <img src="images/Header_earth-pc2x.webp" alt="言語" width="48" height="48" class="p-header__language--icon">
-      En
-      <div class="c-check p-header__language--check"></div>
-    </a>
-    <div class="header">	
-      <a href="javascript:void(0);" class="header_button">
-        <div class="header_button_bg opa"></div>	
-        <div class="header_button_inner">
-          <div><span></span><span></span><span></span></div>
-          <div><span></span><span></span><span></span></div>
-          <div><span></span><span></span><span></span></div>	
-        </div>			
-      </a>	
-    </div>	
-  </header>
+
 </div>
 
+<header class="p-header">
+  <div class="p-header__language c-language c-gnavi__list">
+    <div class="">
+      <a class="c-beforeIconBtn" href="#">
+        <img src="images/Header_earth-pc2x.webp" alt="言語" width="48" height="48" class="p-header__language--icon">
+        Language
+        <div class="c-check p-header__language--check"></div>
+      </a>
+    </div>
+    <ul class="c-language__lists">
+      <li class="c-language__list"><a href="#">日本語</a></li>
+      <li class="c-language__list"><a href="#">English</a></li>
+      <li class="c-language__list"><a href="#">中文簡体</a></li>
+    </ul>
+  </div>
+  <!-- /.c-gnavi__list -->
 
-
-
-
-
-
+  <div class="header p-header__hamburger">	
+    <a class="header_button">
+      <div class="header_button_bg u-opa"></div>	
+      <div class="header_button_inner">
+        <div><span></span><span></span><span></span></div>
+        <div><span></span><span></span><span></span></div>
+        <div><span></span><span></span><span></span></div>	
+      </div>			
+    </a>	
+  </div>	
+</header>
 
 	<!--/MENU/-->
-	<div class="menu none">	
-		<div class="menu_inner opa">
+	<div class="menu u-none">	
+		<div class="menu_inner u-opa">
 			<div class="menu_bg"></div>		
 			<div class="menu_block">	
-				<a href="#" class="menu_list opa link">	
+				<a href="#" class="menu_list u-opa link">	
 					<div><p class="kerning">ホーム</p></div>
 					<div>
 						<p class="kerning en0">HOME</p>
@@ -72,7 +82,7 @@
 						<p class="kerning en0"><span>HOME</span></p>
 					</div><div class="clear"></div>												
 				</a>
-				<a href="#" class="menu_list opa link">	
+				<a href="#" class="menu_list u-opa link">	
 					<div><p class="kerning">トップ</p></div>
 					<div>
 						<p class="kerning en0">Top</p>
@@ -80,7 +90,7 @@
 						<p class="kerning en0"><span>Top</span></p>
 					</div><div class="clear"></div>												
 				</a>
-				<a href="#" class="menu_list opa link">	
+				<a href="#" class="menu_list u-opa link">	
 					<div><p class="kerning">ご宿泊</p></div>
 					<div>
 						<p class="kerning en0">Stay</p>
@@ -88,7 +98,7 @@
 						<p class="kerning en0"><span>Stay</span></p>
 					</div><div class="clear"></div>												
 				</a>
-				<a href="#" class="menu_list opa link">	
+				<a href="#" class="menu_list u-opa link">	
 					<div><p class="kerning">レストラン</p></div>
 					<div>
 						<p class="kerning en0">Restaurant & Bar</p>
@@ -96,7 +106,7 @@
 						<p class="kerning en0"><span>Restaurant & Bar</span></p>
 					</div><div class="clear"></div>												
 				</a>
-				<a href="#" class="menu_list opa link">	
+				<a href="#" class="menu_list u-opa link">	
 					<div><p class="kerning">ご宴会／会議</p></div>
 					<div>
 						<p class="kerning en0">Banquet/meeting</p>
@@ -104,7 +114,7 @@
 						<p class="kerning en0"><span>Banquet/meeting</span></p>
 					</div><div class="clear"></div>												
 				</a>
-				<a href="#" class="menu_list opa link">	
+				<a href="#" class="menu_list u-opa link">	
 					<div><p class="kerning">ウェディング</p></div>
 					<div>
 						<p class="kerning en0">Wedding</p>
@@ -112,7 +122,7 @@
 						<p class="kerning en0"><span>Wedding</span></p>
 					</div><div class="clear"></div>												
 				</a>
-				<a href="#" class="menu_list opa link">	
+				<a href="#" class="menu_list u-opa link">	
 					<div><p class="kerning">フィットネス</p></div>
 					<div>
 						<p class="kerning en0">Fitness</p>
@@ -120,7 +130,7 @@
 						<p class="kerning en0"><span>Fitness</span></p>
 					</div><div class="clear"></div>												
 				</a>
-				<a href="#" class="menu_list opa link">	
+				<a href="#" class="menu_list u-opa link">	
 					<div><p class="kerning">イベント</p></div>
 					<div>
 						<p class="kerning en0">Event</p>
@@ -128,7 +138,7 @@
 						<p class="kerning en0"><span>Event</span></p>
 					</div><div class="clear"></div>												
 				</a>
-				<a href="#" class="menu_list opa link">	
+				<a href="#" class="menu_list u-opa link">	
 					<div><p class="kerning">ホテル案内</p></div>
 					<div>
 						<p class="kerning en0">Guidance</p>
@@ -136,7 +146,7 @@
 						<p class="kerning en0"><span>Guidance</span></p>
 					</div><div class="clear"></div>												
 				</a>
-        <!-- <a href="#" class="menu_list opa link">	
+        <!-- <a href="#" class="menu_list u-opa link">	
 					<div><p class="kerning">アクセス</p></div>
 					<div>
 						<p class="kerning en0">Access</p>
@@ -144,7 +154,7 @@
 						<p class="kerning en0"><span>Access</span></p>
 					</div><div class="clear"></div>												
 				</a>
-        <a href="#" class="menu_list opa link">	
+        <a href="#" class="menu_list u-opa link">	
 					<div><p class="kerning">FAQ</p></div>
 					<div>
 						<p class="kerning en0">FAQ</p>
@@ -155,6 +165,149 @@
 			</div>
 		</div>
 	</div>	
+
+<section class="FV">
+  <picture>
+    <source srcset="">
+    <img src="images/FV-sp2x.webp" alt="" class="FV__anime FV__img1" width="750" height="422">
+  </picture>
+  <picture>
+    <source srcset="">
+    <img src="images/FV_2nd-sp2x.webp" alt="" class="FV__anime FV__img2" width="750" height="422">
+  </picture>
+  <picture>
+    <source srcset="">
+    <img src="images/FV_3rd-sp2x.webp" alt="" class="FV__anime FV__img3" width="750" height="422">
+  </picture>
+  <picture>
+    <source srcset="">
+    <img src="images/FV_4th-sp2x.webp" alt="" class="FV__anime FV__img4" width="750" height="422">
+  </picture>
+  <div class="FV__mask">
+    <h1 class="FV__title">welcome to<br>GoldenHotel NAHA</h1>
+  </div>
+</section>
+<div class="p-photo">
+  <div class="p-photo__image">
+    <picture>
+      <source srcset="">
+      <img src="images/Photo-sp2x.webp" alt="" width="263" height="314">
+    </picture>
+    <p class="p-photo__text">Stay more,<br>Experience more!</p>
+    <p class="p-photo__subtext">素敵な旅をあなたと</p>
+  </div>
+  <p class="p-photo__scroll">scroll</p>
+</div>
+<section class="p-booknow">
+  <h2 class="p-booknow__title c-h2__title">Book Now<span class="c-h2__subtitle">ご予約</span></h2>
+  <div class="p-booknow__tab">
+  <ul class="c-tab">
+    <li>
+      <input class="c-tab__toggle" id="tab-1" type="radio" name="toggle" checked /> 
+      <label data-title="Tab 1" class="c-tab__label c-tab__label--borderleft" for="tab-1">宿泊</label>            
+      <div class="c-tab__content p-tab__content">
+        <ul class="p-stay">
+          <li class="p-stay__checkin c-calendar">
+            <label for="stay-checkin">チェックイン</label>
+            <input
+            type="text"
+            name="checkin"
+            id="stay-checkin"
+            placeholder="日付を選択" 
+            readonly="readonly"
+            class="c-calendar__input p-stay__checkin--input"
+            />
+          </li>
+          <li class="p-stay__checkout c-calendar">
+            <label for="stay-checkout">チェックアウト</label>
+            <input
+            type="text"
+            name="checkout"
+            id="stay-checkout"
+            placeholder="日付を選択" 
+            readonly="readonly"
+            class="c-calendar__input p-stay__checkout--input"
+            />
+          </li>
+          <li class="p-stay__adults c-dropdown">
+            <label for="stay__adults">大人</label>
+            <div class="p-stay__adults--select">
+              <select name="stay__adults" id="stay__adults" class="c-dropdown__list p-stay__adults--dropdown">
+                <option value="1">１人</option>
+                <option value="2">２人</option>
+                <option value="3">３人</option>
+                <option value="4">４人</option>
+              </select>
+            </div>
+
+          </li>
+          <li class="p-stay__children c-dropdown">
+            <label for="stay__children">お子様（12歳以下）</label>
+            <div class="p-stay__children--select">
+              <select name="stay__children" id="stay__children" class="c-dropdown__list stay__children--dropdown">
+                <option value="1">０人</option>
+                <option value="2">１人</option>
+                <option value="3">２人</option>
+                <option value="4">３人</option>
+              </select>
+            </div>
+          </li>
+          <li class="p-stay__rooms c-dropdown">
+            <label for="stay__rooms">室数</label>
+            <div class="p-stay__rooms--select">
+              <select name="stay__rooms" id="stay__rooms" class="c-dropdown__list p-stay__rooms--dropdown">
+                <option value="1">１室</option>
+                <option value="2">２室</option>
+                <option value="3">３室</option>
+              </select>
+            </div>
+          </li>
+          <li class="c-button">
+            <a href="#" class="c-button__tag">SAMPLE</a>
+          </li>
+          <li class="c-button">
+            <a href="#" class="c-button__tag">SAMPLE</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="c-tab__space1"></li>
+    <li>
+      <input class="c-tab__toggle" id="tab-2" type="radio" name="toggle" />
+      <label class="c-tab__label" for="tab-2">航空券付き</label> 
+      <div class="c-tab__content">
+        <div class="tab-content">
+
+          <label for="stay-check">チェック</label>
+          <input
+          type="text"
+          name="check"
+          id="stay-check"
+          placeholder="日付を選択" 
+          readonly="readonly"
+          class="cc-calendar__input"
+          />
+
+        </div>
+      </div>
+    </li>
+    <li class="c-tab__space2"></li>
+    <li>
+      <input class="c-tab__toggle" id="tab-3" type="radio" name="toggle"/>        
+      <label class="c-tab__label" for="tab-3">レストラン</label> 
+      <div class="c-tab__content">
+        <div class="tab-content">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+        </div>
+      </div>    
+    </li>
+  </ul>
+</div>
+</section>
+
+
 
 
 
@@ -175,88 +328,19 @@
     <!-- /.c-card -->
   </div>
 
-  <div class="inner u-mt50">
-    <ul class="c-tab">
-      <li>
-        <input class="c-tab__toggle" id="tab-1" type="radio" name="toggle" checked /> 
-        <label data-title="Tab 1" class="c-tab__label c-tab__label--borderleft" for="tab-1">宿泊</label>            
-        <div class="c-tab__content p-tab__content">
-          <ul class="p-stay">
-            <li class="p-stay__checkin c-calendar">
-              <label for="stay-checkin">チェックイン</label>
-              <input
-              type="date"
-              name="checkin"
-              id="stay-checkin"
-              class="p-stay__calendar"
-            />
-            </li>
-            <li class="p-stay__checkout c-calendar">
-              <label for="stay-checkout">チェックアウト</label>
-              <input
-              type="date"
-              name="checkout"
-              id="stay-checkout"
-              class="p-stay__calendar"
-            />
-            </li>
-            <li class="p-stay__adults c-dropdown">
-              <label for="stay__adults">大人</label>
-              <select name="stay__adults" id="stay__adults" class="c-dropdown__list stay__adults--dropdown">
-                <option value="1">１人</option>
-                <option value="2">２人</option>
-                <option value="3">３人</option>
-                <option value="4">４人</option>
-              </select>
-            </li>
-            <li class="p-stay__children c-dropdown">
-              <label for="stay__children">お子様（12歳以下）</label>
-              <select name="stay__children" id="stay__children" class="c-dropdown__list stay__children--dropdown">
-                <option value="1">０人</option>
-                <option value="2">１人</option>
-                <option value="3">２人</option>
-                <option value="4">３人</option>
-              </select>
-            </li>
-            <li class="p-stay__rooms c-dropdown">
-              <label for="stay__rooms">室数</label>
-              <select name="stay__rooms" id="stay__rooms" class="c-dropdown__list p-stay__rooms--dropdown">
-                <option value="1">１室</option>
-                <option value="2">２室</option>
-                <option value="3">３室</option>
-              </select>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="c-tab__space1"></li>
-      <li>
-        <input class="c-tab__toggle" id="tab-2" type="radio" name="toggle" />
-        <label class="c-tab__label" for="tab-2">航空券付き</label> 
-        <div class="c-tab__content">
-          <div class="tab-content">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-        </div>
-      </li>
-      <li class="c-tab__space2"></li>
-      <li>
-        <input class="c-tab__toggle" id="tab-3" type="radio" name="toggle"/>        
-        <label class="c-tab__label" for="tab-3">レストラン</label> 
-        <div class="c-tab__content">
-          <div class="tab-content">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-          </div>
-        </div>    
-      </li>
-    </ul>
-  </div>
+  
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
+  <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+<script src="https://npmcdn.com/flatpickr/dist/l10n/ja.js"></script>
+  <script>
+    // flatpickr("#stay-check", {});
+    flatpickr('.c-calendar__input', {
+    "locale": "ja"  
+});
+
+  </script>
 </body>
 </html>

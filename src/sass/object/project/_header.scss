@@ -6,13 +6,13 @@
   background-color: $gold;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  // align-items: center;
+  gap: 10px;
+padding-top: 4px;
 }
 .p-header__language {
-  width: 50.787px;
-height: 17.672px;
-flex-shrink: 0;
-  font-size: 14px;
+  font-size: 12px;
+
 }
 .p-header__language--icon {
   width: 13px;
@@ -23,6 +23,14 @@ flex-shrink: 0;
 .p-header__language--check {
 
 }
+
+.p-header__hamburger {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+
 
 
 

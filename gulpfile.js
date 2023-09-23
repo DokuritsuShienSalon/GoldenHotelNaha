@@ -106,9 +106,12 @@ imagemin.gifsicle({interlaced: true}),
 
 // ファイルの変更を検知
 const watchFiles = () => {
-    watch(srcPath.css, series(cssSass, browserSyncReload))
-    watch(srcPath.img, series(imgImagemin, browserSyncReload))
-    watch(srcPath.html, series(browserSyncReload))
+    watch(srcPath.css, series(cssSass))
+
+
+    // watch(srcPath.css, series(cssSass, browserSyncReload))
+    // watch(srcPath.img, series(imgImagemin, browserSyncReload))
+    // watch(srcPath.html, series(browserSyncReload))
 }
 
 // 画像だけ削除
@@ -140,7 +143,7 @@ const clean = (done) => {
 
 // npx gulpで出力する内容
 // exports.default = series(series(clean, cssSass, imgImagemin), parallel(watchFiles, browserSyncFunc));
-exports.default = series(series(cssSass), parallel(watchFiles, browserSyncFunc));
+exports.default = series(series(cssSass), parallel(watchFiles));
 
 
 // npx gulp del → 画像最適化（重複を削除）

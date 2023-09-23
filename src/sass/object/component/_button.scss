@@ -67,51 +67,5 @@
   transform: translateX(49%);
 }
 
-.c-beforeIconBtn {
-  position: relative;
-  display: block;
-  // padding: .2em .3em;
-  border: 1px solid currentColor;
-  color: $white;
-  text-decoration: none;
-  transition: .25s;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.c-beforeIconBtn img {
-  display: inline-block;
-  margin-right: 0.2em;
-
-
-}
-.c-check {
-  width: 0.4em;
-  height: 0.4em;
-  border-bottom: 1px solid $white;
-  border-right: 1px solid $white;
-  transform: rotate(45deg);
-  margin-left: 0.2em;
-  pointer-events: none;
-}
-
-
-.c-beforeIconBtn:focus,
-.c-beforeIconBtn:hover {
-  background-color: $white;
-  border-color: $blue;
-  color: $blue;
-  img {
-
-  }
-}
-.c-beforeIconBtn img:focus,
-.c-beforeIconBtn img:hover {
-  filter: brightness(0) saturate(100%) invert(21%) sepia(16%) saturate(1726%) hue-rotate(173deg) brightness(94%) contrast(87%);
-}
-
-
-
-
 
 
