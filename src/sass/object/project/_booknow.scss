@@ -1,5 +1,51 @@
 @use "global" as *;
 
-.p-tab__content li {
-  margin-top: 10px;
+.p-booknow {
+  margin-top: 30px;
+  text-align: center;
 }
+.p-booknow__tab {
+  width: 100%;
+  aspect-ratio: 375 / 702;
+}
+
+.p-tab__content {
+  font-size: 14px;
+}
+
+.p-stay {
+  margin-top: 54px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  text-align: left;
+}
+.p-stay__rooms,
+.p-stay__children,
+.p-stay__adults,
+.p-stay__checkin, 
+.p-stay__checkout {
+display: grid;
+grid-template-columns: 21vw 1fr 1fr 1fr 21vw;
+}
+.p-stay__rooms label,
+.p-stay__children label,
+.p-stay__adults label,
+.p-stay__checkout label,
+.p-stay__checkin label {
+  grid-column: 2 / -2;
+
+}
+.p-stay__rooms--select,
+.p-stay__children--select,
+.p-stay__adults--select,
+.p-stay__checkout--input,
+.p-stay__checkin--input {
+  display: block;
+  grid-column: 3 / -2;
+}
+// .p-stay__calendar {
+//   background-color: $blue;
+//   color: $white;
+// }

@@ -1182,6 +1182,10 @@ button {
     opacity: 0;
   }
 }
+.c-calendar__input {
+  width: 100%;
+}
+
 .c-dropdown select {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1189,6 +1193,10 @@ button {
   border-style: none;
   text-transform: none;
 }
+.c-dropdown__list {
+  width: 100%;
+}
+
 .c-tab {
   list-style-type: none;
   padding: 0;
@@ -1202,7 +1210,7 @@ button {
   padding: 0;
 }
 .c-tab .c-tab__content {
-  min-height: 350px;
+  min-height: 682px;
   width: 100%;
   display: none;
   overflow: hidden;
@@ -1210,7 +1218,6 @@ button {
   background: #29415f;
   position: absolute;
   top: 21px;
-  padding: 0px 40px 0 20px;
   color: #fff;
   z-index: 0;
 }
@@ -1256,8 +1263,58 @@ button {
   display: block;
 }
 
-.p-tab__content li {
-  margin-top: 10px;
+.p-booknow {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.p-booknow__tab {
+  width: 100%;
+  aspect-ratio: 375/702;
+}
+
+.p-tab__content {
+  font-size: 14px;
+}
+
+.p-stay {
+  margin-top: 54px;
+  margin-inline: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 25px;
+  text-align: left;
+}
+
+.p-stay__rooms,
+.p-stay__children,
+.p-stay__adults,
+.p-stay__checkin,
+.p-stay__checkout {
+  display: grid;
+  grid-template-columns: 21vw 1fr 1fr 1fr 21vw;
+}
+
+.p-stay__rooms label,
+.p-stay__children label,
+.p-stay__adults label,
+.p-stay__checkout label,
+.p-stay__checkin label {
+  grid-column: 2/-2;
+}
+
+.p-stay__rooms--select,
+.p-stay__children--select,
+.p-stay__adults--select,
+.p-stay__checkout--input,
+.p-stay__checkin--input {
+  display: block;
+  grid-column: 3/-2;
 }
 
 .FV {
@@ -1462,6 +1519,25 @@ button {
   }
 }
 
+.c-h2__title {
+  color: #29415f;
+  font-family: Imperial Script;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.c-h2__subtitle {
+  color: #29415f;
+  font-family: Noto Serif JP, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
   .u-mobile {
     display: none;
@@ -1478,6 +1554,9 @@ button {
 
 .u-mt50 {
   margin-top: 50px;
+}
+.u-mt30 {
+  margin-top: 30px;
 }
 .u-bd {
   border: 3px solid red;

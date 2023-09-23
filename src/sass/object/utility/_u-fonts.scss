@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.c-h2__title {
+  color: $blue;
+  font-family: Imperial Script;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.c-h2__subtitle {
+  color: $blue;
+  font-family: $base-font-family;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: block;
+}

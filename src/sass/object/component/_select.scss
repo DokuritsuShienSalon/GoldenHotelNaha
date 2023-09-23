@@ -1,5 +1,14 @@
 @use "global" as *;
 
+.c-calendar {
+
+}
+.c-calendar__input {
+  width: 100%;
+}
+
+
+
 
 .c-dropdown  {
 
@@ -12,4 +21,7 @@
   label {
     // display: block;
   }
+}
+.c-dropdown__list {
+  width: 100%;
 }
