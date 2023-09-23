@@ -237,10 +237,40 @@ button {
           transform: translateX(49%);
 }
 
+.c-card {
+  width: 58.4%;
+  aspect-ratio: 219/115.9;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(25%, #29415f));
+  background-image: linear-gradient(90deg, transparent 0% 25%, #29415f 25% 100%);
+}
+.c-card img {
+  width: 70%;
+  height: auto;
+  margin-bottom: 4.26%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+}
+.c-card h3 {
+  color: #fff;
+  margin-left: -68%;
+  margin-bottom: 0.15em;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
 .c-beforeIconBtn {
   position: relative;
   display: block;
-  padding-inline: 0.1em;
+  padding: 0 0.1em 0.1em;
   border: 1px solid currentColor;
   color: #fff;
   text-decoration: none;
@@ -300,36 +330,28 @@ button {
 }
 
 .c-language__lists {
-  display: none; /*デフォルトでは非表示の状態にしておく*/
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0); /*デフォルトでは非表示の状態にしておく*/
+  -webkit-transform-origin: center top;
+          transform-origin: center top; /*変形を適応する基準をtopとする*/
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; /*表示の変化を0.3秒に指定*/
+  width: 100%;
 }
 
 .c-gnavi__list:hover .c-language__lists {
-  display: block; /*Gナビメニューにホバーしたら表示*/
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1); /*Gナビメニューにホバーしたら表示*/
 }
 
 .c-language__list {
   background-color: #29415f;
   height: 25px;
   line-height: 25px;
-  font-size: 14px;
-  color: #fff;
   text-align: right;
-  padding-right: 1em;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   position: relative;
-}
-
-.c-language__list::before {
-  content: "";
-  background-color: #fff;
-  position: absolute;
-  top: 11px;
-  left: 10px;
-  width: 7px;
-  height: 5px;
-  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
-          clip-path: polygon(0 0, 0% 100%, 100% 50%);
 }
 
 .c-language__list:not(:first-child)::after {
@@ -347,62 +369,23 @@ button {
 }
 
 .c-language__list a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #fff;
+  display: block;
+  padding-right: 1em;
   text-decoration: none;
   position: relative;
 }
 
 .c-language__list a::before {
   content: "";
-  display: block;
-  width: 6px;
-  height: 6px;
-  border-top: 2px solid #fff;
-  border-left: 2px solid #fff;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  background-color: #fff;
   position: absolute;
-  right: 15px;
-  top: calc(50% - 5px);
-}
-
-.c-card {
-  width: 58.4%;
-  aspect-ratio: 219/115.9;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(25%, #29415f));
-  background-image: linear-gradient(90deg, transparent 0% 25%, #29415f 25% 100%);
-}
-.c-card img {
-  width: 70%;
-  height: auto;
-  margin-bottom: 4.26%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1;
-          flex: 1 1;
-}
-.c-card h3 {
-  color: #fff;
-  margin-left: -68%;
-  margin-bottom: 0.15em;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
+  top: 11px;
+  left: 10px;
+  width: 7px;
+  height: 5px;
+  -webkit-clip-path: polygon(0 0, 20% 50%, 0% 100%, 100% 50%);
+          clip-path: polygon(0 0, 20% 50%, 0% 100%, 100% 50%);
 }
 
 .header_button {
@@ -596,7 +579,6 @@ button {
 
 .menu_list > div:nth-child(1) p {
   color: #fff;
-  font-family: "Lato", "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
   font-weight: 600;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -643,21 +625,6 @@ button {
   top: 0;
   right: 0;
   text-align: right;
-}
-
-.menu_sns {
-  width: auto;
-  height: auto;
-  position: absolute;
-  bottom: 55px;
-  right: 55px;
-}
-
-.menu_sns a {
-  display: block;
-  width: 24px;
-  height: 24px;
-  float: left;
 }
 
 @media (max-height: 750px) and (max-width: 1400px) {
@@ -1407,7 +1374,7 @@ button {
 }
 
 .p-header__language {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .p-header__language--icon {
