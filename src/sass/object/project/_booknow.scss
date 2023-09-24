@@ -32,8 +32,8 @@ grid-template-columns: 21vw 1fr 1fr 1fr 21vw;
 .p-stay__rooms label,
 .p-stay__children label,
 .p-stay__adults label,
-.p-stay__checkout label,
-.p-stay__checkin label {
+.p-stay__checkout--label,
+.p-stay__checkin--label {
   grid-column: 2 / -2;
 
 }
@@ -44,8 +44,59 @@ grid-template-columns: 21vw 1fr 1fr 1fr 21vw;
 .p-stay__checkin--input {
   display: block;
   grid-column: 3 / -2;
+  position: relative;
+    &::before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    &::after {
+      content: "";
+      width: 0.4em;
+      height: 0.4em;
+      border-bottom: 1px solid $white;
+      border-right: 1px solid $white;
+      transform: rotate(45deg);
+      margin-inline: 0.2em;
+      position: absolute;
+      top: 0.5em;
+      right: 1em;
+    }
+  }
+.p-stay__checkin--dropdown,
+.p-stay__checkout--dropdown,
+.p-stay__adults--dropdown,
+.p-stay__children--dropdown,
+.p-stay__rooms--dropdown {
+  color: #999;
+  background-color: $blue;
+  padding-left: 1em;
+  border: 0;
 }
+
+
 // .p-stay__calendar {
 //   background-color: $blue;
 //   color: $white;
 // }
+.p-stay__searchbtn {
+  color: $white;
+  border-color: $white;
+  margin-inline: auto;
+  margin-top: 20px;
+}
+.p-stay__searchbtn::after {
+  background-color: $white;
+}
+.p-stay__planbtn {
+  color: $white;
+  border-color: $white;
+  margin-inline: auto;
+}
+.p-stay__planbtn::after {
+  background-color: $white;
+}

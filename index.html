@@ -208,31 +208,43 @@
       <div class="c-tab__content p-tab__content">
         <ul class="p-stay">
           <li class="p-stay__checkin c-calendar">
-            <label for="stay-checkin">チェックイン</label>
-            <input
-            type="text"
-            name="checkin"
-            id="stay-checkin"
-            placeholder="日付を選択" 
-            readonly="readonly"
-            class="c-calendar__input p-stay__checkin--input"
-            />
+            <!-- 疑似要素での修飾のためにinputタグをdivで囲む必要がある→
+            すると並列にならないためlabelタグを使えない→
+            pタグとdivタグの並列にしてgridレイアウト -->
+            <p class="p-stay__checkin--label">チェックイン</p>
+            <!-- <label for="stay-checkin">チェックイン</label> -->
+            <div class="p-stay__checkin--input">
+              <input
+              type="text"
+              name="checkin"
+              id="stay-checkin"
+              placeholder="日付を選択" 
+              readonly="readonly"
+              class="c-calendar__input p-stay__checkin--dropdown"
+              />
+            </div>
+
           </li>
           <li class="p-stay__checkout c-calendar">
-            <label for="stay-checkout">チェックアウト</label>
-            <input
-            type="text"
-            name="checkout"
-            id="stay-checkout"
-            placeholder="日付を選択" 
-            readonly="readonly"
-            class="c-calendar__input p-stay__checkout--input"
-            />
+            <p class="p-stay__checkout--label">チェックアウト</p>
+            <!-- <label for="stay-checkout">チェックアウト</label> -->
+            <div class="p-stay__checkout--input">
+              <input
+              type="text"
+              name="checkout"
+              id="stay-checkout"
+              placeholder="日付を選択" 
+              readonly="readonly"
+              class="c-calendar__input p-stay__checkout--dropdown"
+              />
+            </div>
+
           </li>
           <li class="p-stay__adults c-dropdown">
             <label for="stay__adults">大人</label>
             <div class="p-stay__adults--select">
               <select name="stay__adults" id="stay__adults" class="c-dropdown__list p-stay__adults--dropdown">
+                <option value="" selected disabled>人数を選択</option>
                 <option value="1">１人</option>
                 <option value="2">２人</option>
                 <option value="3">３人</option>
@@ -244,7 +256,8 @@
           <li class="p-stay__children c-dropdown">
             <label for="stay__children">お子様（12歳以下）</label>
             <div class="p-stay__children--select">
-              <select name="stay__children" id="stay__children" class="c-dropdown__list stay__children--dropdown">
+              <select name="stay__children" id="stay__children" class="c-dropdown__list p-stay__children--dropdown">
+                <option value="" selected disabled>人数を選択</option>
                 <option value="1">０人</option>
                 <option value="2">１人</option>
                 <option value="3">２人</option>
@@ -256,17 +269,18 @@
             <label for="stay__rooms">室数</label>
             <div class="p-stay__rooms--select">
               <select name="stay__rooms" id="stay__rooms" class="c-dropdown__list p-stay__rooms--dropdown">
-                <option value="1">１室</option>
-                <option value="2">２室</option>
-                <option value="3">３室</option>
+                <option value="" selected disabled>部屋数を選択</option>
+                <option value="1">１部屋</option>
+                <option value="2">２部屋</option>
+                <option value="3">３部屋</option>
               </select>
             </div>
           </li>
-          <li class="c-button">
-            <a href="#" class="c-button__tag">SAMPLE</a>
+          <li class="p-stay__searchbtn c-button">
+            <a href="#" class="c-button__tag">SEARCH</a>
           </li>
-          <li class="c-button">
-            <a href="#" class="c-button__tag">SAMPLE</a>
+          <li class="p-stay__planbtn c-button">
+            <a href="#" class="c-button__tag">VIEW ALL PLAN</a>
           </li>
         </ul>
       </div>
@@ -338,9 +352,8 @@
   <script>
     // flatpickr("#stay-check", {});
     flatpickr('.c-calendar__input', {
-    "locale": "ja"  
-});
-
+     "locale": "ja"  
+    });
   </script>
 </body>
 </html>
