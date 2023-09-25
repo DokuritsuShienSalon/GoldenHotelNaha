@@ -1817,7 +1817,6 @@ button {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(41, 65, 95, .3))), url(../images/Special-sp2x.webp);
   background-image: linear-gradient(rgba(41, 65, 95, .3)), url(../images/Special-sp2x.webp);
   background-size: cover;
-  background-color: rgba(41, 65, 95, .3);
 }
 
 .p-special__subtitle {
@@ -1874,6 +1873,43 @@ button {
   background-color: #111;
   color: #fff;
   text-align: center;
+}
+
+.p-wedding {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.p-wedding__button {
+  margin-top: 15px;
+  margin-inline: auto;
+}
+
+.p-wedding__container {
+  margin-top: 15px;
+  padding: 15px;
+  width: 100%;
+  aspect-ratio: 375/204;
+  background: url(../images/wedding-sp2x.webp), lightgray 50%/cover no-repeat;
+  background-size: contain;
+  text-align: right;
+}
+
+.p-wedding__subtitle {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.p-wedding__eng {
+  margin-top: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .u-desktop {
