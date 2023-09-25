@@ -1,10 +1,39 @@
 @use "global" as *;
 
+.c-selectorContainer {
+  position: relative;
+    &::before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    &::after {
+      content: "";
+      width: 0.4em;
+      height: 0.4em;
+      border-bottom: 1px solid $white;
+      border-right: 1px solid $white;
+      transform: rotate(45deg);
+      margin-inline: 0.2em;
+      position: absolute;
+      top: 0.5em;
+      right: 1em;
+    }
+}
+
 .c-calendar {
 
 }
 .c-calendar__input {
   width: 100%;
+  border: 0;
+  color: #999;
+  background-color: $blue;
+  padding-left: 1em;
 }
 
 
@@ -24,4 +53,8 @@
 }
 .c-dropdown__list {
   width: 100%;
+  border: 0;
+  color: #999;
+  background-color: $blue;
+  padding-left: 1em;
 }

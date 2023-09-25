@@ -16,3 +16,7 @@
   width: 375px;
   margin-inline: auto;
 }
+.l-inner__tab {
+  display: grid;
+  grid-template-columns: 21vw 1fr 1fr 1fr 21vw;
+}
