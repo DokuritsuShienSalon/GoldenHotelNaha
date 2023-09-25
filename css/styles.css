@@ -1505,6 +1505,52 @@ button {
   left: 0;
 }
 
+.p-fitness {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.p-fitness__container {
+  margin-top: 15px;
+  width: 100%;
+  aspect-ratio: 375/168;
+  position: relative;
+}
+
+.p-fitness__image {
+  width: 235.816px;
+  height: auto;
+}
+
+.p-fitness__textbox {
+  position: absolute;
+  top: 30.75px;
+  left: 155.38px;
+  z-index: -1;
+  width: 219.619px;
+  height: 137.262px;
+  background-color: #29415f;
+}
+
+.p-fitness__text {
+  position: absolute;
+  top: 66px;
+  right: 15px;
+  z-index: 1;
+  color: #fff;
+  text-align: right;
+  font-family: Noto Serif JP, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.p-fitness__button {
+  margin-top: 15px;
+  margin-inline: auto;
+}
+
 .FV {
   position: relative;
   width: 100%;
@@ -1753,6 +1799,34 @@ button {
   position: absolute;
   top: 170px;
   left: 10px;
+}
+
+.p-special {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.p-special__button {
+  margin-top: 15px;
+  margin-inline: auto;
+}
+
+.p-special__container {
+  width: 100%;
+  aspect-ratio: 375/221;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(41, 65, 95, .3))), url(../images/Special-sp2x.webp);
+  background-image: linear-gradient(rgba(41, 65, 95, .3)), url(../images/Special-sp2x.webp);
+  background-size: cover;
+  background-color: rgba(41, 65, 95, .3);
+}
+
+.p-special__subtitle {
+  margin-top: 80px;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .p-story {

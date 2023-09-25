@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.p-fitness {
+  margin-top: 30px;
+  text-align: center;
+}
+.p-fitness__container {
+  margin-top: 15px;
+  width: 100%;
+  aspect-ratio: 375 / 168;
+  position: relative;
+}
+.p-fitness__image {
+  width: 235.816px;
+  height: auto;
+}
+.p-fitness__textbox {
+  position: absolute;
+  top: 30.75px;
+  left: 155.38px;
+  z-index: -1;
+  width: 219.619px;
+  height: 137.262px;
+  background-color: $blue;
+}
+.p-fitness__text {
+  position: absolute;
+  top: 66px;
+  right: 15px;
+  z-index: 1;
+  color: $white;
+  text-align: right;
+  font-family: $base-font-family;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.p-fitness__button {
+  margin-top: 15px;
+  margin-inline: auto ;
+}
