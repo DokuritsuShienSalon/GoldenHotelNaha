@@ -5,6 +5,7 @@ body {
 }
 
 html {
+  color: #29415f;
   font-size: 16px;
 }
 @media (max-width: 375px) {
@@ -160,7 +161,7 @@ button {
 }
 
 .c-button {
-  color: #333;
+  color: #29415f;
   background: transparent;
   font-size: 16px;
   width: 200px;
@@ -171,7 +172,7 @@ button {
 .c-button {
   font-family: "Julius Sans One", sans-serif;
   text-align: center;
-  border: 1px solid #333;
+  border: 1px solid #29415f;
   position: relative;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -181,7 +182,7 @@ button {
   content: "";
   width: 22.5%;
   height: 1px;
-  background-color: #333;
+  background-color: #29415f;
   position: absolute;
   top: 50%;
   right: -7.5%;
@@ -391,6 +392,43 @@ button {
   height: 5px;
   -webkit-clip-path: polygon(0 0, 20% 50%, 0% 100%, 100% 50%);
           clip-path: polygon(0 0, 20% 50%, 0% 100%, 100% 50%);
+}
+
+.c-h2__title {
+  color: #29415f;
+  font-family: Imperial Script;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.c-h2__subtitle {
+  color: #29415f;
+  font-family: Noto Serif JP, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: block;
+}
+
+.c-datetime {
+  color: #29415f;
+  font-family: Noto Serif JP, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.c-h3__title {
+  color: #29415f;
+  font-family: Noto Serif JP, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .header_button {
@@ -1505,6 +1543,31 @@ button {
   margin-right: 10px;
 }
 
+.p-news {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.p-news__content {
+  margin-top: 31px;
+}
+
+.p-news__imagebox {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(12%, #cfab6e), color-stop(88%, transparent));
+  background-image: linear-gradient(transparent 0% 12%, #cfab6e 12% 88%, transparent 88% 100%);
+}
+
+.p-news__image {
+  width: 255px;
+  height: auto;
+  margin-inline: auto;
+}
+
+.p-news__button {
+  margin-top: 30px;
+  margin-inline: auto;
+}
+
 .p-photo {
   margin-top: 50px;
   display: -webkit-box;
@@ -1575,25 +1638,6 @@ button {
   .u-desktop {
     display: block;
   }
-}
-
-.c-h2__title {
-  color: #29415f;
-  font-family: Imperial Script;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.c-h2__subtitle {
-  color: #29415f;
-  font-family: Noto Serif JP, serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  display: block;
 }
 
 @media screen and (min-width: 768px) {

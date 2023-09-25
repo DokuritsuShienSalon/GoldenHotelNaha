@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.p-news {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.p-news__content {
+  margin-top: 31px;
+
+}
+
+.p-news__imagebox {
+  background-image: linear-gradient(transparent 0% 12%, $gold 12% 88%, transparent 88% 100%);
+}
+
+.p-news__image {
+  width: 255px;
+  height: auto;
+  margin-inline: auto;
+}
+.p-news__button {
+  margin-top: 30px;
+  margin-inline: auto;
+}
+
+
+
+
+
+
+
