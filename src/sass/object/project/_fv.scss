@@ -3,23 +3,39 @@
 .FV {
   position: relative;
   width: 100%;
-  // height: calc(100vh - 29px);
+
   aspect-ratio: 750 / 422;
   overflow: hidden;
   z-index: -1;
+  @include mq("md") {
+    aspect-ratio: auto;
+    height: calc(100vh - 64px);
+  }
 }
 .FV__mask  {
   width: 274.524px;
-height: 82.357px;
-background: rgba(41, 65, 95, 0.50);
-position: absolute;
-top: 111.18px;
-left: 18.67px;
+  height: 82.357px;
+  background: rgba(41, 65, 95, 0.50);
+  position: absolute;
+  top: 111.18px;
+  left: 18.67px;
+
+  @include mq("md") {
+    width: 1000px;
+    height: 300px;
+    padding: 12px 45px;
+    top: 405px;
+    left: 68px;
+  }
 }
 .FV__title {
   color: $gold;
   font-size: 24px;
   font-weight: 200;
+
+  @include mq("md") {
+    font-size: 96px;
+  }
 }
 
 .FV__anime {

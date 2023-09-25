@@ -8,16 +8,29 @@
   justify-content: flex-end;
   // align-items: center;
   gap: 10px;
-padding-top: 4px;
+  padding-top: 4px;
+  @include mq("md") {
+    height: 64px;
+    padding-top: 16px;
+  }
 }
 .p-header__language {
   font-size: 12px;
 
+  @include mq("md") {
+    font-size: 20px;
+  }
 }
 .p-language__icon {
   width: 13px;
-height: 13px;
-flex-shrink: 0;
+  height: 13px;
+
+  @include mq("md") {
+    width: 24px;
+    height: 24px;
+
+  }
+  
 
 }
 
