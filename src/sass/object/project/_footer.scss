@@ -1,0 +1,45 @@
+@use "global" as *;
+
+.p-footer {
+  margin-top: 30px;
+  text-align: right;
+  width: 100%;
+  aspect-ratio: 375 / 167;
+  background-image: linear-gradient(rgba(207, 171, 110, 0.50)), url(../images/Footer-sp2x.webp);
+  background-size: cover;
+  padding: 10px;
+  position: relative;
+}
+.p-footer__title {
+  color: $blue;
+  font-family: Imperial Script;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.p-footer:not(:first-child) {
+  color: $blue;
+  font-family: $base-font-family;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.p-footer__adressEng {
+  margin-top: 5px;
+}
+.p-footer__facebook {
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.p-footer__twitter {
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  bottom: 10px;
+  left: 60px;
+}

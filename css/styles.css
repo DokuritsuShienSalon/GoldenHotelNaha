@@ -1551,6 +1551,56 @@ button {
   margin-inline: auto;
 }
 
+.p-footer {
+  margin-top: 30px;
+  text-align: right;
+  width: 100%;
+  aspect-ratio: 375/167;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 171, 110, .5))), url(../images/Footer-sp2x.webp);
+  background-image: linear-gradient(rgba(207, 171, 110, .5)), url(../images/Footer-sp2x.webp);
+  background-size: cover;
+  padding: 10px;
+  position: relative;
+}
+
+.p-footer__title {
+  color: #29415f;
+  font-family: Imperial Script;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.p-footer:not(:first-child) {
+  color: #29415f;
+  font-family: Noto Serif JP, serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.p-footer__adressEng {
+  margin-top: 5px;
+}
+
+.p-footer__facebook {
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.p-footer__twitter {
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  bottom: 10px;
+  left: 60px;
+}
+
 .FV {
   position: relative;
   width: 100%;
@@ -1945,14 +1995,6 @@ button {
 .p-story__button {
   margin-top: 50px;
   margin-left: 15px;
-}
-
-.test {
-  font-size: 20px;
-  font-size: 1.25rem;
-  background-color: #111;
-  color: #fff;
-  text-align: center;
 }
 
 .p-wedding {
