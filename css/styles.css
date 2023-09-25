@@ -1492,7 +1492,7 @@ button {
   font-size: 12px;
 }
 
-.p-header__language--icon {
+.p-language__icon {
   width: 13px;
   height: 13px;
   -ms-flex-negative: 0;
