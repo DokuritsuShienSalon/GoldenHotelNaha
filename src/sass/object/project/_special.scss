@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.p-special {
+  margin-top: 30px;
+  text-align: center;
+}
+.p-special__button {
+  margin-top: 15px;
+  margin-inline: auto;
+}
+.p-special__container {
+  width: 100%;
+  aspect-ratio: 375 / 221;
+  background-image: linear-gradient(rgba(41, 65, 95, 0.30)), url(../images/Special-sp2x.webp);
+  background-size: cover;
+}
+
+.p-special__title {
+
+}
+
+.p-special__subtitle {
+  margin-top: 80px;
+  color: $white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
