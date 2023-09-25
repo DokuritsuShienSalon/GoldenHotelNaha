@@ -1,0 +1,53 @@
+@use "global" as *;
+
+.p-cuisine {
+  margin-top: 30px;
+  text-align: center;
+}
+.p-cuisine__content-l {
+  margin-top: 15px;
+  position: relative;
+}
+.p-cuisine__content-l::after {
+  content: "10th";
+  color: $blue;
+  font-family: Imperial Script;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+}
+.p-cuisine__card {
+  grid-column: 2 / 4;
+  margin-bottom: 15px;
+  &--mirror {
+    grid-column: 3 / 5;
+  }
+}
+.p-cuisine__gallery {
+  background-image: linear-gradient(transparent 0% 15%, $gold 15% 82%, transparent 82% 100%);
+}
+.p-cuisine__button {
+  margin-inline: auto;
+}
+.p-cuisine__content-r {
+  margin-top: 50px;
+  position: relative;
+}
+.p-cuisine__content-r::before {
+  content: "12th Floor";
+  color: $blue;
+  font-family: Imperial Script;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  writing-mode: vertical-lr;
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+}

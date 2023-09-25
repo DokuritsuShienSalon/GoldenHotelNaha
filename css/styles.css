@@ -160,6 +160,11 @@ button {
   grid-template-columns: 21vw 1fr 1fr 1fr 21vw;
 }
 
+.l-inner__cuisine {
+  display: grid;
+  grid-template-columns: 15px 126.39px auto 126.39px 15px;
+}
+
 .c-button {
   color: #29415f;
   background: transparent;
@@ -245,33 +250,56 @@ button {
 }
 
 .c-card {
-  width: 58.4%;
+  width: 100%;
   aspect-ratio: 219/115.9;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(25%, #29415f));
   background-image: linear-gradient(90deg, transparent 0% 25%, #29415f 25% 100%);
+  position: relative;
 }
-.c-card img {
+.c-card--mirror {
+  background-image: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(25%, #29415f));
+  background-image: linear-gradient(270deg, transparent 0% 25%, #29415f 25% 100%);
+}
+
+.c-card__box {
+  display: block;
+  overflow: hidden;
   width: 70%;
   height: auto;
-  margin-bottom: 4.26%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1;
-          flex: 1 1;
+  margin-top: 4.26%;
 }
-.c-card h3 {
+.c-card__box--mirror {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.c-card__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.c-card__image:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.c-card__title {
   color: #fff;
-  margin-left: -68%;
   margin-bottom: 0.15em;
+  margin-right: 0.5em;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.c-card__title--mirror {
+  left: 0;
+  right: inherit;
+  margin-left: 0.5em;
 }
 
 .c-beforeIconBtn {
@@ -1412,6 +1440,69 @@ button {
 
 .p-tab__planbtn::after {
   background-color: #fff;
+}
+
+.p-cuisine {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.p-cuisine__content-l {
+  margin-top: 15px;
+  position: relative;
+}
+
+.p-cuisine__content-l::after {
+  content: "10th";
+  color: #29415f;
+  font-family: Imperial Script;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+}
+
+.p-cuisine__card {
+  grid-column: 2/4;
+  margin-bottom: 15px;
+}
+.p-cuisine__card--mirror {
+  grid-column: 3/5;
+}
+
+.p-cuisine__gallery {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(15%, #cfab6e), color-stop(82%, transparent));
+  background-image: linear-gradient(transparent 0% 15%, #cfab6e 15% 82%, transparent 82% 100%);
+}
+
+.p-cuisine__button {
+  margin-inline: auto;
+}
+
+.p-cuisine__content-r {
+  margin-top: 50px;
+  position: relative;
+}
+
+.p-cuisine__content-r::before {
+  content: "12th Floor";
+  color: #29415f;
+  font-family: Imperial Script;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  position: absolute;
+  bottom: 60px;
+  left: 0;
 }
 
 .FV {
