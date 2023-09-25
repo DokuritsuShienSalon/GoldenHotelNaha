@@ -16,3 +16,14 @@
   width: 375px;
   margin-inline: auto;
 }
+
+
+.l-inner__tab {
+  display: grid;
+  grid-template-columns: 21vw 1fr 1fr 1fr 21vw;
+}
+.l-inner__cuisine {
+
+  display: grid;
+  grid-template-columns: 15px 126.39px auto 126.39px 15px;
+}

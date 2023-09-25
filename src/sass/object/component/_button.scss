@@ -1,19 +1,20 @@
 @use "global" as *;
 
 .c-button {
-  color: #333;
+  color: $blue;
   background: transparent;
   font-size: 16px;
   // font-weight: bold;
   width: 200px;
   height: 40px;
   line-height: 40px;
+  text-transform: uppercase;
 }
 
 .c-button {
   font-family: 'Julius Sans One', sans-serif;
   text-align: center;
-  border: 1px solid #333;
+  border: 1px solid $blue;
   position: relative;
   box-sizing: content-box;
 }
@@ -22,7 +23,7 @@
   // width: 45px;
   width: 22.5%;
   height: 1px;
-  background-color: #333;
+  background-color: $blue;
   position: absolute;
   top: 50%;
   right: -7.5%;
