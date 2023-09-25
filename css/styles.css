@@ -1664,6 +1664,45 @@ button {
   left: 10px;
 }
 
+.p-story {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.p-story__content {
+  margin-top: 30px;
+  position: relative;
+}
+
+.p-story__image {
+  width: 100%;
+  height: auto;
+}
+
+.p-story__text {
+  width: 274px;
+  height: 158px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 19px 7px 19px 15px;
+  background: rgba(255, 255, 255, .5);
+  position: absolute;
+  top: 108px;
+  left: 96px;
+  color: #29415f;
+  text-align: right;
+  font-family: Noto Serif JP, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.p-story__button {
+  margin-top: 50px;
+  margin-left: 15px;
+}
+
 .test {
   font-size: 20px;
   font-size: 1.25rem;

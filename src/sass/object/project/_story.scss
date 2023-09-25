@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.p-story {
+  margin-top: 30px;
+  text-align: center;
+}
+.p-story__content {
+  margin-top: 30px;
+  position: relative;
+}
+.p-story__image {
+  width: 100%;
+  height: auto;
+}
+.p-story__text {
+  width: 274px;
+  height: 158px;
+  flex-shrink: 0;
+  padding: 19px 7px 19px 15px;
+  background: rgba(255, 255, 255, 0.50);
+  position: absolute;
+  top: 108px;
+  left: 96px;
+  color: $blue;
+  text-align: right;
+  font-family: $base-font-family;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.p-story__button {
+  margin-top: 50px;
+  margin-left: $size15;
+}
