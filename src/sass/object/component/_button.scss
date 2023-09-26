@@ -9,6 +9,11 @@
   height: 40px;
   line-height: 40px;
   text-transform: uppercase;
+
+  @include mq("md") {
+    height: 60px;
+    line-height: 60px;
+  }
 }
 
 .c-button {
@@ -32,6 +37,7 @@
 .c-button__tag {
   position: relative;
   z-index: 1;
+  // margin-right: 22px;
   display: block;
   overflow: hidden;
   transition: .3s;
@@ -66,6 +72,13 @@
 }
 .c-button__tag:hover::after {
   transform: translateX(49%);
+}
+.c-button--white {
+  color: $white;
+  border-color: $white;
+}
+.c-button--white::after {
+  background-color: $white;
 }
 
 

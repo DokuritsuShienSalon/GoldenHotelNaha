@@ -3,10 +3,18 @@
 .p-special {
   margin-top: 30px;
   text-align: center;
+
+  @include mq("md") {
+    margin-top: 173px;
+  }
 }
 .p-special__button {
-  margin-top: 15px;
+  margin-top: 12px;
   margin-inline: auto;
+
+  @include mq("md") {
+    margin-right: 147px;
+  }
 }
 .p-special__container {
   width: 100%;
@@ -16,15 +24,23 @@
 }
 
 .p-special__title {
-
+  // padding-top: 85px;
 }
-
+.p-special__jptitle {
+  margin-top: -5px;
+}
 .p-special__subtitle {
-  margin-top: 80px;
+  margin-top: 93px;
   color: $white;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+
+  @include mq("md") {
+    font-size: 32px;
+    text-align: right;
+    margin: 300px 147px 30px auto;
+  }
 }
 

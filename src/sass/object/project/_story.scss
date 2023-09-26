@@ -3,14 +3,31 @@
 .p-story {
   margin-top: 30px;
   text-align: center;
+  @include mq("md") {
+    margin-top: 173px;
+  }
 }
+.p-story__flex {
+
+  @include mq("md") {
+    display: flex;
+    align-items: end;
+  }
+}
+
 .p-story__content {
-  margin-top: 30px;
+  margin-top: 16px;
   position: relative;
+  @include mq("md") {
+    width: 70%;
+
+  }
 }
 .p-story__image {
   width: 100%;
   height: auto;
+
+
 }
 .p-story__text {
   width: 274px;
@@ -20,7 +37,7 @@
   background: rgba(255, 255, 255, 0.50);
   position: absolute;
   top: 108px;
-  left: 96px;
+  left: 93px;
   color: $blue;
   text-align: right;
   font-family: $base-font-family;
@@ -28,8 +45,21 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+
+  @include mq("md") {
+    width: 574px;
+    height: 149px;
+    background: $white;
+    font-size: 20px;
+    top: 214px;
+    left: 680.42px;
+  }
 }
 .p-story__button {
-  margin-top: 50px;
+  margin-top: 55px;
   margin-left: $size15;
+
+  @include mq("md") {
+    margin-left: 68px;
+  }
 }

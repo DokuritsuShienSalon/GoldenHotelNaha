@@ -1,20 +1,52 @@
 @use "global" as *;
 
 .p-meeting {
-  margin-top: 30px;
+  margin-top: 21px;
   text-align: center;
+
+  @include mq("md") {
+    margin-top: 173px;
+  }
 }
+.p-meeting__jptitle {
+  margin-top: -12px;
+}
+.p-meeting__flex {
+
+  @include mq("md") {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    padding-top: 129px;
+    background-image: linear-gradient($gold 0% 75%, transparent 75% 100%);
+  }
+}
+
+
 
 .p-meeting__content {
   margin-top: 5px;
   width: 100%;
-  
+  background-image: linear-gradient(transparent 0% 40%, $gold 40% 100%);
+
+  @include mq("md") {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 .p-meeting__imagebox {
   width: 100%;
   aspect-ratio: 375 / 222;
-  background-image: linear-gradient(transparent 0% 18.9%, $gold 18.9% 100%);
+  margin-top: 7px;
+
+
+  @include mq("md") {
+
+    order: 1;
+  }
 }
 
 .p-meeting__image {
@@ -23,6 +55,12 @@
   margin-inline: auto;
   position: relative;
   overflow: hidden;
+
+  @include mq("md") {
+    width: 470px;
+    height: auto;
+  }
+
   &::before,
   &::after {
     content: "";
@@ -58,21 +96,30 @@
   }
 }
 .p-meeting__subtitle {
-  margin-top: 30px;
+  margin-top: 23px;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  @include mq("md") {
+    order: 2;
+  }
 }
 .p-meeting__contentTitle {
   margin-top: 3px;
+  padding-bottom: 16px;
+
+  @include mq("md") {
+    order: 3;
+  }
 }
 
 
 
 .p-meeting__button {
   // display: none;
-  margin-top: 30px;
+  margin-top: 21px;
   margin-inline: auto;
 }
 

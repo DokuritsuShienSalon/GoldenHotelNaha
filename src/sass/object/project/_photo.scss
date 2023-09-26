@@ -1,16 +1,31 @@
 @use "global" as *;
 
 .p-photo {
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
 
+  @include mq("md") {
+    margin-top: 73px;
+  }
 
-  &__image {
+  &__imagebox {
     margin-left: 44px;
     width: 263px;
-    height: 314px;
+    aspect-ratio: 263 / 314;
     position: relative;
+
+    @include mq("md") {
+      margin-left: 740px;
+      width: 482px;
+      height: 576px;
+    }
   }
+  &__image {
+    width: 100%;
+    height: auto;
+    // height: 314px;
+  }
+
   &__text {
     position: absolute;
     top: 164px;
@@ -21,25 +36,42 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    @include mq("md") {
+      top: 109px;
+      left: -598px;
+      font-size: 96px;
+    }
   }
   &__subtext {
     position: absolute;
     top: 264px;
-    left: 20px;
+    left: 29px;
     color: $blue;
     font-family: inherit;
     font-size: 16px;
     font-style: normal;
     font-weight: 200;
     line-height: normal;
+
+    @include mq("md") {
+      font-size: 20px;
+      top: 400px;
+      left: -598px;
+    }
   }
   &__scroll {
     font-size: 14px;
     writing-mode: vertical-lr;
     text-align: right;
-    padding-bottom: 20px;
+    padding-bottom: 28px;
+    padding-right: 7.5px;
     transform: rotate(180deg);
     position: relative;
+
+    @include mq("md") {
+      margin-left: -25px;
+    }
   }
   &__scroll::before {
     content: "";
@@ -47,7 +79,12 @@
     height:65px;
     background-color: $blue;
     position: absolute;
-    top: 170px;
+    top: 173px;
     left: 10px;
+
+    @include mq("md") {
+      height: 100px;
+      top: 400px;
+    }  
   }
 }

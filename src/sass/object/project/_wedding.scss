@@ -1,21 +1,33 @@
 @use "global" as *;
 
 .p-wedding {
-  margin-top: 30px;
+  margin-top: 16px;
   text-align: center;
+
+  @include mq("md") {
+    margin-top: 173px;
+  }
+}
+.p-wedding__jptitle {
+  margin-top: -9px;
 }
 .p-wedding__button {
   margin-top: 15px;
   margin-inline: auto;
 }
 .p-wedding__container {
-  margin-top: 15px;
+  margin-top: 3px;
   padding: 15px;
   width: 100%;
   aspect-ratio: 375 / 204;
   background: url(../images/wedding-sp2x.webp), lightgray 50% / cover no-repeat;
   background-size: contain;
   text-align: right;
+
+  @include mq("md") {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .p-wedding__title {
@@ -23,12 +35,18 @@
 }
 
 .p-wedding__subtitle {
-
   color: $white;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+
+  @include mq("md") {
+    order: 2;
+    font-size: 32px;
+    font-weight: 400;
+    margin-right: 181px;
+  }
 }
 .p-wedding__eng {
   margin-top: 5px;
@@ -37,5 +55,17 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
 
+  @include mq("md") {
+    order: 1;
+    font-size: 48px;
+    margin-right: 169px;
+  }
+}
+.p-wedding__button {
+  @include mq("md") {
+    order: 3;
+    margin-right: 173px;
+  }
+
+}
