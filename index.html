@@ -453,45 +453,58 @@
 
 <section class="p-news">
   <h2 class="p-news__title c-h2__title">Event/News<span class="c-h2__subtitle">イベント情報／お知らせ</span></h2>
-  <div class="p-news__content">
-    <div class="p-news__imagebox">
-      <picture class="p-news__image">
-        <source>
-        <img src="images/News_car-sp2x.webp" alt="レンタカー">
-      </picture>
+  <div class="p-news__flex">
+    <div class="p-news__content">
+      <div class="p-news__imagebox">
+        <picture class="p-news__image">
+          <source>
+          <img src="images/News_car-sp2x.webp" alt="レンタカー">
+        </picture>
+      </div>
+      <div class="p-news__contentTitleBox">
+        <time datetime="2023-7-20" class="p-news__datetime c-datetime">2023/7/20</time>
+        <h3 class="p-news__contentTitle c-h3__title">レンタカー付き宿泊プランのご案内</h3>
+      </div>
+
     </div>
-    <time datetime="2023-7-20" class="p-news__datetime c-datetime">2023/7/20</time>
-    <h3 class="p-news__contentTitle c-h3__title">レンタカー付き宿泊プランのご案内</h3>
+    <div class="p-news__content">
+      <div class="p-news__imagebox">
+        <picture class="p-news__image">
+          <source>
+          <img src="images/News_bus-sp2x.webp" alt="シャトルバス">
+        </picture>
+      </div>
+      <div class="p-news__contentTitleBox">
+        <time datetime="2023-7-20" class="p-news__datetime c-datetime">2023/7/20</time>
+        <h3 class="p-news__contentTitle c-h3__title">那覇空港直行シャトルバスのご案内</h3>
+      </div>
+
+
+    </div>
+
   </div>
-  <div class="p-news__content">
-    <div class="p-news__imagebox">
-      <picture class="p-news__image">
-        <source>
-        <img src="images/News_bus-sp2x.webp" alt="シャトルバス">
-      </picture>
-    </div>
-    <time datetime="2023-7-20" class="p-news__datetime c-datetime">2023/7/20</time>
-    <h3 class="p-news__contentTitle c-h3__title">那覇空港直行シャトルバスのご案内</h3>
-    <div class="p-news__button c-button">
-      <a href="#" class="c-button__tag">View More</a>
-    </div>
+  <div class="p-news__button c-button">
+    <a href="#" class="c-button__tag">View More</a>
   </div>
 </section>
 
 <sction class="p-story">
   <h2 class="p-story__title c-h2__title">Story<span class="c-h2__subtitle">~私たちができる5つのこと</span></h2>
-  <div class="p-story__content">
-    <picture class="p-story__image">
-      <source>
-      <img src="images/Story-sp2x.webp" alt="プールサイド">
-    </picture>
-    <p class="p-story__text">
-      笑顔からはじまる、豊かな時間を大切に<br>GOLDEN HOTEL那覇で過ごす<br>大切な人との時間のために<br>私たちができる５つのこと<br>ここにしかない和やかで贅沢な時間を<br>お楽しみください
-    </p>
+  <div class="p-story__flex">
+    <div class="p-story__content">
+      <picture class="p-story__image">
+        <source>
+        <img src="images/Story-sp2x.webp" alt="プールサイド">
+      </picture>
+      <p class="p-story__text">
+        笑顔からはじまる、豊かな時間を大切に<br>GOLDEN HOTEL那覇で過ごす<br class="u-mobile">大切な人との時間のために<br>私たちができる５つのこと<br>ここにしかない和やかで贅沢な時間を<br class="u-mobile">お楽しみください
+      </p>
+    </div>
+    <div class="p-story__button c-button">
+      <a href="#" class="c-button__tag">View More</a>
+    </div>
   </div>
-  <div class="p-story__button c-button">
-    <a href="#" class="c-button__tag">View More</a>
-  </div>
+
 </sction>
 
 <section class="p-cuisine">
@@ -506,7 +519,7 @@
         </div>
         <h3 class="c-card__title">All Day Dining</h3>
       </div>
-      <div class="p-cuisine__card p-cuisine__card--mirror c-card c-card--mirror">
+      <div class="p-cuisine__card p-cuisine__card--mirror c-card c-card--mirror p-cuisine__card--alone">
         <div class="c-card__box c-card__box--mirror">
           <picture>
             <img src="images/Cuisine_lounge-sp2x.webp" alt="Lobby Lounge" width="309" height="196" class="c-card__image">
@@ -539,7 +552,7 @@
         </div>
         <h3 class="c-card__title c-card__title--mirror">Chinese Cuisine</h3>
       </div>
-      <div class="p-cuisine__card c-card">
+      <div class="p-cuisine__card c-card p-cuisine__card--alone">
         <div class="c-card__box">
           <picture>
             <img src="images/Cuisine_teppan-sp2x.webp" alt="Teppanyaki" width="309" height="196" class="c-card__image">

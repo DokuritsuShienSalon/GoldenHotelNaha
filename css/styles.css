@@ -163,6 +163,13 @@ button {
 .l-inner__cuisine {
   display: grid;
   grid-template-columns: 15px 126.39px auto 126.39px 15px;
+  row-gap: 15px;
+}
+@media screen and (min-width: 768px) {
+  .l-inner__cuisine {
+    grid-template-columns: 100px 524px auto 524px 100px;
+    row-gap: 135px;
+  }
 }
 
 .c-button {
@@ -173,6 +180,12 @@ button {
   height: 40px;
   line-height: 40px;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .c-button {
+    height: 60px;
+    line-height: 60px;
+  }
 }
 
 .c-button {
@@ -295,6 +308,11 @@ button {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+@media screen and (min-width: 768px) {
+  .c-card__title {
+    font-size: 48px;
+  }
 }
 .c-card__title--mirror {
   left: 0;
@@ -431,6 +449,11 @@ button {
   font-weight: 400;
   line-height: normal;
 }
+@media screen and (min-width: 768px) {
+  .c-h2__title {
+    font-size: 128px;
+  }
+}
 
 .c-h2__subtitle {
   color: #29415f;
@@ -450,6 +473,11 @@ button {
   font-weight: 500;
   line-height: normal;
 }
+@media screen and (min-width: 768px) {
+  .c-datetime {
+    font-size: 16px;
+  }
+}
 
 .c-h3__title {
   color: #29415f;
@@ -458,6 +486,11 @@ button {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+@media screen and (min-width: 768px) {
+  .c-h3__title {
+    font-size: 20px;
+  }
 }
 
 .header_button {
@@ -1307,7 +1340,7 @@ button {
   list-style-type: none;
   padding: 0;
   margin: 0 auto;
-  max-width: 375px;
+  width: 100%;
   position: relative;
   background: #29415f;
 }
@@ -1327,6 +1360,12 @@ button {
   color: #fff;
   z-index: 0;
 }
+@media screen and (min-width: 768px) {
+  .c-tab .c-tab__content {
+    top: 55px;
+    min-height: 582px;
+  }
+}
 .c-tab .c-tab__label {
   outline: 2px;
   float: left;
@@ -1343,6 +1382,14 @@ button {
   text-align: center;
   border-top: 1px solid #29415f;
   border-right: 1px solid #29415f;
+}
+@media screen and (min-width: 768px) {
+  .c-tab .c-tab__label {
+    width: 265px;
+    line-height: 55px;
+    font-size: 32px;
+    font-weight: 500;
+  }
 }
 .c-tab .c-tab__label.c-tab__label--borderleft {
   border-left: 2px solid #29415f;
@@ -1373,11 +1420,23 @@ button {
   margin-top: 30px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .p-booknow {
+    margin-top: 171px;
+  }
+}
 
 .p-booknow__tab {
   width: 100%;
   margin-top: 10px;
   aspect-ratio: 375/702;
+}
+@media screen and (min-width: 768px) {
+  .p-booknow__tab {
+    aspect-ratio: 1078/637;
+    max-width: 1078px;
+    margin-inline: auto;
+  }
 }
 
 .p-tab__content {
@@ -1420,6 +1479,17 @@ button {
   display: block;
   grid-column: 3/-2;
 }
+@media screen and (min-width: 768px) {
+  .p-departure__select,
+  .p-date__input,
+  .p-rooms__select,
+  .p-children__select,
+  .p-adults__select,
+  .p-checkout__input,
+  .p-checkin__input {
+    display: inline;
+  }
+}
 
 .p-tab__searchbtn {
   color: #fff;
@@ -1446,14 +1516,25 @@ button {
   margin-top: 30px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .p-cuisine {
+    margin-top: 173px;
+  }
+}
 
 .p-cuisine__content-l {
   margin-top: 15px;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .p-cuisine__content-l .p-cuisine__button {
+    margin-left: 742px;
+    margin-top: -60px;
+  }
+}
 
 .p-cuisine__content-l::after {
-  content: "10th";
+  content: "10th Floor";
   color: #29415f;
   font-family: Imperial Script;
   font-size: 36px;
@@ -1466,13 +1547,32 @@ button {
   bottom: 30px;
   right: 0;
 }
+@media screen and (min-width: 768px) {
+  .p-cuisine__content-l::after {
+    font-size: 96px;
+    -webkit-transform: none;
+            transform: none;
+    top: 0;
+    bottom: auto;
+    right: 154px;
+  }
+}
 
 .p-cuisine__card {
   grid-column: 2/4;
-  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .p-cuisine__card {
+    grid-column: 2/3;
+  }
 }
 .p-cuisine__card--mirror {
   grid-column: 3/5;
+}
+@media screen and (min-width: 768px) {
+  .p-cuisine__card--mirror {
+    grid-column: 4/5;
+  }
 }
 
 .p-cuisine__gallery {
@@ -1487,6 +1587,17 @@ button {
 .p-cuisine__content-r {
   margin-top: 50px;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .p-cuisine__content-r {
+    margin-top: 313px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-cuisine__content-r .p-cuisine__button {
+    margin-right: 742px;
+    margin-top: -60px;
+  }
 }
 
 .p-cuisine__content-r::before {
@@ -1503,6 +1614,24 @@ button {
   position: absolute;
   bottom: 60px;
   left: 0;
+}
+@media screen and (min-width: 768px) {
+  .p-cuisine__content-r::before {
+    font-size: 96px;
+    -webkit-writing-mode: initial;
+        -ms-writing-mode: initial;
+            writing-mode: initial;
+    top: 0;
+    bottom: auto;
+    left: 154px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-cuisine__card--alone {
+    grid-row: 1/3;
+    margin: auto;
+  }
 }
 
 .p-fitness {
@@ -1850,6 +1979,34 @@ button {
   margin-top: 30px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .p-news {
+    margin-top: 173px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(12%, #cfab6e), color-stop(70%, transparent));
+    background-image: linear-gradient(transparent 0% 12%, #cfab6e 12% 70%, transparent 70% 100%);
+  }
+}
+
+.p-news__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .p-news__flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
 
 .p-news__content {
   margin-top: 31px;
@@ -1859,6 +2016,11 @@ button {
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(12%, #cfab6e), color-stop(88%, transparent));
   background-image: linear-gradient(transparent 0% 12%, #cfab6e 12% 88%, transparent 88% 100%);
 }
+@media screen and (min-width: 768px) {
+  .p-news__imagebox {
+    background-image: none;
+  }
+}
 
 .p-news__image {
   width: 255px;
@@ -1866,6 +2028,11 @@ button {
   margin-inline: auto;
   position: relative;
   overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .p-news__image {
+    width: 470px;
+  }
 }
 .p-news__image::before, .p-news__image::after {
   content: "";
@@ -1909,6 +2076,24 @@ button {
 .p-news__button {
   margin-top: 30px;
   margin-inline: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .p-news__contentTitleBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.p-news__datetime {
+  margin-right: 1em;
 }
 
 .p-photo {
@@ -2038,10 +2223,31 @@ button {
   margin-top: 30px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .p-story {
+    margin-top: 173px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-story__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+}
 
 .p-story__content {
   margin-top: 30px;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .p-story__content {
+    width: 70%;
+  }
 }
 
 .p-story__image {
@@ -2067,10 +2273,25 @@ button {
   font-weight: 600;
   line-height: normal;
 }
+@media screen and (min-width: 768px) {
+  .p-story__text {
+    width: 574px;
+    height: 149px;
+    background: #fff;
+    font-size: 20px;
+    top: 214px;
+    left: 680.42px;
+  }
+}
 
 .p-story__button {
   margin-top: 50px;
   margin-left: 15px;
+}
+@media screen and (min-width: 768px) {
+  .p-story__button {
+    margin-left: 68px;
+  }
 }
 
 .p-wedding {

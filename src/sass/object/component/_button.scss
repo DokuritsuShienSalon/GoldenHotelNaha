@@ -9,6 +9,11 @@
   height: 40px;
   line-height: 40px;
   text-transform: uppercase;
+
+  @include mq("md") {
+    height: 60px;
+    line-height: 60px;
+  }
 }
 
 .c-button {

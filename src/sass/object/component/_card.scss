@@ -50,6 +50,10 @@
   position: absolute;
   bottom: 0;
   right: 0;
+
+  @include mq("md") {
+    font-size: 48px;
+  }
   &--mirror {
     left: 0;
     right: inherit;
