@@ -7,10 +7,10 @@
   width: 100%;
   aspect-ratio: 219 / 115.9;
 
-  background-image: linear-gradient(90deg, transparent 0% 25%, $blue 25% 100%);
+  background-image: linear-gradient(90deg, transparent 0% 23%, $blue 23% 100%);
   position: relative;
   &--mirror {
-    background-image: linear-gradient(270deg, transparent 0% 25%, $blue 25% 100%);
+    background-image: linear-gradient(270deg, transparent 0% 23%, $blue 23% 100%);
   }
 }
 .c-card__box {

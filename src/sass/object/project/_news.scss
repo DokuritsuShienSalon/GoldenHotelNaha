@@ -21,7 +21,7 @@
 }
 
 .p-news__content {
-  margin-top: 31px;
+  margin-top: 29px;
   
 }
 
@@ -84,7 +84,7 @@
 }
 
 .p-news__contentTitleBox {
-
+  margin-top: 5px;
   @include mq("md") {
     display: flex;
     justify-content: center;
@@ -92,7 +92,15 @@
   }
 }
 .p-news__datetime {
-  margin-right: 1em;
+  margin-left: 0.5em;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+}
+.p-news__contentTitle {
+
 }
 
 

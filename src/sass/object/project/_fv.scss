@@ -16,6 +16,7 @@
   width: 274.524px;
   height: 82.357px;
   background: rgba(41, 65, 95, 0.50);
+  padding-left: 14.28px;
   position: absolute;
   top: 111.18px;
   left: 18.67px;
@@ -32,6 +33,10 @@
   color: $gold;
   font-size: 24px;
   font-weight: 200;
+  color: #CFAB6E;
+  font-style: normal;
+  line-height: normal;
+  margin-top: 2px;
 
   @include mq("md") {
     font-size: 96px;

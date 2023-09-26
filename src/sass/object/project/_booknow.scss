@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .p-booknow {
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: center;
 
   @include mq("md") {
@@ -82,19 +82,19 @@
 //   color: $white;
 // }
 .p-tab__searchbtn {
-  color: $white;
-  border-color: $white;
+  // color: $white;
+  // border-color: $white;
   margin-inline: auto;
   margin-top: 20px;
 }
-.p-tab__searchbtn::after {
-  background-color: $white;
-}
+// .p-tab__searchbtn::after {
+//   background-color: $white;
+// }
 .p-tab__planbtn {
-  color: $white;
-  border-color: $white;
+  // color: $white;
+  // border-color: $white;
   margin-inline: auto;
 }
-.p-tab__planbtn::after {
-  background-color: $white;
-}
+// .p-tab__planbtn::after {
+//   background-color: $white;
+// }

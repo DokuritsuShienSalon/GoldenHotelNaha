@@ -26,7 +26,7 @@
 
   display: grid;
   grid-template-columns: 15px 126.39px auto 126.39px 15px;
-  row-gap: 15px;
+  row-gap: 12px;
   @include mq("md") {
     grid-template-columns: 100px 524px auto 524px 100px;
     row-gap: 135px;

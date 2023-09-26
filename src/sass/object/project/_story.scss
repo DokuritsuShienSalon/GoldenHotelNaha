@@ -16,7 +16,7 @@
 }
 
 .p-story__content {
-  margin-top: 30px;
+  margin-top: 16px;
   position: relative;
   @include mq("md") {
     width: 70%;
@@ -37,7 +37,7 @@
   background: rgba(255, 255, 255, 0.50);
   position: absolute;
   top: 108px;
-  left: 96px;
+  left: 93px;
   color: $blue;
   text-align: right;
   font-family: $base-font-family;
@@ -56,7 +56,7 @@
   }
 }
 .p-story__button {
-  margin-top: 50px;
+  margin-top: 55px;
   margin-left: $size15;
 
   @include mq("md") {
