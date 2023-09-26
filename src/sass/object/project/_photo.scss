@@ -5,7 +5,7 @@
   display: flex;
 
   @include mq("md") {
-    margin-top: 73px;
+    margin-top: 173px;
   }
 
   &__imagebox {
@@ -57,7 +57,7 @@
     @include mq("md") {
       font-size: 20px;
       top: 400px;
-      left: -598px;
+      left: -585px;
     }
   }
   &__scroll {
@@ -70,7 +70,8 @@
     position: relative;
 
     @include mq("md") {
-      margin-left: -25px;
+      margin-left: -36px;
+      margin-top: 12px;
     }
   }
   &__scroll::before {
@@ -84,7 +85,7 @@
 
     @include mq("md") {
       height: 100px;
-      top: 400px;
+      top: 376px;
     }  
   }
 }

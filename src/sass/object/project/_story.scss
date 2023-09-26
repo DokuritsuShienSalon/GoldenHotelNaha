@@ -20,7 +20,7 @@
   position: relative;
   @include mq("md") {
     width: 70%;
-
+    margin-top: 40px;
   }
 }
 .p-story__image {
@@ -52,7 +52,8 @@
     background: $white;
     font-size: 20px;
     top: 214px;
-    left: 680.42px;
+    left: 674.42px;
+    padding-right: 26px;
   }
 }
 .p-story__button {
@@ -60,6 +61,6 @@
   margin-left: $size15;
 
   @include mq("md") {
-    margin-left: 68px;
+    margin-left: 65px;
   }
 }
