@@ -1470,13 +1470,13 @@ button {
   line-height: 22px;
   background: #29415f;
   position: absolute;
-  top: 21px;
+  top: 23px;
   color: #fff;
   z-index: 0;
 }
 @media screen and (min-width: 768px) {
   .c-tab .c-tab__content {
-    top: 55px;
+    top: 58px;
     min-height: 582px;
   }
 }
@@ -1484,7 +1484,7 @@ button {
   outline: 2px;
   float: left;
   cursor: pointer;
-  width: 33%;
+  width: 32.8%;
   line-height: 20px;
   display: block;
   margin: 0;
@@ -1496,6 +1496,7 @@ button {
   text-align: center;
   border-top: 1px solid #29415f;
   border-right: 1px solid #29415f;
+  border-bottom: 2px solid #29415f;
 }
 @media screen and (min-width: 768px) {
   .c-tab .c-tab__label {
@@ -1510,12 +1511,29 @@ button {
 }
 .c-tab .c-tab__label:hover {
   margin-top: 0;
+  line-height: 21px;
 }
+@media screen and (min-width: 768px) {
+  .c-tab .c-tab__label:hover {
+    line-height: 55px;
+    border-top: 3px solid #29415f;
+    border-right: 2px solid #29415f;
+    font-weight: 500;
+  }
+}
+.c-tab .c-tab__space1,
 .c-tab .c-tab__space2 {
   width: 2px;
   height: 23px;
   float: left;
   background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .c-tab .c-tab__space1,
+  .c-tab .c-tab__space2 {
+    width: 6px;
+    height: 57px;
+  }
 }
 .c-tab .c-tab__toggle {
   display: none;
@@ -1536,13 +1554,17 @@ button {
 }
 @media screen and (min-width: 768px) {
   .p-booknow {
-    margin-top: 171px;
+    margin-top: 137px;
   }
+}
+
+.p-booknow__jptitle {
+  margin-top: -27px;
 }
 
 .p-booknow__tab {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 28px;
   aspect-ratio: 375/702;
 }
 @media screen and (min-width: 768px) {
@@ -1602,7 +1624,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .p-ticket {
-    padding: 10px 50px 0;
+    padding: 0 50px;
   }
 }
 
@@ -2566,8 +2588,13 @@ button {
 }
 
 .p-news__button {
-  margin-top: 64px;
+  margin-top: 29px;
   margin-inline: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-news__button {
+    margin-top: 64px;
+  }
 }
 
 .p-news__contentTitleBox {
