@@ -1,11 +1,17 @@
 @use "global" as *;
 
 
-.c-beforeIconBtn {
+
+
+
+
+
+.c-iconButton,
+.c-drawer {
   position: relative;
   display: block;
   padding: 0 .1em .1em;
-  border: 1px solid currentColor;
+  // border: 1px solid currentColor;
   color: $white;
   text-decoration: none;
   transition: .25s;
@@ -13,13 +19,20 @@
   justify-content: space-around;
   align-items: center;
 }
-.c-beforeIconBtn img {
+.c-iconButton img,
+.c-drawer img {
   display: inline-block;
   margin-inline: 0.1em;
 
-
+  @include mq("md") {
+    margin-inline: 0.3em;
+  }
 }
-.c-check {
+.c-drawer {
+  border: 1px solid currentColor;
+}
+
+.c-drawer__check {
   width: 0.4em;
   height: 0.4em;
   border-bottom: 1px solid $white;
@@ -27,18 +40,32 @@
   transform: rotate(45deg);
   margin-inline: 0.2em;
   pointer-events: none;
+
+  @include mq("md") {
+    margin-inline: 0.4em;
+  }
 }
 
-
-.c-beforeIconBtn:focus,
-.c-beforeIconBtn:hover {
+.c-iconButton:focus,
+.c-iconButton:hover {
   background-color: $white;
   border-color: $blue;
   color: $blue;
   img {
     filter: brightness(0) saturate(100%) invert(21%) sepia(16%) saturate(1726%) hue-rotate(173deg) brightness(94%) contrast(87%);
   }
-  .c-check {
+}
+
+
+.c-drawer:focus,
+.c-drawer:hover {
+  background-color: $white;
+  border-color: $blue;
+  color: $blue;
+  img {
+    filter: brightness(0) saturate(100%) invert(21%) sepia(16%) saturate(1726%) hue-rotate(173deg) brightness(94%) contrast(87%);
+  }
+  .c-drawer__check {
     border-color: $blue;
   }
 }
@@ -56,7 +83,7 @@
   transition: all .3s;/*表示の変化を0.3秒に指定*/
   width: 100%;
 }
-.c-gnavi__list:hover .c-language__lists {
+.c-language:hover .c-language__lists {
   transform: scaleY(1);/*Gナビメニューにホバーしたら表示*/
 
 }

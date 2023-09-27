@@ -5,7 +5,7 @@
   display: flex;
 
   @include mq("md") {
-    margin-top: 73px;
+    margin-top: 173px;
   }
 
   &__imagebox {
@@ -57,34 +57,26 @@
     @include mq("md") {
       font-size: 20px;
       top: 400px;
-      left: -598px;
+      left: -585px;
     }
   }
   &__scroll {
-    font-size: 14px;
-    writing-mode: vertical-lr;
-    text-align: right;
     padding-bottom: 28px;
     padding-right: 7.5px;
-    transform: rotate(180deg);
-    position: relative;
+
 
     @include mq("md") {
-      margin-left: -25px;
+      margin-left: -36px;
+      margin-top: 12px;
+    }
+    &::before {
+      position: absolute;
+
+
+      @include mq("md") {
+
+      }
     }
   }
-  &__scroll::before {
-    content: "";
-    width: 1px;
-    height:65px;
-    background-color: $blue;
-    position: absolute;
-    top: 173px;
-    left: 10px;
-
-    @include mq("md") {
-      height: 100px;
-      top: 400px;
-    }  
-  }
+  
 }

@@ -12,8 +12,33 @@
   @include mq("md") {
     height: 64px;
     padding-top: 16px;
+
+    @include mq("md") {
+      gap: 60px;
+    }
   }
 }
+.p-header__contact,
+.p-header__booknow {
+  display: none;
+
+  @include mq("md") {
+    display: block;
+    font-size: 20px;
+  }
+
+}
+
+.p-header__booknow--icon,
+.p-header__contact--icon {
+  
+  @include mq("md") {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+
 .p-header__language {
   font-size: 12px;
 
@@ -38,6 +63,10 @@
   width: 20px;
   height: 20px;
   margin-right: 10px;
+
+  @include mq("md") {
+    margin-right: 60px;
+  }
 }
 
 

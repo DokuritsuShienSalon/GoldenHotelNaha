@@ -37,12 +37,24 @@
 
 	<!--/HEADER/-->
 <header class="p-header">
-  <div class="p-header__language c-language c-gnavi__list">
+  <div class="p-header__booknow">
+    <a href="#" class="c-iconButton">
+      <img src="images/Header_aiplane-pc2x.webp" alt="予約" class="p-header__booknow--icon">
+      BookNow
+    </a>
+  </div>
+  <div class="p-header__contact">
+    <a href="#" class="c-iconButton">
+      <img src="images/Header_mail-pc2x.webp" alt="連絡" class="p-header__contact--icon">
+      Contact
+    </a>
+  </div>
+  <div class="p-header__language c-language">
     <div class="">
-      <a class="c-beforeIconBtn" href="#">
+      <a class="c-drawer" href="#">
         <img src="images/Header_earth-pc2x.webp" alt="言語" width="48" height="48" class="p-language__icon">
         Language
-        <div class="c-check p-language__check"></div>
+        <div class="c-drawer__check p-language__check"></div>
       </a>
     </div>
     <ul class="c-language__lists">
@@ -51,7 +63,6 @@
       <li class="c-language__list"><a href="#">中文簡体</a></li>
     </ul>
   </div>
-  <!-- /.c-gnavi__list -->
 
   <div class="header p-header__hamburger">	
     <a class="header_button">
@@ -192,7 +203,7 @@
     <p class="p-photo__text">Stay more,<br>Experience more!</p>
     <p class="p-photo__subtext">素敵な旅をあなたと</p>
   </div>
-  <p class="p-photo__scroll">scroll</p>
+  <div class="p-photo__scroll c-scrollbar">scroll</div>
 </div>
 <section class="p-booknow">
   <h2 class="p-booknow__title c-h2__title">Book Now<span class="c-h2__subtitle">ご予約</span></h2>
@@ -452,7 +463,7 @@
 </section>
 
 <section class="p-news">
-  <h2 class="p-news__title c-h2__title">Event/News<span class="c-h2__subtitle">イベント情報／お知らせ</span></h2>
+  <h2 class="p-news__title c-h2__title">Event/News<span class="p-news__jptitle c-h2__subtitle">イベント情報／お知らせ</span></h2>
   <div class="p-news__flex">
     <div class="p-news__content">
       <div class="p-news__imagebox">
@@ -572,6 +583,7 @@
     <div class="p-cuisine__button c-button">
       <a class="c-button__tag">View More</a>
     </div>
+    <div class="p-cuisine__scroll c-scrollbar u-desktop">scroll</div>
   </div>
 </section>
 
