@@ -159,6 +159,17 @@ button {
   display: grid;
   grid-template-columns: 21vw 1fr 1fr 1fr 21vw;
 }
+@media screen and (min-width: 768px) {
+  .l-inner__tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    grid-template-columns: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .l-inner__cuisine {
   display: grid;
@@ -1431,6 +1442,12 @@ button {
   color: #999;
   background-color: #29415f;
   padding-left: 1em;
+  padding-right: 1em;
+}
+@media screen and (min-width: 768px) {
+  .c-dropdown__list {
+    width: 180px;
+  }
 }
 
 .c-tab {
@@ -1453,13 +1470,13 @@ button {
   line-height: 22px;
   background: #29415f;
   position: absolute;
-  top: 21px;
+  top: 23px;
   color: #fff;
   z-index: 0;
 }
 @media screen and (min-width: 768px) {
   .c-tab .c-tab__content {
-    top: 55px;
+    top: 58px;
     min-height: 582px;
   }
 }
@@ -1467,7 +1484,7 @@ button {
   outline: 2px;
   float: left;
   cursor: pointer;
-  width: 33%;
+  width: 32.8%;
   line-height: 20px;
   display: block;
   margin: 0;
@@ -1479,6 +1496,7 @@ button {
   text-align: center;
   border-top: 1px solid #29415f;
   border-right: 1px solid #29415f;
+  border-bottom: 2px solid #29415f;
 }
 @media screen and (min-width: 768px) {
   .c-tab .c-tab__label {
@@ -1493,12 +1511,29 @@ button {
 }
 .c-tab .c-tab__label:hover {
   margin-top: 0;
+  line-height: 21px;
 }
+@media screen and (min-width: 768px) {
+  .c-tab .c-tab__label:hover {
+    line-height: 55px;
+    border-top: 3px solid #29415f;
+    border-right: 2px solid #29415f;
+    font-weight: 500;
+  }
+}
+.c-tab .c-tab__space1,
 .c-tab .c-tab__space2 {
   width: 2px;
   height: 23px;
   float: left;
   background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .c-tab .c-tab__space1,
+  .c-tab .c-tab__space2 {
+    width: 6px;
+    height: 57px;
+  }
 }
 .c-tab .c-tab__toggle {
   display: none;
@@ -1519,13 +1554,17 @@ button {
 }
 @media screen and (min-width: 768px) {
   .p-booknow {
-    margin-top: 171px;
+    margin-top: 137px;
   }
+}
+
+.p-booknow__jptitle {
+  margin-top: -27px;
 }
 
 .p-booknow__tab {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 28px;
   aspect-ratio: 375/702;
 }
 @media screen and (min-width: 768px) {
@@ -1538,6 +1577,11 @@ button {
 
 .p-tab__content {
   font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  .p-tab__content {
+    font-size: 20px;
+  }
 }
 
 .p-restaurant,
@@ -1555,6 +1599,89 @@ button {
   row-gap: 25px;
   text-align: left;
 }
+@media screen and (min-width: 768px) {
+  .p-restaurant,
+  .p-ticket,
+  .p-stay {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-stay {
+    padding: 50px 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-ticket {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-restaurant {
+    padding: 50px 180px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-restaurant__date,
+  .p-ticket__departure {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-departure__dropdown {
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-restaurant__adults,
+  .p-restaurant__children,
+  .p-ticket__checkin,
+  .p-ticket__checkout,
+  .p-stay__checkin,
+  .p-stay__checkout {
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-ticket__adults,
+  .p-ticket__rooms,
+  .p-stay__adults,
+  .p-stay__rooms {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30%;
+            flex: 1 1 30%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-ticket__children,
+  .p-stay__children {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40%;
+            flex: 1 1 40%;
+  }
+}
 
 .p-departure__label,
 .p-date__label,
@@ -1564,6 +1691,17 @@ button {
 .p-checkout__label,
 .p-checkin__label {
   grid-column: 2/-2;
+}
+@media screen and (min-width: 768px) {
+  .p-departure__label,
+  .p-date__label,
+  .p-rooms__label,
+  .p-children__label,
+  .p-adults__label,
+  .p-checkout__label,
+  .p-checkin__label {
+    margin-right: 0.5em;
+  }
 }
 
 .p-departure__select,
@@ -1595,6 +1733,12 @@ button {
 
 .p-tab__planbtn {
   margin-inline: auto;
+  margin-top: 18px;
+}
+@media screen and (min-width: 768px) {
+  .p-tab__planbtn {
+    margin-top: 47px;
+  }
 }
 
 .p-cuisine {
@@ -2444,8 +2588,13 @@ button {
 }
 
 .p-news__button {
-  margin-top: 64px;
+  margin-top: 29px;
   margin-inline: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-news__button {
+    margin-top: 64px;
+  }
 }
 
 .p-news__contentTitleBox {
@@ -2828,5 +2977,8 @@ button {
 }
 .u-none {
   display: none !important;
+}
+.u-smallchar {
+  font-size: 16px;
 }
 /*# sourceMappingURL=styles.css.map */

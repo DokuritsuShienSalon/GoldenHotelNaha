@@ -21,6 +21,11 @@
 .l-inner__tab {
   display: grid;
   grid-template-columns: 21vw 1fr 1fr 1fr 21vw;
+  @include mq("md") {
+    display: flex;
+    grid-template-columns: none;
+    justify-content: center;
+  }
 }
 .l-inner__cuisine {
 
