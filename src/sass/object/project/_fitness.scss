@@ -3,15 +3,25 @@
 .p-fitness {
   margin-top: 13px;
   text-align: center;
+  @include mq("md") {
+    margin-top: 133px;
+  }
 }
 .p-fitness__jptitle {
   margin-top: -12px;
+  @include mq("md") {
+    margin-top: -21px;
+  }
 }
 .p-fitness__container {
   margin-top: 15px;
   width: 100%;
   aspect-ratio: 375 / 168;
   position: relative;
+
+  @include mq("md") {
+    margin-top: 50px;
+  }
 }
 .p-fitness__image {
   width: 62.9%;

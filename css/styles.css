@@ -1358,6 +1358,32 @@ button {
           transform: rotate(-45deg);
 }
 
+.c-scrollbar {
+  font-size: 14px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  text-align: right;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: relative;
+}
+.c-scrollbar::before {
+  content: "";
+  width: 1px;
+  height: 65px;
+  background-color: #29415f;
+  position: absolute;
+  top: 173px;
+  left: 10px;
+}
+@media screen and (min-width: 768px) {
+  .c-scrollbar::before {
+    height: 100px;
+    top: 376px;
+  }
+}
+
 .c-selectorContainer {
   position: relative;
 }
@@ -1577,17 +1603,27 @@ button {
 }
 @media screen and (min-width: 768px) {
   .p-cuisine {
-    margin-top: 173px;
+    margin-top: 133px;
   }
 }
 
 .p-cuisine__subtitle {
   margin-top: -12px;
 }
+@media screen and (min-width: 768px) {
+  .p-cuisine__subtitle {
+    margin-top: -18px;
+  }
+}
 
 .p-cuisine__content-l {
   margin-top: 15px;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .p-cuisine__content-l {
+    margin-top: 66px;
+  }
 }
 @media screen and (min-width: 768px) {
   .p-cuisine__content-l .p-cuisine__button {
@@ -1641,6 +1677,12 @@ button {
 .p-cuisine__gallery {
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(16%, #cfab6e), color-stop(84%, transparent));
   background-image: linear-gradient(transparent 0% 16%, #cfab6e 16% 84%, transparent 84% 100%);
+}
+@media screen and (min-width: 768px) {
+  .p-cuisine__gallery {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(18%, #cfab6e), color-stop(79%, transparent));
+    background-image: linear-gradient(transparent 0% 18%, #cfab6e 18% 79%, transparent 79% 100%);
+  }
 }
 
 .p-cuisine__button {
@@ -1698,13 +1740,35 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .p-cuisine__scroll {
+    font-size: 16px;
+    margin-left: 150px;
+    margin-top: -100px;
+  }
+}
+.p-cuisine__scroll::before {
+  width: 1px;
+  top: -110px;
+}
+
 .p-fitness {
   margin-top: 13px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .p-fitness {
+    margin-top: 133px;
+  }
+}
 
 .p-fitness__jptitle {
   margin-top: -12px;
+}
+@media screen and (min-width: 768px) {
+  .p-fitness__jptitle {
+    margin-top: -21px;
+  }
 }
 
 .p-fitness__container {
@@ -1712,6 +1776,11 @@ button {
   width: 100%;
   aspect-ratio: 375/168;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .p-fitness__container {
+    margin-top: 50px;
+  }
 }
 
 .p-fitness__image {
@@ -1788,7 +1857,10 @@ button {
 }
 @media screen and (min-width: 768px) {
   .p-footer {
-    margin-top: 173px;
+    margin-top: 190px;
+    aspect-ratio: 1366/590;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 171, 110, .5))), url(../images/Footer-pc2x.webp);
+    background-image: linear-gradient(rgba(207, 171, 110, .5)), url(../images/Footer-pc2x.webp);
   }
 }
 
@@ -1803,8 +1875,9 @@ button {
 @media screen and (min-width: 768px) {
   .p-footer__title {
     font-size: 64px;
-    margin-top: 348px;
-    margin-right: 150px;
+    margin-top: 339px;
+    margin-right: 144px;
+    margin-bottom: -7px;
   }
 }
 
@@ -1826,7 +1899,7 @@ button {
   .p-footer__adressEng,
   .p-footer__telephoneEng {
     font-size: 20px;
-    margin-right: 139px;
+    margin-right: 135px;
   }
 }
 
@@ -1892,23 +1965,23 @@ button {
 }
 .p-footer__toplink::before {
   content: "";
-  width: 80px;
+  width: 64px;
   height: 1px;
   background-color: #29415f;
   position: absolute;
-  top: 10px;
-  right: 100px;
+  top: 13px;
+  right: 95px;
 }
 .p-footer__toplink::after {
   content: "";
-  width: 20px;
+  width: 14px;
   height: 1px;
   background-color: #29415f;
   -webkit-transform: rotate(150deg);
           transform: rotate(150deg);
   position: absolute;
-  top: 5px;
-  right: 163px;
+  top: 9px;
+  right: 146px;
 }
 
 .p-footer__scrollbtn {
@@ -2124,7 +2197,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .p-meeting {
-    margin-top: 173px;
+    margin-top: 141px;
   }
 }
 
@@ -2140,8 +2213,8 @@ button {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    margin-top: 30px;
-    padding-top: 129px;
+    margin-top: 68px;
+    padding-top: 117px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#cfab6e), color-stop(75%, transparent));
     background-image: linear-gradient(#cfab6e 0% 75%, transparent 75% 100%);
   }
@@ -2163,6 +2236,7 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    background-image: none;
   }
 }
 
@@ -2243,6 +2317,8 @@ button {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    font-size: 32px;
+    margin-top: 17px;
   }
 }
 
@@ -2470,16 +2546,8 @@ button {
   }
 }
 .p-photo__scroll {
-  font-size: 14px;
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-  text-align: right;
   padding-bottom: 28px;
   padding-right: 7.5px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  position: relative;
 }
 @media screen and (min-width: 768px) {
   .p-photo__scroll {
@@ -2488,28 +2556,15 @@ button {
   }
 }
 .p-photo__scroll::before {
-  content: "";
-  width: 1px;
-  height: 65px;
-  background-color: #29415f;
   position: absolute;
-  top: 173px;
-  left: 10px;
 }
-@media screen and (min-width: 768px) {
-  .p-photo__scroll::before {
-    height: 100px;
-    top: 376px;
-  }
-}
-
 .p-special {
   margin-top: 30px;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .p-special {
-    margin-top: 173px;
+    margin-top: 228px;
   }
 }
 
@@ -2520,6 +2575,7 @@ button {
 @media screen and (min-width: 768px) {
   .p-special__button {
     margin-right: 147px;
+    margin-top: 39px;
   }
 }
 
@@ -2531,8 +2587,20 @@ button {
   background-size: cover;
 }
 
+@media screen and (min-width: 768px) {
+  .p-special__title {
+    padding-top: 87px;
+  }
+}
+
 .p-special__jptitle {
   margin-top: -5px;
+}
+@media screen and (min-width: 768px) {
+  .p-special__jptitle {
+    font-size: 16px;
+    margin-top: -13px;
+  }
 }
 
 .p-special__subtitle {
@@ -2547,7 +2615,7 @@ button {
   .p-special__subtitle {
     font-size: 32px;
     text-align: right;
-    margin: 300px 147px 30px auto;
+    margin: 307px 151px 30px auto;
   }
 }
 
@@ -2641,6 +2709,11 @@ button {
 .p-wedding__jptitle {
   margin-top: -9px;
 }
+@media screen and (min-width: 768px) {
+  .p-wedding__jptitle {
+    margin-top: -11px;
+  }
+}
 
 .p-wedding__button {
   margin-top: 15px;
@@ -2658,6 +2731,9 @@ button {
 }
 @media screen and (min-width: 768px) {
   .p-wedding__container {
+    margin-top: 62px;
+    padding-top: 32px;
+    padding-right: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2682,7 +2758,8 @@ button {
             order: 2;
     font-size: 32px;
     font-weight: 400;
-    margin-right: 181px;
+    margin-right: 159px;
+    margin-top: 7px;
   }
 }
 
@@ -2700,7 +2777,7 @@ button {
         -ms-flex-order: 1;
             order: 1;
     font-size: 48px;
-    margin-right: 169px;
+    margin-right: 147px;
   }
 }
 
@@ -2709,7 +2786,8 @@ button {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
-    margin-right: 173px;
+    margin-right: 148px;
+    margin-top: 39px;
   }
 }
 

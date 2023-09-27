@@ -61,31 +61,22 @@
     }
   }
   &__scroll {
-    font-size: 14px;
-    writing-mode: vertical-lr;
-    text-align: right;
     padding-bottom: 28px;
     padding-right: 7.5px;
-    transform: rotate(180deg);
-    position: relative;
+
 
     @include mq("md") {
       margin-left: -36px;
       margin-top: 12px;
     }
-  }
-  &__scroll::before {
-    content: "";
-    width: 1px;
-    height:65px;
-    background-color: $blue;
-    position: absolute;
-    top: 173px;
-    left: 10px;
+    &::before {
+      position: absolute;
 
-    @include mq("md") {
-      height: 100px;
-      top: 376px;
-    }  
+
+      @include mq("md") {
+
+      }
+    }
   }
+  
 }

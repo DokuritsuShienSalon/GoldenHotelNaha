@@ -10,6 +10,9 @@
 }
 .p-wedding__jptitle {
   margin-top: -9px;
+  @include mq("md") {
+    margin-top: -11px;
+  }
 }
 .p-wedding__button {
   margin-top: 15px;
@@ -25,6 +28,9 @@
   text-align: right;
 
   @include mq("md") {
+    margin-top: 62px;
+    padding-top: 32px;
+    padding-right: 0px;
     display: flex;
     flex-direction: column;
   }
@@ -45,7 +51,8 @@
     order: 2;
     font-size: 32px;
     font-weight: 400;
-    margin-right: 181px;
+    margin-right: 159px;
+    margin-top: 7px;
   }
 }
 .p-wedding__eng {
@@ -59,13 +66,14 @@
   @include mq("md") {
     order: 1;
     font-size: 48px;
-    margin-right: 169px;
+    margin-right: 147px;
   }
 }
 .p-wedding__button {
   @include mq("md") {
     order: 3;
-    margin-right: 173px;
+    margin-right: 148px;
+    margin-top: 39px;
   }
 
 }

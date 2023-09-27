@@ -5,7 +5,7 @@
   text-align: center;
 
   @include mq("md") {
-    margin-top: 173px;
+    margin-top: 228px;
   }
 }
 .p-special__button {
@@ -14,6 +14,7 @@
 
   @include mq("md") {
     margin-right: 147px;
+    margin-top: 39px;
   }
 }
 .p-special__container {
@@ -25,9 +26,16 @@
 
 .p-special__title {
   // padding-top: 85px;
+  @include mq("md") {
+    padding-top: 87px;
+  }
 }
 .p-special__jptitle {
   margin-top: -5px;
+  @include mq("md") {
+    font-size: 16px;
+    margin-top: -13px;
+  }
 }
 .p-special__subtitle {
   margin-top: 93px;
@@ -40,7 +48,7 @@
   @include mq("md") {
     font-size: 32px;
     text-align: right;
-    margin: 300px 147px 30px auto;
+    margin: 307px 151px 30px auto;
   }
 }
 

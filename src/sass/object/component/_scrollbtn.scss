@@ -33,3 +33,25 @@
   // margin-top: -4px;
   transform: rotate(-45deg);
 }
+
+.c-scrollbar {
+  font-size: 14px;
+  writing-mode: vertical-lr;
+  text-align: right;
+  transform: rotate(180deg);
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 1px;
+    height:65px;
+    background-color: $blue;
+    position: absolute;
+    top: 173px;
+    left: 10px;
+    @include mq("md") {
+      height: 100px;
+      top: 376px;
+    }  
+  }
+}
