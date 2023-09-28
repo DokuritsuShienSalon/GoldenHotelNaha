@@ -3,13 +3,13 @@
 .c-h2__title {
   color: $blue;
   font-family: Imperial Script;
-  font-size: 48px;
+  font-size: re(48);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 
   @include mq("md") {
-    font-size: 128px;
+    font-size: re(128);
   }
 }
 .c-h2__subtitle {

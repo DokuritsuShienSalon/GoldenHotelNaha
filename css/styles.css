@@ -187,7 +187,8 @@ button {
   color: #29415f;
   background: transparent;
   font-size: 16px;
-  width: 200px;
+  max-width: 200px;
+  width: 100%;
   height: 40px;
   line-height: 40px;
   text-transform: uppercase;
@@ -196,6 +197,11 @@ button {
   .c-button {
     height: 60px;
     line-height: 60px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .c-button {
+    width: 12.5rem;
   }
 }
 
@@ -494,13 +500,14 @@ button {
   color: #29415f;
   font-family: Imperial Script;
   font-size: 48px;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 @media screen and (min-width: 768px) {
   .c-h2__title {
-    font-size: 128px;
+    font-size: 8rem;
   }
 }
 
@@ -1559,18 +1566,24 @@ button {
 }
 
 .p-booknow__jptitle {
-  margin-top: -27px;
+  margin-top: -7px;
+}
+@media screen and (min-width: 768px) {
+  .p-booknow__jptitle {
+    margin-top: -27px;
+  }
 }
 
 .p-booknow__tab {
   width: 100%;
-  margin-top: 28px;
+  margin-top: 7px;
   aspect-ratio: 375/702;
 }
 @media screen and (min-width: 768px) {
   .p-booknow__tab {
     aspect-ratio: 1078/637;
     max-width: 1078px;
+    margin-top: 28px;
     margin-inline: auto;
   }
 }
@@ -1897,33 +1910,33 @@ button {
 }
 
 .p-fitness {
-  margin-top: 13px;
+  margin-top: 3.4666666667vw;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .p-fitness {
-    margin-top: 133px;
+    margin-top: 9.7364568082vw;
   }
 }
 
 .p-fitness__jptitle {
-  margin-top: -12px;
+  margin-top: -3.2vw;
 }
 @media screen and (min-width: 768px) {
   .p-fitness__jptitle {
-    margin-top: -21px;
+    margin-top: -1.5373352855vw;
   }
 }
 
 .p-fitness__container {
-  margin-top: 15px;
+  margin-top: 4vw;
   width: 100%;
   aspect-ratio: 375/168;
   position: relative;
 }
 @media screen and (min-width: 768px) {
   .p-fitness__container {
-    margin-top: 50px;
+    margin-top: 3.6603221083vw;
   }
 }
 
@@ -1934,18 +1947,18 @@ button {
 
 .p-fitness__textbox {
   position: absolute;
-  top: 30.75px;
-  left: 155.38px;
+  top: 8.2vw;
+  left: 41.4346666667vw;
   z-index: -1;
-  width: 219.619px;
-  height: 137.262px;
+  width: 58.5650666667vw;
+  height: 36.6032vw;
   background-color: #29415f;
 }
 @media screen and (min-width: 768px) {
   .p-fitness__textbox {
-    width: 800px;
-    height: 500px;
-    top: 112px;
+    width: 58.5651537335vw;
+    height: 36.6032210835vw;
+    top: 8.1991215227vw;
     right: 0;
     left: auto;
   }
@@ -1953,33 +1966,34 @@ button {
 
 .p-fitness__text {
   position: absolute;
-  top: 66px;
-  right: 15px;
+  top: 17.6vw;
+  right: 4vw;
   z-index: 1;
   color: #fff;
   text-align: right;
   font-family: Noto Serif JP, serif;
   font-size: 14px;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 @media screen and (min-width: 768px) {
   .p-fitness__text {
-    font-size: 32px;
-    top: 325px;
-    right: 147px;
+    font-size: 2rem;
+    top: 23.7920937042vw;
+    right: 10.7613469985vw;
   }
 }
 
 .p-fitness__button {
-  margin-top: 10px;
+  margin-top: 2.6666666667vw;
   margin-inline: auto;
 }
 @media screen and (min-width: 768px) {
   .p-fitness__button {
-    margin-top: -100px;
-    margin-right: 147px;
+    margin-top: -7.3206442167vw;
+    margin-right: 10.7613469985vw;
     color: #fff;
     border-color: #fff;
   }
@@ -2708,23 +2722,23 @@ button {
   position: absolute;
 }
 .p-special {
-  margin-top: 30px;
+  margin-top: 8vw;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .p-special {
-    margin-top: 228px;
+    margin-top: 16.6910688141vw;
   }
 }
 
 .p-special__button {
-  margin-top: 12px;
+  margin-top: 3.2vw;
   margin-inline: auto;
 }
 @media screen and (min-width: 768px) {
   .p-special__button {
-    margin-right: 147px;
-    margin-top: 39px;
+    margin-right: 10.7613469985vw;
+    margin-top: 2.8550512445vw;
   }
 }
 
@@ -2738,43 +2752,43 @@ button {
 
 @media screen and (min-width: 768px) {
   .p-special__title {
-    padding-top: 87px;
+    padding-top: 6.3689604685vw;
   }
 }
 
 .p-special__jptitle {
-  margin-top: -5px;
+  margin-top: -1.3333333333vw;
 }
 @media screen and (min-width: 768px) {
   .p-special__jptitle {
-    font-size: 16px;
-    margin-top: -13px;
+    margin-top: -0.9516837482vw;
   }
 }
 
 .p-special__subtitle {
-  margin-top: 93px;
+  margin-top: 24.8vw;
   color: #fff;
   font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 @media screen and (min-width: 768px) {
   .p-special__subtitle {
-    font-size: 32px;
+    font-size: 2rem;
     text-align: right;
-    margin: 307px 151px 30px auto;
+    margin: 22.4743777452vw 11.0541727672vw 2.196193265vw auto;
   }
 }
 
 .p-story {
-  margin-top: 30px;
+  margin-top: 8vw;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .p-story {
-    margin-top: 173px;
+    margin-top: 12.6647144949vw;
   }
 }
 
@@ -2790,13 +2804,16 @@ button {
 }
 
 .p-story__content {
-  margin-top: 16px;
+  margin-top: 4.2666666667vw;
   position: relative;
 }
 @media screen and (min-width: 768px) {
   .p-story__content {
     width: 70%;
-    margin-top: 40px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 70%;
+            flex: 0 1 70%;
+    margin-top: 2.9282576867vw;
   }
 }
 
@@ -2806,42 +2823,45 @@ button {
 }
 
 .p-story__text {
-  width: 274px;
-  height: 158px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  width: 73.0666666667vw;
+  height: 42.1333333333vw;
   padding: 19px 7px 19px 15px;
+  padding: 1.1875rem 0.4375rem 1.1875rem 0.9375rem;
   background: rgba(255, 255, 255, .5);
   position: absolute;
-  top: 108px;
-  left: 93px;
+  top: 28.8vw;
+  left: 24.8vw;
   color: #29415f;
   text-align: right;
   font-family: Noto Serif JP, serif;
   font-size: 14px;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 @media screen and (min-width: 768px) {
   .p-story__text {
-    width: 574px;
-    height: 149px;
+    width: 42.0204978038vw;
+    height: 10.9077598829vw;
     background: #fff;
-    font-size: 20px;
-    top: 214px;
-    left: 674.42px;
-    padding-right: 26px;
+    font-size: 1.25rem;
+    top: 15.6661786237vw;
+    left: 49.3718887262vw;
+    padding-right: 1.625rem;
   }
 }
 
 .p-story__button {
+  margin-top: 14.6666666667vw;
   margin-top: 55px;
-  margin-left: 15px;
+  margin-right: 42.6666666667vw;
+  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .p-story__button {
-    margin-left: 65px;
+    margin-left: 4.7584187408vw;
+    margin-right: 2.9282576867vw;
   }
 }
 

@@ -9,18 +9,22 @@
   }
 }
 .p-booknow__jptitle {
-  margin-top: -27px;
+  margin-top: -7px;
+  @include mq("md") {
+    margin-top: -27px;
+  }
+
 }
 
 .p-booknow__tab {
   width: 100%;
-  margin-top: 28px;
+  margin-top: 7px;
   aspect-ratio: 375 / 702;
 
   @include mq("md") {
     aspect-ratio: 1078 / 637;
     max-width: 1078px;
-    
+    margin-top: 28px;
     margin-inline: auto;
   }
 }
