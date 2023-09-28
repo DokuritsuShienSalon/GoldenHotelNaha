@@ -1,18 +1,18 @@
 @use "global" as *;
 
 .p-news {
-  margin-top: 30px;
+  margin-top: vw(375, 30);
   text-align: center;
 
   @include mq("md") {
-    margin-top: 173px;
+    margin-top: vw(1366, 173);
     background-image: linear-gradient(transparent 0% 11%, $gold 11% 70%, transparent 70% 100%);
   }
 }
 .p-news__jptitle {
 
   @include mq("md") {
-    margin-top: -6px;
+    margin-top: vw(1366, -6);
   }
 }
 
@@ -28,7 +28,7 @@
 }
 
 .p-news__content {
-  margin-top: 29px;
+  margin-top: vw(375, 29);
   
 }
 
@@ -41,14 +41,14 @@
 }
 
 .p-news__image {
-  width: 255px;
+  width: vw(375, 255);
   height: auto;
   margin-inline: auto;
   position: relative;
   overflow: hidden;
 
   @include mq("md") {
-    width: 470px;
+    width: vw(1366, 470);
   }
   &::before,
   &::after {
@@ -86,20 +86,20 @@
 }
 
 .p-news__button {
-  margin-top: 29px;
+  margin-top: vw(375, 29);
   margin-inline: auto;
   @include mq("md") {
-    margin-top: 64px;
+    margin-top: vw(1366, 64);
   }
 }
 
 .p-news__contentTitleBox {
-  margin-top: 5px;
+  margin-top: vw(375, 5);
   @include mq("md") {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 23px;
+    margin-top: vw(1366, 23);
   }
 }
 .p-news__datetime {

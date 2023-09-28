@@ -8,38 +8,39 @@
   overflow: hidden;
   z-index: -1;
   @include mq("md") {
-    aspect-ratio: auto;
-    height: calc(100vh - 64px);
+    // aspect-ratio: auto;
+    // height: calc(100vh - 64px);
   }
 }
 .FV__mask  {
-  width: 274.524px;
-  height: 82.357px;
+  width: vw(375, 274.524);
+  height: vw(375, 82.357);
   background: rgba(41, 65, 95, 0.50);
-  padding-left: 14.28px;
+  padding-left: vw(375, 14.28);
   position: absolute;
-  top: 111.18px;
-  left: 18.67px;
+  top: vw(375, 111.18);
+  left: vw(375, 18.67);
 
   @include mq("md") {
-    width: 1000px;
-    height: 300px;
-    padding: 12px 45px;
-    top: 405px;
-    left: 68px;
+    width: vw(1366, 1000);
+    height: vw(1366, 300);
+    padding: vw(1366, 12) vw(1366, 45);
+    top: vw(1366, 405);
+    left: vw(1366, 68);
   }
 }
 .FV__title {
   color: $gold;
-  font-size: 24px;
+  font-size: re(24);
   font-weight: 200;
   color: #CFAB6E;
   font-style: normal;
   line-height: normal;
-  margin-top: 2px;
+  margin-top: vw(375, 2);
 
   @include mq("md") {
-    font-size: 96px;
+    font-size: re(96);
+    margin-top: vw(1366, 2);
   }
 }
 
@@ -51,6 +52,7 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  vertical-align: bottom;
   opacity: 0;
   // animation: change-img-anime 9s infinite;
 }

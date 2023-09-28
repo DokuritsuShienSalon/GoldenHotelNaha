@@ -1,23 +1,23 @@
 @use "global" as *;
 
 .p-photo {
-  margin-top: 30px;
+  margin-top: vw(375, 30);
   display: flex;
 
   @include mq("md") {
-    margin-top: 173px;
+    margin-top: vw(1366, 173);
   }
 
   &__imagebox {
-    margin-left: 44px;
-    width: 263px;
+    margin-left: vw(375, 44);
+    width: vw(375, 263);
     aspect-ratio: 263 / 314;
     position: relative;
 
     @include mq("md") {
-      margin-left: 740px;
-      width: 482px;
-      height: 576px;
+      margin-left: vw(1366, 740);
+      width: vw(1366, 482);
+      height: vw(1366, 576);
     }
   }
   &__image {
@@ -28,46 +28,46 @@
 
   &__text {
     position: absolute;
-    top: 164px;
-    left: 20px;
+    top: vw(375, 164);
+    left: vw(375, 20);
     color: $blue;
     font-family: inherit;
-    font-size: 24px;
+    font-size: re(24);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 
     @include mq("md") {
-      top: 109px;
-      left: -598px;
-      font-size: 96px;
+      top: vw(1366, 109);
+      left: vw(1366, -598);
+      font-size: re(96);
     }
   }
   &__subtext {
     position: absolute;
-    top: 264px;
-    left: 29px;
+    top: vw(375, 264);
+    left: vw(375, 29);
     color: $blue;
     font-family: inherit;
-    font-size: 16px;
+    font-size: re(16);
     font-style: normal;
     font-weight: 200;
     line-height: normal;
 
     @include mq("md") {
-      font-size: 20px;
-      top: 400px;
-      left: -585px;
+      font-size: re(20);
+      top: vw(1366, 400);
+      left: vw(1366, -585);
     }
   }
   &__scroll {
-    padding-bottom: 28px;
-    padding-right: 7.5px;
+    padding-bottom: re(28);
+    padding-right: re(7.5);
 
 
     @include mq("md") {
-      margin-left: -36px;
-      margin-top: 12px;
+      margin-left: re(-36);
+      margin-top: re(12);
     }
     &::before {
       position: absolute;

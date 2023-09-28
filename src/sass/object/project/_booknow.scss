@@ -1,71 +1,72 @@
 @use "global" as *;
 
 .p-booknow {
-  margin-top: 20px;
+  margin-top: vw(375, 20);
   text-align: center;
 
   @include mq("md") {
-    margin-top: 137px;
+    margin-top: vw(1366, 137);
   }
 }
 .p-booknow__jptitle {
-  margin-top: -7px;
+  margin-top: vw(375, -7);
   @include mq("md") {
-    margin-top: -27px;
+    margin-top: vw(1366, -27);
   }
 
 }
 
 .p-booknow__tab {
   width: 100%;
-  margin-top: 7px;
+  margin-top: vw(375, 7);
   aspect-ratio: 375 / 702;
 
   @include mq("md") {
     aspect-ratio: 1078 / 637;
-    max-width: 1078px;
-    margin-top: 28px;
+    max-width: vw(1366, 1078);
+    margin-top: vw(1366, 28);
     margin-inline: auto;
   }
 }
 
 .p-tab__content {
-  font-size: 14px;
+  font-size: re(14);
   @include mq("md") {
-    font-size: 20px;
+    font-size: re(20);
   }
 }
 
 .p-restaurant,
 .p-ticket,
 .p-stay {
-  margin-top: 54px;
+  margin-top: vw(375, 54);
   margin-inline: auto;
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
+  row-gap: vw(375, 25);
   text-align: left;
 
   @include mq("md") {
+    margin-top: vw(1366, 54);
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 70px;
+    row-gap: vw(1366, 70);
   }
 }
 .p-stay {
   @include mq("md") {
-    padding: 50px 50px;
+    padding: vw(1366, 50) vw(1366, 50);
   }
 }
 .p-ticket {
   @include mq("md") {
-    padding: 0 50px;
+    padding: 0 vw(1366, 50);
   }
 }
 .p-restaurant {
   @include mq("md") {
-    padding: 50px 180px;
+    padding: vw(1366, 50) vw(1366, 180);
   }
 
 }
@@ -80,7 +81,7 @@
 }
 .p-departure__dropdown {
   @include mq("md") {
-    width: 220px;
+    width: vw(1366, 220);
   }
 
 }
@@ -92,7 +93,7 @@
 .p-stay__checkout {
   @include mq("md") {
     width: 100%;
-    flex: 1 1 50%;
+    flex: 0 1 50%;
   }
 
 }
@@ -164,9 +165,12 @@
 .p-tab__searchbtn {
   // color: $white;
   // border-color: $white;
+  width: 200px;
   margin-inline: auto;
-  margin-top: 20px;
-
+  margin-top: vw(375, 20);
+  @include mq("md") {
+    margin-top: vw(1366, 0);
+  }
 }
 // .p-tab__searchbtn::after {
 //   background-color: $white;
@@ -174,10 +178,11 @@
 .p-tab__planbtn {
   // color: $white;
   // border-color: $white;
+  width: 200px;
   margin-inline: auto;
-  margin-top: 18px;
+  margin-top: vw(375, 18);
   @include mq("md") {
-    margin-top: 47px;
+    margin-top: vw(1366, 47);
   }
 }
 // .p-tab__planbtn::after {

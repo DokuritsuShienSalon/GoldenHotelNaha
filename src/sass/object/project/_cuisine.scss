@@ -1,31 +1,31 @@
 @use "global" as *;
 
 .p-cuisine {
-  margin-top: 15px;
+  margin-top: vw(375, 15);
   text-align: center;
 
   @include mq("md") {
-    margin-top: 133px;
+    margin-top: vw(1366, 133);
   }
 }
 .p-cuisine__subtitle {
-  margin-top: -12px;
+  margin-top: vw(375, -12);
   @include mq("md") {
-    margin-top: -18px;
+    margin-top: vw(1366, -18);
   }
 }
 .p-cuisine__content-l {
-  margin-top: 15px;
+  margin-top: vw(375, 15);
   position: relative;
 
   @include mq("md") {
-    margin-top: 66px;
+    margin-top: vw(1366, 66);
   }
   & .p-cuisine__button {
 
     @include mq("md") {
-      margin-left: 742px;
-      margin-top: -60px;
+      margin-left: vw(1366, 742);
+      margin-top: vw(1366, -60);
     }
   }
 }
@@ -33,21 +33,21 @@
   content: "10th Floor";
   color: $blue;
   font-family: Imperial Script;
-  font-size: 36px;
+  font-size: re(36);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   transform: rotate(-90deg);
   position: absolute;
-  bottom: 46px;
-  right: -32px;
+  bottom: vw(375, 46);
+  right: vw(375, -32);
 
   @include mq("md") {
-    font-size: 96px;
+    font-size: re(96);
     transform: none;
     top: 0;
     bottom: auto;
-    right: 154px;
+    right: vw(1366, 154);
   }
 }
 .p-cuisine__card {
@@ -73,23 +73,25 @@
   }
 }
 .p-cuisine__button {
-  margin-top: 10px;
+  margin-top: vw(375, 10);
   margin-inline: auto;
-
+@include mq("md") {
+  margin-top: vw(1366, 10);
+}
 
 }
 .p-cuisine__content-r {
-  margin-top: 50px;
+  margin-top: vw(375, 50);
   position: relative;
 
   @include mq("md") {
-    margin-top: 313px;
+    margin-top: vw(1366, 313);
   }
   & .p-cuisine__button {
 
     @include mq("md") {
-      margin-right: 742px;
-      margin-top: -60px;
+      margin-right: vw(1366, 742);
+      margin-top: vw(1366, -60);
     }
   }
 }
@@ -97,21 +99,21 @@
   content: "12th Floor";
   color: $blue;
   font-family: Imperial Script;
-  font-size: 36px;
+  font-size: re(36);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   writing-mode: vertical-lr;
   position: absolute;
-  bottom: 28px;
-  left: 6px;
+  bottom: vw(375, 28);
+  left: vw(375, 6);
 
   @include mq("md") {
-    font-size: 96px;
+    font-size: re(96);
     writing-mode: initial;
     top: 0;
     bottom: auto;
-    left: 154px;
+    left: vw(1366, 154);
   }
 }
 
