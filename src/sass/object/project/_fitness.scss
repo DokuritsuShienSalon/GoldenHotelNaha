@@ -1,26 +1,26 @@
 @use "global" as *;
 
 .p-fitness {
-  margin-top: 13px;
+  margin-top: vw(375, 13);
   text-align: center;
   @include mq("md") {
-    margin-top: 133px;
+    margin-top: vw(1366, 133);
   }
 }
 .p-fitness__jptitle {
-  margin-top: -12px;
+  margin-top: vw(375, -12);
   @include mq("md") {
-    margin-top: -21px;
+    margin-top: vw(1366, -21);
   }
 }
 .p-fitness__container {
-  margin-top: 15px;
+  margin-top: vw(375, 15);
   width: 100%;
   aspect-ratio: 375 / 168;
   position: relative;
 
   @include mq("md") {
-    margin-top: 50px;
+    margin-top: vw(1366, 50);
   }
 }
 .p-fitness__image {
@@ -29,47 +29,47 @@
 }
 .p-fitness__textbox {
   position: absolute;
-  top: 30.75px;
-  left: 155.38px;
+  top: vw(375, 30.75);
+  left: vw(375, 155.38);
   z-index: -1;
-  width: 219.619px;
-  height: 137.262px;
+  width: vw(375, 219.619);
+  height: vw(375, 137.262);
   background-color: $blue;
 
   @include mq("md") {
-    width: 800px;
-    height: 500px;
-    top: 112px;
+    width: calc(800 / 1366 * 100vw);
+    height: calc(500 / 1366 * 100vw);
+    top: vw(1366, 112);
     right: 0;
     left: auto;
   }
 }
 .p-fitness__text {
   position: absolute;
-  top: 66px;
-  right: 15px;
+  top: vw(375, 66);
+  right: vw(375,15);
   z-index: 1;
   color: $white;
   text-align: right;
   font-family: $base-font-family;
-  font-size: 14px;
+  font-size: re(14);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 
   @include mq("md") {
-    font-size: 32px;
-    top: 325px;
-    right: 147px;
+    font-size: re(32);
+    top: vw(1366, 325);
+    right: vw(1366, 147);
   }
 }
 .p-fitness__button {
-  margin-top: 10px;
+  margin-top: vw(375, 10);
   margin-inline: auto ;
 
   @include mq("md") {
-    margin-top: -100px;
-    margin-right: 147px;
+    margin-top: vw(1366, -100);
+    margin-right: vw(1366, 147);
     color: $white;
     border-color: $white;
     &::after {

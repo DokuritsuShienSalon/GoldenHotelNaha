@@ -44,7 +44,7 @@
   // margin-top: 83px;
   margin-bottom: 0.15em;
   margin-right: 0.5em;
-  font-size: 20px;
+  font-size: re(20);
   font-style: normal;
   font-weight: 400;
   position: absolute;
@@ -52,7 +52,7 @@
   right: 0;
 
   @include mq("md") {
-    font-size: 48px;
+    font-size: re(48);
   }
   &--mirror {
     left: 0;

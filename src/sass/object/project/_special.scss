@@ -1,20 +1,20 @@
 @use "global" as *;
 
 .p-special {
-  margin-top: 30px;
+  margin-top: vw(375, 30);
   text-align: center;
 
   @include mq("md") {
-    margin-top: 228px;
+    margin-top: vw(1366, 228);
   }
 }
 .p-special__button {
-  margin-top: 12px;
+  margin-top: vw(375, 12);
   margin-inline: auto;
 
   @include mq("md") {
-    margin-right: 147px;
-    margin-top: 39px;
+    margin-right: vw(1366, 147);
+    margin-top: vw(1366, 39);
   }
 }
 .p-special__container {
@@ -25,30 +25,30 @@
 }
 
 .p-special__title {
-  // padding-top: 85px;
+  // padding-top: vw(375, 85);
   @include mq("md") {
-    padding-top: 87px;
+    padding-top: vw(1366, 87);
   }
 }
 .p-special__jptitle {
-  margin-top: -5px;
+  margin-top: vw(375, -5);
   @include mq("md") {
-    font-size: 16px;
-    margin-top: -13px;
+    // font-size: re(16);
+    margin-top: vw(1366, -13);
   }
 }
 .p-special__subtitle {
-  margin-top: 93px;
+  margin-top: vw(375, 93);
   color: $white;
-  font-size: 16px;
+  font-size: re(16);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 
   @include mq("md") {
-    font-size: 32px;
+    font-size: re(32);
     text-align: right;
-    margin: 307px 151px 30px auto;
+    margin: vw(1366, 307) vw(1366, 151) vw(1366, 30) auto;
   }
 }
 

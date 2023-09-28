@@ -20,7 +20,7 @@
       transform: rotate(45deg);
       margin-inline: 0.2em;
       position: absolute;
-      top: 0.5em;
+      top: 0.2em;
       right: 1em;
     }
 }
@@ -59,6 +59,6 @@
   padding-left: 1em;
   padding-right: 1em;
   @include mq("md") {
-    width: 180px;
+    width: vw(1366, 180);
   }
 }

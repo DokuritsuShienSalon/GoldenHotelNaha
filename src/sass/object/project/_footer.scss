@@ -1,17 +1,17 @@
 @use "global" as *;
 
 .p-footer {
-  margin-top: 25px;
+  margin-top: vw(375, 25);
   text-align: right;
   width: 100%;
   aspect-ratio: 375 / 167;
   background-image: linear-gradient(rgba(207, 171, 110, 0.50)), url(../images/Footer-sp2x.webp);
   background-size: cover;
-  padding: 10px;
+  padding: re(10);
   position: relative;
 
   @include mq("md") {
-    margin-top: 190px;
+    margin-top: vw(1366, 190);
     aspect-ratio: 1366 / 590;
     background-image: linear-gradient(rgba(207, 171, 110, 0.50)), url(../images/Footer-pc2x.webp);
   }
@@ -19,16 +19,16 @@
 .p-footer__title {
   color: $blue;
   font-family: Imperial Script;
-  font-size: 40px;
+  font-size: re(40);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 
   @include mq("md") {
-    font-size: 64px;
-    margin-top: 339px;
-    margin-right: 144px;
-    margin-bottom: -7px;
+    font-size: re(64);
+    margin-top: vw(1366, 339);
+    margin-right: vw(1366, 144);
+    margin-bottom: vw(1366, -7);
   }
 }
 .p-footer__adress,
@@ -38,57 +38,57 @@
   display: block;
   color: $blue;
   font-family: $base-font-family;
-  font-size: 12px;
+  font-size: re(12);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 
   @include mq("md") {
-    font-size: 20px;
-    margin-right: 135px;
+    font-size: re(20);
+    margin-right: vw(1366, 135);
   }
 }
 .p-footer__adressEng {
-  margin-top: 5px;
+  margin-top: vw(375, 5);
 
   @include mq("md") {
-    margin-top: 30px;
+    margin-top: vw(1366, 30);
   }
 }
 .p-footer__facebook {
-  width: 38px;
-  height: 38px;
+  width: re(38);
+  height: re(38);
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: re(10);
+  left: re(10);
 
   &:hover {
     filter: brightness(0) saturate(100%) invert(21%) sepia(16%) saturate(1726%) hue-rotate(173deg) brightness(94%) contrast(87%);
   }
 
   @include mq("md") {
-    width: 41px;
-    height: 41px;
-    bottom: 28px;
-    left: 145px;
+    width: re(41);
+    height: re(41);
+    bottom: re(28);
+    left: re(145);
   }
 }
 .p-footer__twitter {
-  width: 38px;
-  height: 38px;
+  width: re(38);
+  height: re(38);
   position: absolute;
-  bottom: 10px;
-  left: 60px;
+  bottom: re(10);
+  left: re(60);
 
   &:hover {
     filter: brightness(0) saturate(100%) invert(21%) sepia(16%) saturate(1726%) hue-rotate(173deg) brightness(94%) contrast(87%);
   }
 
   @include mq("md") {
-    width: 41px;
-    height: 41px;
-    bottom: 28px;
-    left: 213px;
+    width: re(41);
+    height: re(41);
+    bottom: re(28);
+    left: re(213);
   }
 }
 .p-footer__toplink {
@@ -123,7 +123,7 @@
   // height: 20px;
   // display: block;
   text-align: right;
-  margin-right: 11px;
+  margin-right: vw(1366, 11);
   margin-left: auto;
-  margin-top: -21px;
+  margin-top: vw(1366, -21);
 }

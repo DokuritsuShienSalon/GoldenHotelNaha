@@ -30,10 +30,10 @@
 .l-inner__cuisine {
 
   display: grid;
-  grid-template-columns: 15px 126.39px auto 126.39px 15px;
-  row-gap: 12px;
+  grid-template-columns: vw(375, 15) vw(375, 126.39) auto vw(375, 126.39) vw(375, 15);
+  row-gap: vw(375, 12);
   @include mq("md") {
-    grid-template-columns: 100px 524px auto 524px 100px;
-    row-gap: 135px;
+    grid-template-columns: vw(1366, 100) vw(1366, 524) auto vw(1366, 524) vw(1366, 100);
+    row-gap: vw(1366, 135);
   }
 }

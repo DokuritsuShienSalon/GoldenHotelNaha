@@ -48,6 +48,7 @@ $gold: #cfab6e;
 
 //ブレイクポイント
 $breakpoints: (
+  se: 375,
   sm: 600,
   md: 768,
   lg: 1024,
@@ -57,6 +58,7 @@ $breakpoints: (
 
 //メディアクエリー
 $mediaquerys: (
+  se: "screen and (max-width: #{map-get($breakpoints,'se')}px)",
   sm: "screen and (min-width: #{map-get($breakpoints,'sm')}px)",
   md: "screen and (min-width: #{map-get($breakpoints,'md')}px)",
   lg: "screen and (min-width: #{map-get($breakpoints,'lg')}px)",
