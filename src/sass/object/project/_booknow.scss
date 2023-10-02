@@ -10,8 +10,9 @@
 }
 .p-booknow__jptitle {
   margin-top: vw(375, -7);
+  margin-top: 7px;
   @include mq("md") {
-    margin-top: vw(1366, -27);
+    margin-top: vw(1366, -9);
   }
 
 }
@@ -19,10 +20,18 @@
 .p-booknow__tab {
   width: 100%;
   margin-top: vw(375, 7);
-  aspect-ratio: 375 / 702;
+  // aspect-ratio: 375 / 702;
+  --min-size: 640;
+  --max-size: 968;
+  padding-bottom: var(--fluid-size);
+
 
   @include mq("md") {
-    aspect-ratio: 1078 / 637;
+    // aspect-ratio: 1078 / 637;
+    --min-size: 448;
+    --max-size: 648;
+    --min-viewport: 768;
+    --max-viewport: 1366;
     max-width: vw(1366, 1078);
     margin-top: vw(1366, 28);
     margin-inline: auto;
@@ -66,7 +75,7 @@
 }
 .p-restaurant {
   @include mq("md") {
-    padding: vw(1366, 50) vw(1366, 180);
+    padding: vw(1366, 50) vw(1366, 160);
   }
 
 }

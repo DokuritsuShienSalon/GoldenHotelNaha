@@ -6,7 +6,8 @@
   font-size: re(48);
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  // line-height: normal;
+  line-height: 1;
 
   @include mq("md") {
     font-size: re(128);

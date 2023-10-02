@@ -2,17 +2,20 @@
 
 .p-news {
   margin-top: vw(375, 30);
+  margin-top: 30px;
   text-align: center;
 
   @include mq("md") {
-    margin-top: vw(1366, 173);
+    margin-top: vw(1366, 146);
+    // margin-top: 173px;
     background-image: linear-gradient(transparent 0% 11%, $gold 11% 70%, transparent 70% 100%);
   }
 }
 .p-news__jptitle {
 
   @include mq("md") {
-    margin-top: vw(1366, -6);
+    margin-top: vw(1366, 5);
+    // margin-top: 6px;
   }
 }
 
@@ -29,7 +32,9 @@
 
 .p-news__content {
   margin-top: vw(375, 29);
-  
+  @include mq("md") {
+    margin-top: vw(1366, 29);
+  }
 }
 
 .p-news__imagebox {

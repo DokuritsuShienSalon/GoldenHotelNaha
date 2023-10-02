@@ -4,6 +4,23 @@ body {
   font-family: Noto Serif JP, serif;
 }
 
+/* Clamp */
+*, *::before, *::after {
+  /* 最小サイズ、 最大サイズ、 最小画面幅、最大画面幅（単位px） */
+  --min-size: 10;
+  --max-size: 36;
+  --min-viewport: 320;
+  --max-viewport: 768;
+  /* a 傾き */
+  --slope: calc((var(--max-size) - var(--min-size)) / (var(--max-viewport) - var(--min-viewport)));
+  /* b 切片 */
+  --intercept: calc(var(--min-size) - var(--slope) * var(--min-viewport));
+  /* y = ax + b 可変サイズ */
+  --fluid-size: calc(var(--slope) * 100vw + var(--intercept) * 1px);
+  /* clamp(最小サイズ, 可変サイズ, 最大サイズ) */
+  --clamp-size: clamp(var(--min-size) * 1px, var(--fluid-size), var(--max-size) * 1px);
+}
+
 html {
   color: #29415f;
   font-size: 16px;
@@ -504,7 +521,7 @@ button {
   font-size: 3rem;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1;
 }
 @media screen and (min-width: 768px) {
   .c-h2__title {
@@ -1475,7 +1492,9 @@ button {
   padding: 0;
 }
 .c-tab .c-tab__content {
-  min-height: 181.8666666667vw;
+  --min-size: 617;
+  --max-size: 945;
+  height: var(--fluid-size);
   width: 100%;
   display: none;
   overflow: hidden;
@@ -1491,7 +1510,10 @@ button {
 @media screen and (min-width: 768px) {
   .c-tab .c-tab__content {
     top: 3.625rem;
-    min-height: 42.6061493411vw;
+    --min-size: 390;
+    --max-size: 590;
+    --min-viewport: 768;
+    --max-viewport: 1366;
   }
 }
 .c-tab .c-tab__label {
@@ -1562,7 +1584,6 @@ button {
   margin-top: 1px;
 }
 .c-tab .c-tab__toggle.active ~ .c-tab__content, .c-tab .c-tab__toggle:checked ~ .c-tab__content {
-  height: auto;
   display: block;
 }
 
@@ -1578,21 +1599,27 @@ button {
 
 .p-booknow__jptitle {
   margin-top: -1.8666666667vw;
+  margin-top: 7px;
 }
 @media screen and (min-width: 768px) {
   .p-booknow__jptitle {
-    margin-top: -1.9765739385vw;
+    margin-top: -0.6588579795vw;
   }
 }
 
 .p-booknow__tab {
   width: 100%;
   margin-top: 1.8666666667vw;
-  aspect-ratio: 375/702;
+  --min-size: 640;
+  --max-size: 968;
+  padding-bottom: var(--fluid-size);
 }
 @media screen and (min-width: 768px) {
   .p-booknow__tab {
-    aspect-ratio: 1078/637;
+    --min-size: 448;
+    --max-size: 648;
+    --min-viewport: 768;
+    --max-viewport: 1366;
     max-width: 78.9165446559vw;
     margin-top: 2.0497803807vw;
     margin-inline: auto;
@@ -1656,7 +1683,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .p-restaurant {
-    padding: 3.6603221083vw 13.17715959vw;
+    padding: 3.6603221083vw 11.7130307467vw;
   }
 }
 
@@ -2550,11 +2577,12 @@ button {
 
 .p-news {
   margin-top: 8vw;
+  margin-top: 30px;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .p-news {
-    margin-top: 12.6647144949vw;
+    margin-top: 10.6881405564vw;
     background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(11%, #cfab6e), color-stop(70%, transparent));
     background-image: linear-gradient(transparent 0% 11%, #cfab6e 11% 70%, transparent 70% 100%);
   }
@@ -2562,7 +2590,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .p-news__jptitle {
-    margin-top: -0.439238653vw;
+    margin-top: 0.3660322108vw;
   }
 }
 
@@ -2589,6 +2617,11 @@ button {
 
 .p-news__content {
   margin-top: 7.7333333333vw;
+}
+@media screen and (min-width: 768px) {
+  .p-news__content {
+    margin-top: 2.1229868228vw;
+  }
 }
 
 .p-news__imagebox {
@@ -2843,7 +2876,13 @@ button {
 }
 @media screen and (min-width: 768px) {
   .p-story {
-    margin-top: 12.6647144949vw;
+    margin-top: 9.3704245974vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-story__jptitle {
+    margin-top: 11px;
   }
 }
 
@@ -2878,14 +2917,12 @@ button {
 }
 
 .p-story__text {
-  width: 73.0666666667vw;
-  height: 42.1333333333vw;
   padding: 19px 7px 19px 15px;
   padding: 1.1875rem 0.4375rem 1.1875rem 0.9375rem;
   background: rgba(255, 255, 255, .5);
   position: absolute;
   top: 28.8vw;
-  left: 24.8vw;
+  right: 2.1333333333vw;
   color: #29415f;
   text-align: right;
   font-family: Noto Serif JP, serif;
