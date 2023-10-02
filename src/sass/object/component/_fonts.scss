@@ -43,6 +43,10 @@
   line-height: normal;
 
   @include mq("md") {
-    font-size: 20px;
+    --min-size: 16;
+    --max-size: 20;
+    --min-viewport: 768;
+    --max-viewport: 1366;
+    font-size: var(--clamp-size);
   }
 }

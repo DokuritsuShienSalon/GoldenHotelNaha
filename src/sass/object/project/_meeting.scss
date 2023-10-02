@@ -1,17 +1,17 @@
 @use "global" as *;
 
 .p-meeting {
-  margin-top: vw(375, 21);
+  margin-top: vw(375, 26);
   text-align: center;
 
   @include mq("md") {
-    margin-top: vw(1366, 141);
+    margin-top: vw(1366, 155);
   }
 }
 .p-meeting__jptitle {
-  margin-top: vw(375, -12);
+  margin-top: vw(375, -7);
   @include mq("md") {
-    margin-top: vw(1366, -12);
+    margin-top: vw(1366, 1);
   }
 
 }

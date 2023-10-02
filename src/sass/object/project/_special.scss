@@ -25,20 +25,20 @@
 }
 
 .p-special__title {
-  // padding-top: vw(375, 85);
+  padding-top: vw(375, 5);
   @include mq("md") {
-    padding-top: vw(1366, 87);
+    padding-top: vw(1366, 99);
   }
 }
 .p-special__jptitle {
-  margin-top: vw(375, -5);
+  margin-top: vw(375, 1);
   @include mq("md") {
     // font-size: re(16);
-    margin-top: vw(1366, -13);
+    margin-top: vw(1366, 1);
   }
 }
 .p-special__subtitle {
-  margin-top: vw(375, 93);
+  margin-top: vw(375, 92);
   color: $white;
   font-size: re(16);
   font-style: normal;

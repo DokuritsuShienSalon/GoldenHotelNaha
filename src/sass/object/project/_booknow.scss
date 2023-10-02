@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .p-booknow {
-  margin-top: vw(375, 20);
+  margin-top: vw(375, 24);
   text-align: center;
 
   @include mq("md") {
@@ -9,8 +9,8 @@
   }
 }
 .p-booknow__jptitle {
-  margin-top: vw(375, -7);
-  margin-top: 7px;
+  margin-top: vw(375, 7);
+  // margin-top: 7px;
   @include mq("md") {
     margin-top: vw(1366, -9);
   }

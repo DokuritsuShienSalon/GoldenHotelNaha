@@ -8,11 +8,15 @@
   @include mq("md") {
     margin-top: vw(1366, 146);
     // margin-top: 173px;
-    background-image: linear-gradient(transparent 0% 11%, $gold 11% 70%, transparent 70% 100%);
+    --min-size: 60;
+    --max-size: 70;
+    --min-viewport: 768;
+    --max-viewport: 1366;
+    background-image: linear-gradient(transparent 0% 9%, $gold 9% 70%, transparent 70% 100%);
   }
 }
 .p-news__jptitle {
-
+  margin-top: vw(375, 5);
   @include mq("md") {
     margin-top: vw(1366, 5);
     // margin-top: 6px;
@@ -31,7 +35,7 @@
 }
 
 .p-news__content {
-  margin-top: vw(375, 29);
+  margin-top: vw(375, 31);
   @include mq("md") {
     margin-top: vw(1366, 29);
   }
@@ -122,6 +126,9 @@
 }
 .p-news__contentTitle {
 
+  @include mq("md") {
+    
+  }
 }
 
 

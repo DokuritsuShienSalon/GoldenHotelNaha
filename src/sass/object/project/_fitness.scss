@@ -1,16 +1,16 @@
 @use "global" as *;
 
 .p-fitness {
-  margin-top: vw(375, 13);
+  margin-top: vw(375, 18);
   text-align: center;
   @include mq("md") {
-    margin-top: vw(1366, 133);
+    margin-top: vw(1366, 149);
   }
 }
 .p-fitness__jptitle {
-  margin-top: vw(375, -12);
+  margin-top: vw(375, -7);
   @include mq("md") {
-    margin-top: vw(1366, -21);
+    margin-top: vw(1366, -9);
   }
 }
 .p-fitness__container {

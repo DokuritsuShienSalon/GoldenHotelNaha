@@ -1,22 +1,26 @@
 @use "global" as *;
 
 .p-wedding {
-  margin-top: vw(375, 16);
+  margin-top: vw(375, 21);
   text-align: center;
 
   @include mq("md") {
-    margin-top: vw(1366, 173);
+    margin-top: vw(1366, 189);
   }
 }
 .p-wedding__jptitle {
-  margin-top: vw(375, -9);
+  margin-top: vw(375, -4);
   @include mq("md") {
-    margin-top: vw(1366, -11);
+    margin-top: vw(1366, 2);
   }
 }
 .p-wedding__button {
-  margin-top: vw(1366, 15);
+  margin-top: vw(375, 15);
   margin-inline: auto;
+  @include mq("md") {
+    margin-top: vw(1366, 15);
+
+  }
 }
 .p-wedding__container {
   margin-top: vw(375, 3);
@@ -48,9 +52,9 @@
 
   @include mq("md") {
     order: 2;
-    font-size: 32px;
+    font-size: re(32);
     font-weight: 400;
-    margin-right: vw(1366, 159);
+    margin-right: vw(1366, 155);
     margin-top: vw(1366, 7);
   }
 }
@@ -64,8 +68,8 @@
 
   @include mq("md") {
     order: 1;
-    font-size: 48px;
-    margin-right: vw(1366, 147);
+    font-size: re(48);
+    margin-right: vw(1366, 143);
   }
 }
 .p-wedding__button {

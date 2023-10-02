@@ -212,8 +212,13 @@ button {
 }
 @media screen and (min-width: 768px) {
   .c-button {
-    height: 60px;
-    line-height: 60px;
+    --min-size: 160;
+    --max-size: 200;
+    --min-viewport: 768;
+    --max-viewport: 1366;
+    max-width: var(--clamp-size);
+    height: 3.75rem;
+    line-height: 3.75rem;
   }
 }
 @media screen and (max-width: 375px) {
@@ -563,7 +568,11 @@ button {
 }
 @media screen and (min-width: 768px) {
   .c-h3__title {
-    font-size: 20px;
+    --min-size: 16;
+    --max-size: 20;
+    --min-viewport: 768;
+    --max-viewport: 1366;
+    font-size: var(--clamp-size);
   }
 }
 
@@ -1588,7 +1597,7 @@ button {
 }
 
 .p-booknow {
-  margin-top: 5.3333333333vw;
+  margin-top: 6.4vw;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -1598,8 +1607,7 @@ button {
 }
 
 .p-booknow__jptitle {
-  margin-top: -1.8666666667vw;
-  margin-top: 7px;
+  margin-top: 1.8666666667vw;
 }
 @media screen and (min-width: 768px) {
   .p-booknow__jptitle {
@@ -1802,21 +1810,21 @@ button {
 }
 
 .p-cuisine {
-  margin-top: 4vw;
+  margin-top: 5.3333333333vw;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .p-cuisine {
-    margin-top: 9.7364568082vw;
+    margin-top: 10.8345534407vw;
   }
 }
 
 .p-cuisine__subtitle {
-  margin-top: -3.2vw;
+  margin-top: -1.8666666667vw;
 }
 @media screen and (min-width: 768px) {
   .p-cuisine__subtitle {
-    margin-top: -1.317715959vw;
+    margin-top: -0.2928257687vw;
   }
 }
 
@@ -1954,7 +1962,7 @@ button {
 @media screen and (min-width: 768px) {
   .p-cuisine__scroll {
     font-size: 16px;
-    margin-left: 150px;
+    margin-left: 10.980966325vw;
     margin-top: -100px;
   }
 }
@@ -1964,21 +1972,21 @@ button {
 }
 
 .p-fitness {
-  margin-top: 3.4666666667vw;
+  margin-top: 4.8vw;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .p-fitness {
-    margin-top: 9.7364568082vw;
+    margin-top: 10.9077598829vw;
   }
 }
 
 .p-fitness__jptitle {
-  margin-top: -3.2vw;
+  margin-top: -1.8666666667vw;
 }
 @media screen and (min-width: 768px) {
   .p-fitness__jptitle {
-    margin-top: -1.5373352855vw;
+    margin-top: -0.6588579795vw;
   }
 }
 
@@ -2085,6 +2093,8 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-top: -1.8666666667vw;
+  margin-right: 2.1333333333vw;
 }
 @media screen and (min-width: 768px) {
   .p-footer__title {
@@ -2179,10 +2189,15 @@ button {
 
 .p-footer__toplink {
   position: absolute;
-  bottom: 69px;
+  bottom: 63px;
   right: 34px;
+  right: 2.125rem;
   text-transform: uppercase;
-  font-size: 16px;
+  --min-size: 12;
+  --max-size: 16;
+  --min-viewport: 768;
+  --max-viewport: 1366;
+  font-size: var(--clamp-size);
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
@@ -2197,6 +2212,7 @@ button {
   position: absolute;
   top: 4px;
   right: 85px;
+  right: 5.3em;
 }
 
 .p-footer__scrollbtn {
@@ -2341,13 +2357,13 @@ button {
 }
 @media screen and (min-width: 768px) {
   .p-header {
-    height: 64px;
-    padding-top: 16px;
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 768px) {
-  .p-header {
-    gap: 60px;
+    --min-size: 39;
+    --max-size: 64;
+    --min-viewport: 768;
+    --max-viewport: 1366;
+    height: var(--fluid-size);
+    padding-top: 0.8em;
+    gap: 3.75rem;
   }
 }
 
@@ -2359,7 +2375,11 @@ button {
   .p-header__contact,
   .p-header__booknow {
     display: block;
-    font-size: 20px;
+    --min-size: 16;
+    --max-size: 20;
+    --min-viewport: 768;
+    --max-viewport: 1366;
+    font-size: var(--clamp-size);
   }
 }
 
@@ -2376,7 +2396,11 @@ button {
 }
 @media screen and (min-width: 768px) {
   .p-header__language {
-    font-size: 20px;
+    --min-size: 16;
+    --max-size: 20;
+    --min-viewport: 768;
+    --max-viewport: 1366;
+    font-size: var(--clamp-size);
   }
 }
 
@@ -2398,26 +2422,26 @@ button {
 }
 @media screen and (min-width: 768px) {
   .p-header__hamburger {
-    margin-right: 60px;
+    margin-right: 3.75rem;
   }
 }
 
 .p-meeting {
-  margin-top: 5.6vw;
+  margin-top: 6.9333333333vw;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .p-meeting {
-    margin-top: 10.3221083455vw;
+    margin-top: 11.3469985359vw;
   }
 }
 
 .p-meeting__jptitle {
-  margin-top: -3.2vw;
+  margin-top: -1.8666666667vw;
 }
 @media screen and (min-width: 768px) {
   .p-meeting__jptitle {
-    margin-top: -0.878477306vw;
+    margin-top: 0.0732064422vw;
   }
 }
 
@@ -2583,11 +2607,18 @@ button {
 @media screen and (min-width: 768px) {
   .p-news {
     margin-top: 10.6881405564vw;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(11%, #cfab6e), color-stop(70%, transparent));
-    background-image: linear-gradient(transparent 0% 11%, #cfab6e 11% 70%, transparent 70% 100%);
+    --min-size: 60;
+    --max-size: 70;
+    --min-viewport: 768;
+    --max-viewport: 1366;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(9%, #cfab6e), color-stop(70%, transparent));
+    background-image: linear-gradient(transparent 0% 9%, #cfab6e 9% 70%, transparent 70% 100%);
   }
 }
 
+.p-news__jptitle {
+  margin-top: 1.3333333333vw;
+}
 @media screen and (min-width: 768px) {
   .p-news__jptitle {
     margin-top: 0.3660322108vw;
@@ -2616,7 +2647,7 @@ button {
 }
 
 .p-news__content {
-  margin-top: 7.7333333333vw;
+  margin-top: 8.2666666667vw;
 }
 @media screen and (min-width: 768px) {
   .p-news__content {
@@ -2758,7 +2789,7 @@ button {
 }
 .p-photo__text {
   position: absolute;
-  top: 43.7333333333vw;
+  top: 43.2vw;
   left: 5.3333333333vw;
   color: #29415f;
   font-family: inherit;
@@ -2838,23 +2869,26 @@ button {
   background-size: cover;
 }
 
+.p-special__title {
+  padding-top: 1.3333333333vw;
+}
 @media screen and (min-width: 768px) {
   .p-special__title {
-    padding-top: 6.3689604685vw;
+    padding-top: 7.2474377745vw;
   }
 }
 
 .p-special__jptitle {
-  margin-top: -1.3333333333vw;
+  margin-top: 0.2666666667vw;
 }
 @media screen and (min-width: 768px) {
   .p-special__jptitle {
-    margin-top: -0.9516837482vw;
+    margin-top: 0.0732064422vw;
   }
 }
 
 .p-special__subtitle {
-  margin-top: 24.8vw;
+  margin-top: 24.5333333333vw;
   color: #fff;
   font-size: 16px;
   font-size: 1rem;
@@ -2871,18 +2905,21 @@ button {
 }
 
 .p-story {
-  margin-top: 8vw;
+  margin-top: 2.9333333333vw;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .p-story {
-    margin-top: 9.3704245974vw;
+    margin-top: 9.1508052709vw;
   }
 }
 
+.p-story__jptitle {
+  margin-top: 5px;
+}
 @media screen and (min-width: 768px) {
   .p-story__jptitle {
-    margin-top: 11px;
+    margin-top: 14px;
   }
 }
 
@@ -2958,27 +2995,32 @@ button {
 }
 
 .p-wedding {
-  margin-top: 4.2666666667vw;
+  margin-top: 5.6vw;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .p-wedding {
-    margin-top: 12.6647144949vw;
+    margin-top: 13.8360175695vw;
   }
 }
 
 .p-wedding__jptitle {
-  margin-top: -2.4vw;
+  margin-top: -1.0666666667vw;
 }
 @media screen and (min-width: 768px) {
   .p-wedding__jptitle {
-    margin-top: -0.8052708638vw;
+    margin-top: 0.1464128843vw;
   }
 }
 
 .p-wedding__button {
-  margin-top: 1.0980966325vw;
+  margin-top: 4vw;
   margin-inline: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-wedding__button {
+    margin-top: 1.0980966325vw;
+  }
 }
 
 .p-wedding__container {
@@ -3017,9 +3059,9 @@ button {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 400;
-    margin-right: 11.6398243045vw;
+    margin-right: 11.3469985359vw;
     margin-top: 0.5124450952vw;
   }
 }
@@ -3037,8 +3079,8 @@ button {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    font-size: 48px;
-    margin-right: 10.7613469985vw;
+    font-size: 3rem;
+    margin-right: 10.4685212299vw;
   }
 }
 

@@ -12,8 +12,13 @@
   text-transform: uppercase;
 
   @include mq("md") {
-    height: 60px;
-    line-height: 60px;
+    --min-size: 160;
+    --max-size: 200;
+    --min-viewport: 768;
+    --max-viewport: 1366;
+    max-width: var(--clamp-size);
+    height: re(60);
+    line-height: re(60);
   }
   @include mq("se") {
     width: re(200);

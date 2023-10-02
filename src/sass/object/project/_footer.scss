@@ -23,7 +23,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-
+  margin-top: vw(375, -7);
+  margin-right: vw(375, 8);
   @include mq("md") {
     font-size: re(64);
     margin-top: vw(1366, 339);
@@ -120,10 +121,14 @@
 // }
 .p-footer__toplink {
   position: absolute;
-  bottom: 69px;
-  right: 34px;
+  bottom: 63px;
+  right: re(34);
   text-transform: uppercase;
-  font-size: 16px;
+  --min-size: 12;
+  --max-size: 16;
+  --min-viewport: 768;
+  --max-viewport: 1366;
+  font-size: var(--clamp-size);
   transform: rotate(90deg);
   &::before {
     content: "";
@@ -135,6 +140,7 @@
     position: absolute;
     top: 4px;
     right: 85px;
+    right: 5.3em;
   }
 
 }
