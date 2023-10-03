@@ -9,7 +9,7 @@
   }
 }
 .p-wedding__jptitle {
-  margin-top: vw(375, -4);
+  margin-top: re(-4);
   @include mq("md") {
     margin-top: vw(1366, 2);
   }
@@ -24,7 +24,7 @@
 }
 .p-wedding__container {
   margin-top: vw(375, 3);
-  padding: re(15);
+  padding: vw(375, 15);
   width: 100%;
   aspect-ratio: 375 / 204;
   background: url(../images/Wedding-sp2x.webp), lightgray 50% / cover no-repeat;
@@ -45,7 +45,7 @@
 
 .p-wedding__subtitle {
   color: $white;
-  font-size: 14px;
+  font-size: vw(375, 14);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -61,7 +61,7 @@
 .p-wedding__eng {
   margin-top: 5px;
   color: $white;
-  font-size: 16px;
+  font-size: vw(375, 16);
   font-style: normal;
   font-weight: 400;
   line-height: normal;

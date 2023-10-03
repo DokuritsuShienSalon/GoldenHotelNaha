@@ -8,7 +8,7 @@
   }
 }
 .p-fitness__jptitle {
-  margin-top: vw(375, -7);
+  margin-top: re(-7);
   @include mq("md") {
     margin-top: vw(1366, -9);
   }
@@ -52,7 +52,12 @@
   color: $white;
   text-align: right;
   font-family: $base-font-family;
-  font-size: re(14);
+  font-size: vw(375, 14);
+  --min-size: 14;
+  --max-size: 24;
+  --min-viewport: 375;
+  --max-viewport: 768;
+  font-size: var(--fluid-size);
   font-style: normal;
   font-weight: 400;
   line-height: normal;

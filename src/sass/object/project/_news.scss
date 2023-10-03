@@ -35,7 +35,8 @@
 }
 
 .p-news__content {
-  margin-top: vw(375, 31);
+  // margin-top: vw(375, 31);
+  margin-top: re(31);
   @include mq("md") {
     margin-top: vw(1366, 29);
   }
@@ -95,7 +96,8 @@
 }
 
 .p-news__button {
-  margin-top: vw(375, 29);
+  // margin-top: vw(375, 29);
+  margin-top: re(29);
   margin-inline: auto;
   @include mq("md") {
     margin-top: vw(1366, 64);

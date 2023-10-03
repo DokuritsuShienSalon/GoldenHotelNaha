@@ -212,7 +212,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .c-button {
-    --min-size: 160;
+    --min-size: 180;
     --max-size: 200;
     --min-viewport: 768;
     --max-viewport: 1366;
@@ -350,8 +350,7 @@ button {
   color: #fff;
   margin-bottom: 0.15em;
   margin-right: 0.5em;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 5.3333333333vw;
   font-style: normal;
   font-weight: 400;
   position: absolute;
@@ -1519,6 +1518,7 @@ button {
 @media screen and (min-width: 768px) {
   .c-tab .c-tab__content {
     top: 3.625rem;
+    line-height: 2.5rem;
     --min-size: 390;
     --max-size: 590;
     --min-viewport: 768;
@@ -1820,7 +1820,8 @@ button {
 }
 
 .p-cuisine__subtitle {
-  margin-top: -1.8666666667vw;
+  margin-top: -7px;
+  margin-top: -0.4375rem;
 }
 @media screen and (min-width: 768px) {
   .p-cuisine__subtitle {
@@ -1982,7 +1983,8 @@ button {
 }
 
 .p-fitness__jptitle {
-  margin-top: -1.8666666667vw;
+  margin-top: -7px;
+  margin-top: -0.4375rem;
 }
 @media screen and (min-width: 768px) {
   .p-fitness__jptitle {
@@ -2034,8 +2036,12 @@ button {
   color: #fff;
   text-align: right;
   font-family: Noto Serif JP, serif;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 3.7333333333vw;
+  --min-size: 14;
+  --max-size: 24;
+  --min-viewport: 375;
+  --max-viewport: 768;
+  font-size: var(--fluid-size);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -2072,8 +2078,7 @@ button {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 171, 110, .5))), url(../images/Footer-sp2x.webp);
   background-image: linear-gradient(rgba(207, 171, 110, .5)), url(../images/Footer-sp2x.webp);
   background-size: cover;
-  padding: 10px;
-  padding: 0.625rem;
+  padding: 2.6666666667vw;
   position: relative;
 }
 @media screen and (min-width: 768px) {
@@ -2088,8 +2093,7 @@ button {
 .p-footer__title {
   color: #29415f;
   font-family: Imperial Script;
-  font-size: 40px;
-  font-size: 2.5rem;
+  font-size: 10.6666666667vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -2114,6 +2118,11 @@ button {
   font-family: Noto Serif JP, serif;
   font-size: 12px;
   font-size: 0.75rem;
+  --min-size: 12;
+  --max-size: 16;
+  --min-viewport: 375;
+  --max-viewport: 768;
+  font-size: var(--clamp-size);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -2143,8 +2152,7 @@ button {
   height: 38px;
   height: 2.375rem;
   position: absolute;
-  bottom: 10px;
-  bottom: 0.625rem;
+  bottom: 2.6666666667vw;
   left: 10px;
   left: 0.625rem;
 }
@@ -2168,8 +2176,7 @@ button {
   height: 38px;
   height: 2.375rem;
   position: absolute;
-  bottom: 10px;
-  bottom: 0.625rem;
+  bottom: 2.6666666667vw;
   left: 60px;
   left: 3.75rem;
 }
@@ -2217,9 +2224,10 @@ button {
 
 .p-footer__scrollbtn {
   text-align: right;
-  margin-right: 0.8052708638vw;
+  margin-right: 2.9333333333vw;
   margin-left: auto;
-  margin-top: -1.5373352855vw;
+  margin-top: -5.6vw;
+  margin-bottom: 8vw;
 }
 
 .FV {
@@ -2250,8 +2258,7 @@ button {
 
 .FV__title {
   color: #cfab6e;
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 6.4vw;
   font-weight: 200;
   color: #CFAB6E;
   font-style: normal;
@@ -2361,7 +2368,7 @@ button {
     --max-size: 64;
     --min-viewport: 768;
     --max-viewport: 1366;
-    height: var(--fluid-size);
+    height: var(--clamp-size);
     padding-top: 0.8em;
     gap: 3.75rem;
   }
@@ -2437,7 +2444,8 @@ button {
 }
 
 .p-meeting__jptitle {
-  margin-top: -1.8666666667vw;
+  margin-top: -7px;
+  margin-top: -0.4375rem;
 }
 @media screen and (min-width: 768px) {
   .p-meeting__jptitle {
@@ -2549,7 +2557,8 @@ button {
 }
 
 .p-meeting__subtitle {
-  margin-top: 6.1333333333vw;
+  margin-top: 23px;
+  margin-top: 1.4375rem;
   font-size: 20px;
   font-size: 1.25rem;
   font-style: normal;
@@ -2647,7 +2656,8 @@ button {
 }
 
 .p-news__content {
-  margin-top: 8.2666666667vw;
+  margin-top: 31px;
+  margin-top: 1.9375rem;
 }
 @media screen and (min-width: 768px) {
   .p-news__content {
@@ -2717,7 +2727,8 @@ button {
 }
 
 .p-news__button {
-  margin-top: 7.7333333333vw;
+  margin-top: 29px;
+  margin-top: 1.8125rem;
   margin-inline: auto;
 }
 @media screen and (min-width: 768px) {
@@ -2793,8 +2804,7 @@ button {
   left: 5.3333333333vw;
   color: #29415f;
   font-family: inherit;
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 6.4vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -2812,8 +2822,7 @@ button {
   left: 7.7333333333vw;
   color: #29415f;
   font-family: inherit;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 4.2666666667vw;
   font-style: normal;
   font-weight: 200;
   line-height: normal;
@@ -2871,6 +2880,11 @@ button {
 
 .p-special__title {
   padding-top: 1.3333333333vw;
+  --min-size: 5;
+  --max-size: 100;
+  --min-viewport: 375;
+  --max-viewport: 768;
+  padding-top: var(--fluid-size);
 }
 @media screen and (min-width: 768px) {
   .p-special__title {
@@ -2892,6 +2906,11 @@ button {
   color: #fff;
   font-size: 16px;
   font-size: 1rem;
+  --min-size: 16;
+  --max-size: 20;
+  --min-viewport: 375;
+  --max-viewport: 768;
+  font-size: var(--fluid-size);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -2965,6 +2984,11 @@ button {
   font-family: Noto Serif JP, serif;
   font-size: 14px;
   font-size: 0.875rem;
+  --min-size: 14;
+  --max-size: 24;
+  --min-viewport: 375;
+  --max-viewport: 768;
+  font-size: var(--fluid-size);
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -2982,8 +3006,8 @@ button {
 }
 
 .p-story__button {
-  margin-top: 14.6666666667vw;
   margin-top: 55px;
+  margin-top: 3.4375rem;
   margin-right: 42.6666666667vw;
   margin-left: auto;
 }
@@ -3005,7 +3029,8 @@ button {
 }
 
 .p-wedding__jptitle {
-  margin-top: -1.0666666667vw;
+  margin-top: -4px;
+  margin-top: -0.25rem;
 }
 @media screen and (min-width: 768px) {
   .p-wedding__jptitle {
@@ -3025,8 +3050,7 @@ button {
 
 .p-wedding__container {
   margin-top: 0.8vw;
-  padding: 15px;
-  padding: 0.9375rem;
+  padding: 4vw;
   width: 100%;
   aspect-ratio: 375/204;
   background: url(../images/Wedding-sp2x.webp), lightgray 50%/cover no-repeat;
@@ -3049,7 +3073,7 @@ button {
 
 .p-wedding__subtitle {
   color: #fff;
-  font-size: 14px;
+  font-size: 3.7333333333vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -3069,7 +3093,7 @@ button {
 .p-wedding__eng {
   margin-top: 5px;
   color: #fff;
-  font-size: 16px;
+  font-size: 4.2666666667vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

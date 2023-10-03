@@ -12,7 +12,7 @@
   text-transform: uppercase;
 
   @include mq("md") {
-    --min-size: 160;
+    --min-size: 180;
     --max-size: 200;
     --min-viewport: 768;
     --max-viewport: 1366;

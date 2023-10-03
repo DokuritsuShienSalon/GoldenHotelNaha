@@ -26,6 +26,11 @@
 
 .p-special__title {
   padding-top: vw(375, 5);
+  --min-size: 5;
+  --max-size: 100;
+  --min-viewport: 375;
+  --max-viewport: 768;
+  padding-top: var(--fluid-size);
   @include mq("md") {
     padding-top: vw(1366, 99);
   }
@@ -41,6 +46,11 @@
   margin-top: vw(375, 92);
   color: $white;
   font-size: re(16);
+  --min-size: 16;
+  --max-size: 20;
+  --min-viewport: 375;
+  --max-viewport: 768;
+  font-size: var(--fluid-size);
   font-style: normal;
   font-weight: 500;
   line-height: normal;

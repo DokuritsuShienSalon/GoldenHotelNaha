@@ -53,6 +53,11 @@
   text-align: right;
   font-family: $base-font-family;
   font-size: re(14);
+  --min-size: 14;
+  --max-size: 24;
+  --min-viewport: 375;
+  --max-viewport: 768;
+  font-size: var(--fluid-size);
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -68,8 +73,8 @@
   }
 }
 .p-story__button {
-  margin-top: vw(375, 55);
-  margin-top: 55px;
+  margin-top: re(55);
+  // margin-top: 55px;
   margin-right: vw(375, 160);
   margin-left: auto;
   

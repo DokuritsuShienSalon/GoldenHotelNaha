@@ -14,11 +14,10 @@
     --max-size: 64;
     --min-viewport: 768;
     --max-viewport: 1366;
-    height: var(--fluid-size);
+    height: var(--clamp-size);
     // height: re(64);
     padding-top: 0.8em;
     gap: re(60);
-
   }
 }
 .p-header__contact,
@@ -34,18 +33,15 @@
     font-size: var(--clamp-size);
     // font-size: 20px;
   }
-
 }
 
 .p-header__booknow--icon,
 .p-header__contact--icon {
-  
   @include mq("md") {
     width: 24px;
     height: 24px;
   }
 }
-
 
 .p-header__language {
   font-size: 12px;
@@ -66,10 +62,7 @@
   @include mq("md") {
     width: 24px;
     height: 24px;
-
   }
-  
-
 }
 
 .p-header__hamburger {
@@ -81,10 +74,3 @@
     margin-right: re(60);
   }
 }
-
-
-
-
-
-
-

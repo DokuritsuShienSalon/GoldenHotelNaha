@@ -9,7 +9,7 @@
   }
 }
 .p-meeting__jptitle {
-  margin-top: vw(375, -7);
+  margin-top: re(-7);
   @include mq("md") {
     margin-top: vw(1366, 1);
   }
@@ -102,7 +102,7 @@
   }
 }
 .p-meeting__subtitle {
-  margin-top: vw(375, 23);
+  margin-top: re(23);
   font-size: re(20);
   font-style: normal;
   font-weight: 400;

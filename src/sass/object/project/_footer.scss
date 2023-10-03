@@ -7,7 +7,7 @@
   aspect-ratio: 375 / 167;
   background-image: linear-gradient(rgba(207, 171, 110, 0.50)), url(../images/Footer-sp2x.webp);
   background-size: cover;
-  padding: re(10);
+  padding: vw(375, 10);
   position: relative;
 
   @include mq("md") {
@@ -19,7 +19,7 @@
 .p-footer__title {
   color: $blue;
   font-family: Imperial Script;
-  font-size: re(40);
+  font-size: vw(375, 40);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -40,6 +40,11 @@
   color: $blue;
   font-family: $base-font-family;
   font-size: re(12);
+  --min-size: 12;
+  --max-size: 16;
+  --min-viewport: 375;
+  --max-viewport: 768;
+  font-size: var(--clamp-size);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -60,7 +65,7 @@
   width: re(38);
   height: re(38);
   position: absolute;
-  bottom: re(10);
+  bottom: vw(375, 10);
   left: re(10);
 
   &:hover {
@@ -78,7 +83,7 @@
   width: re(38);
   height: re(38);
   position: absolute;
-  bottom: re(10);
+  bottom: vw(375, 10);
   left: re(60);
 
   &:hover {
@@ -149,7 +154,8 @@
   // height: 20px;
   // display: block;
   text-align: right;
-  margin-right: vw(1366, 11);
+  margin-right: vw(375, 11);
   margin-left: auto;
-  margin-top: vw(1366, -21);
+  margin-top: vw(375, -21);
+  margin-bottom: vw(375, 30);
 }

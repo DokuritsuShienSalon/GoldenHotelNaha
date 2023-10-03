@@ -9,7 +9,8 @@
   }
 }
 .p-cuisine__subtitle {
-  margin-top: vw(375, -7);
+  // margin-top: vw(375, -7);
+  margin-top: re(-7);
   @include mq("md") {
     margin-top: vw(1366, -4);
   }
