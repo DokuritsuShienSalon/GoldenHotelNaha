@@ -43,6 +43,7 @@ html {
 
 img {
   width: 100%;
+  height: auto;
   vertical-align: bottom;
   -o-object-fit: cover;
      object-fit: cover;
@@ -185,6 +186,7 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    text-align: center;
   }
 }
 
@@ -335,8 +337,12 @@ button {
 }
 
 .c-card__image {
-  width: 100%;
+  width: 110%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top right;
+     object-position: top right;
   display: block;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
@@ -1454,7 +1460,7 @@ button {
           transform: rotate(45deg);
   margin-inline: 0.2em;
   position: absolute;
-  top: 0.2em;
+  top: 0.6em;
   right: 1em;
 }
 
@@ -1628,7 +1634,7 @@ button {
     --max-size: 648;
     --min-viewport: 768;
     --max-viewport: 1366;
-    max-width: 78.9165446559vw;
+    max-width: 1078px;
     margin-top: 2.0497803807vw;
     margin-inline: auto;
   }
@@ -1641,6 +1647,7 @@ button {
 @media screen and (min-width: 768px) {
   .p-tab__content {
     font-size: 1.25rem;
+    font-size: clamp(14px, 1.25rem, 20px);
   }
 }
 
@@ -1679,48 +1686,32 @@ button {
 
 @media screen and (min-width: 768px) {
   .p-stay {
-    padding: 3.6603221083vw 3.6603221083vw;
+    padding: 3.6603221083vw 3.6603221083vw 5.8565153734vw;
   }
 }
 
 @media screen and (min-width: 768px) {
   .p-ticket {
-    padding: 0 3.6603221083vw;
+    padding: 0 3.6603221083vw 5.8565153734vw;
   }
 }
 
 @media screen and (min-width: 768px) {
   .p-restaurant {
-    padding: 3.6603221083vw 11.7130307467vw;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .p-restaurant__date,
-  .p-ticket__departure {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .p-departure__dropdown {
-    width: 16.1054172767vw;
+    padding: 3.6603221083vw 11.7130307467vw 5.8565153734vw;
   }
 }
 
 @media screen and (min-width: 768px) {
   .p-restaurant__adults,
-  .p-restaurant__children,
   .p-ticket__checkin,
   .p-ticket__checkout,
   .p-stay__checkin,
   .p-stay__checkout {
     width: 100%;
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 50%;
-            flex: 0 1 50%;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
   }
 }
 
@@ -1744,11 +1735,33 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .p-restaurant__children {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-restaurant__date,
+  .p-ticket__departure {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 56%;
+            flex: 0 0 56%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-date__dropdown,
+  .p-departure__dropdown {
+    width: 16.1054172767vw;
+  }
+}
+
 .p-departure__label,
 .p-date__label,
-.p-rooms__label,
 .p-children__label,
-.p-adults__label,
 .p-checkout__label,
 .p-checkin__label {
   grid-column: 2/-2;
@@ -1756,12 +1769,38 @@ button {
 @media screen and (min-width: 768px) {
   .p-departure__label,
   .p-date__label,
-  .p-rooms__label,
   .p-children__label,
-  .p-adults__label,
   .p-checkout__label,
   .p-checkin__label {
+    grid-column: none;
+    margin-right: 1em;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-children__label {
+    margin-left: 1em;
+    margin-right: 0;
+  }
+}
+
+.p-rooms__label,
+.p-adults__label {
+  grid-column: 2/-2;
+}
+@media screen and (min-width: 768px) {
+  .p-rooms__label,
+  .p-adults__label {
+    grid-column: none;
     margin-right: 0.5em;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
+    text-align: right;
   }
 }
 
@@ -1783,7 +1822,19 @@ button {
   .p-adults__select,
   .p-checkout__input,
   .p-checkin__input {
+    grid-column: none;
     display: inline;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-date__input,
+  .p-departure__select {
+    margin-right: 10vw;
   }
 }
 
@@ -1812,6 +1863,8 @@ button {
 .p-cuisine {
   margin-top: 5.3333333333vw;
   text-align: center;
+  width: 100%;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .p-cuisine {
@@ -1859,6 +1912,11 @@ button {
   position: absolute;
   bottom: 12.2666666667vw;
   right: -8.5333333333vw;
+  --min-size: -32;
+  --max-size: -15;
+  --min-viewport: 375;
+  --max-viewport: 768;
+  right: var(--fluid-size);
 }
 @media screen and (min-width: 768px) {
   .p-cuisine__content-l::after {
@@ -2075,8 +2133,8 @@ button {
   text-align: right;
   width: 100%;
   aspect-ratio: 375/167;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 171, 110, .5))), url(../images/Footer-sp2x.webp);
-  background-image: linear-gradient(rgba(207, 171, 110, .5)), url(../images/Footer-sp2x.webp);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 171, 110, .5))), url(../images/Footer-sp@2x.webp);
+  background-image: linear-gradient(rgba(207, 171, 110, .5)), url(../images/Footer-sp@2x.webp);
   background-size: cover;
   padding: 2.6666666667vw;
   position: relative;
@@ -2085,8 +2143,8 @@ button {
   .p-footer {
     margin-top: 13.9092240117vw;
     aspect-ratio: 1366/590;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 171, 110, .5))), url(../images/Footer-pc2x.webp);
-    background-image: linear-gradient(rgba(207, 171, 110, .5)), url(../images/Footer-pc2x.webp);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 171, 110, .5))), url(../images/Footer-pc@2x.webp);
+    background-image: linear-gradient(rgba(207, 171, 110, .5)), url(../images/Footer-pc@2x.webp);
   }
 }
 
@@ -2873,9 +2931,15 @@ button {
 .p-special__container {
   width: 100%;
   aspect-ratio: 375/221;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(41, 65, 95, .3))), url(../images/Special-sp2x.webp);
-  background-image: linear-gradient(rgba(41, 65, 95, .3)), url(../images/Special-sp2x.webp);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(41, 65, 95, .3))), url(../images/Special-sp@2x.webp);
+  background-image: linear-gradient(rgba(41, 65, 95, .3)), url(../images/Special-sp@2x.webp);
   background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .p-special__container {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(41, 65, 95, .3))), url(../images/Special-pc@2x.webp);
+    background-image: linear-gradient(rgba(41, 65, 95, .3)), url(../images/Special-pc@2x.webp);
+  }
 }
 
 .p-special__title {
@@ -3001,7 +3065,7 @@ button {
     font-size: 1.25rem;
     top: 15.6661786237vw;
     left: 49.3718887262vw;
-    padding-right: 1.625rem;
+    right: auto;
   }
 }
 
@@ -3053,12 +3117,14 @@ button {
   padding: 4vw;
   width: 100%;
   aspect-ratio: 375/204;
-  background: url(../images/Wedding-sp2x.webp), lightgray 50%/cover no-repeat;
+  background: url(../images/Wedding-sp@2x.webp), lightgray 50%/cover no-repeat;
   background-size: contain;
   text-align: right;
 }
 @media screen and (min-width: 768px) {
   .p-wedding__container {
+    background: url(../images/Wedding-pc@2x.webp), lightgray 50%/cover no-repeat;
+    background-size: contain;
     margin-top: 4.5387994143vw;
     padding: 2rem 0 0 0;
     display: -webkit-box;
@@ -3158,5 +3224,19 @@ button {
 }
 .u-smallchar {
   font-size: re(16);
+}
+
+.u-visually-hidden {
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  padding: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+          clip-path: inset(50%) !important;
+  margin: -1px !important;
 }
 /*# sourceMappingURL=styles.css.map */

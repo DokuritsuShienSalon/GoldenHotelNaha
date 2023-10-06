@@ -3,6 +3,8 @@
 .p-cuisine {
   margin-top: vw(375, 20);
   text-align: center;
+  width: 100%;
+  position: relative;
 
   @include mq("md") {
     margin-top: vw(1366, 148);
@@ -42,6 +44,11 @@
   position: absolute;
   bottom: vw(375, 46);
   right: vw(375, -32);
+  --min-size: -32;
+  --max-size: -15;
+  --min-viewport: 375;
+  --max-viewport: 768;
+  right: var(--fluid-size);
 
   @include mq("md") {
     font-size: re(96);

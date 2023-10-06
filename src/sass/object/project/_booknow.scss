@@ -32,7 +32,8 @@
     --max-size: 648;
     --min-viewport: 768;
     --max-viewport: 1366;
-    max-width: vw(1366, 1078);
+    // max-width: vw(1366, 1078);
+    max-width: 1078px;
     margin-top: vw(1366, 28);
     margin-inline: auto;
   }
@@ -42,6 +43,7 @@
   font-size: re(14);
   @include mq("md") {
     font-size: re(20);
+    font-size: clamp(14px, re(20), 20px);
   }
 }
 
@@ -65,47 +67,33 @@
 }
 .p-stay {
   @include mq("md") {
-    padding: vw(1366, 50) vw(1366, 50);
+    padding: vw(1366, 50) vw(1366, 50) vw(1366, 80);
   }
 }
 .p-ticket {
   @include mq("md") {
-    padding: 0 vw(1366, 50);
+    padding: 0 vw(1366, 50)  vw(1366, 80);
   }
 }
 .p-restaurant {
   @include mq("md") {
-    padding: vw(1366, 50) vw(1366, 160);
+    padding: vw(1366, 50) vw(1366, 160)  vw(1366, 80);
   }
 
 }
 
 
-
-.p-restaurant__date,
-.p-ticket__departure {
-  @include mq("md") {
-    flex: 1 1 100%;
-  }
-}
-.p-departure__dropdown {
-  @include mq("md") {
-    width: vw(1366, 220);
-  }
-
-}
 .p-restaurant__adults,
-.p-restaurant__children,
 .p-ticket__checkin,
 .p-ticket__checkout,
 .p-stay__checkin,
 .p-stay__checkout {
   @include mq("md") {
     width: 100%;
-    flex: 0 1 50%;
+    flex: 0 1 45%;
   }
-
 }
+
 .p-ticket__adults,
 .p-ticket__rooms,
 .p-stay__adults,
@@ -113,15 +101,37 @@
   @include mq("md") {
     flex: 1 1 30%;
   }
-
 }
 .p-ticket__children,
 .p-stay__children {
   @include mq("md") {
     flex: 1 1 40%;
   }
+}
+.p-restaurant__children {
+  @include mq("md") {
+    flex: 1 1 50%;
+  }
+}
+
+
+
+.p-restaurant__date,
+.p-ticket__departure {
+  @include mq("md") {
+    flex: 0 0 56%;
+  }
+}
+.p-date__dropdown,
+.p-departure__dropdown {
+  @include mq("md") {
+    width: vw(1366, 220);
+  }
 
 }
+
+
+
 // .p-stay__rooms,
 // .p-stay__children,
 // .p-stay__adults,
@@ -132,16 +142,38 @@
 // }
 .p-departure__label,
 .p-date__label,
-.p-rooms__label,
 .p-children__label,
-.p-adults__label,
 .p-checkout__label,
 .p-checkin__label {
   grid-column: 2 / -2;
   @include mq("md") {
-    margin-right: 0.5em;
+    grid-column: none;
+    margin-right: 1em;
+    flex: 0 0 50%;
+    text-align: right;
   }
 }
+.p-children__label {
+  @include mq("md") {
+    margin-left: 1em;
+    margin-right: 0;
+  }
+}
+
+
+.p-rooms__label,
+.p-adults__label {
+  grid-column: 2 / -2;
+  @include mq("md") {
+    grid-column: none;
+    margin-right: 0.5em;
+    flex: 0 0 30%;
+    text-align: right;
+  }
+}
+
+
+
 .p-departure__select,
 .p-date__input,
 .p-rooms__select,
@@ -153,10 +185,23 @@
   grid-column: 3 / -2;
 
   @include mq("md") {
+    grid-column: none;
     display: inline;
-
+    flex: 1 1 50%;
+    text-align: left;
   }
 }
+
+.p-date__input,
+.p-departure__select {
+  @include mq("md") {
+    margin-right: 10vw;
+  }
+}
+
+
+
+
 // .p-checkin__dropdown,
 // .p-checkout__dropdown,
 // .p-adults__dropdown,

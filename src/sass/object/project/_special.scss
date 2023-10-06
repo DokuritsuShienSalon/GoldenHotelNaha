@@ -20,8 +20,12 @@
 .p-special__container {
   width: 100%;
   aspect-ratio: 375 / 221;
-  background-image: linear-gradient(rgba(41, 65, 95, 0.30)), url(../images/Special-sp2x.webp);
+  background-image: linear-gradient(rgba(41, 65, 95, 0.30)), url(../images/Special-sp@2x.webp);
   background-size: cover;
+
+  @include mq("md") {
+    background-image: linear-gradient(rgba(41, 65, 95, 0.30)), url(../images/Special-pc@2x.webp);
+  }
 }
 
 .p-special__title {

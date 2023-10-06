@@ -27,11 +27,13 @@
   padding: vw(375, 15);
   width: 100%;
   aspect-ratio: 375 / 204;
-  background: url(../images/Wedding-sp2x.webp), lightgray 50% / cover no-repeat;
+  background: url(../images/Wedding-sp@2x.webp), lightgray 50% / cover no-repeat;
   background-size: contain;
   text-align: right;
 
   @include mq("md") {
+    background: url(../images/Wedding-pc@2x.webp), lightgray 50% / cover no-repeat;
+    background-size: contain;
     margin-top: vw(1366, 62);
     padding: re(32) 0 0 0;
     display: flex;

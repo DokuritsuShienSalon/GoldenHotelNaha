@@ -68,7 +68,9 @@
     font-size: re(20);
     top: vw(1366, 214);
     left: vw(1366, 674.42);
-    padding-right: re(26);
+    right: auto;
+    // padding-right: re(26);
+    // white-space: nowrap;
   }
 }
 .p-story__button {
