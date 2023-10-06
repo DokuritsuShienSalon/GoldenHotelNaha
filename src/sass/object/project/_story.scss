@@ -62,7 +62,8 @@
   line-height: normal;
 
   @include mq("md") {
-    width: vw(1366, 574);
+    // width: vw(1366, 574);
+    width: vw(1366, 584);
     height: vw(1366, 149);
     background: $white;
     font-size: re(20);

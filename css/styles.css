@@ -1639,6 +1639,11 @@ button {
     margin-inline: auto;
   }
 }
+@media screen and (min-width: 1440px) {
+  .p-booknow__tab {
+    max-width: 75%;
+  }
+}
 
 .p-tab__content {
   font-size: 14px;
@@ -3059,7 +3064,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .p-story__text {
-    width: 42.0204978038vw;
+    width: 42.7525622255vw;
     height: 10.9077598829vw;
     background: #fff;
     font-size: 1.25rem;

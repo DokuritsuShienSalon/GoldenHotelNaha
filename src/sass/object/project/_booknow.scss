@@ -32,10 +32,13 @@
     --max-size: 648;
     --min-viewport: 768;
     --max-viewport: 1366;
-    // max-width: vw(1366, 1078);
+    // min-width: vw(1366, 1078);
     max-width: 1078px;
     margin-top: vw(1366, 28);
     margin-inline: auto;
+  }
+  @include mq("xl") {
+    max-width: 75%;
   }
 }
 
