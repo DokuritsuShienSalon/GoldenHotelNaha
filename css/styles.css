@@ -704,8 +704,6 @@ button {
 }
 
 .menu {
-  width: 33.333332%;
-  width: 33.33333%;
   width: 33.3333333333%;
   max-width: 500px;
   min-width: 400px;
@@ -3064,7 +3062,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .p-story__text {
-    width: 42.7525622255vw;
+    width: 43.1918008785vw;
     height: 10.9077598829vw;
     background: #fff;
     font-size: 1.25rem;
