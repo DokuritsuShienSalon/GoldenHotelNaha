@@ -66,11 +66,19 @@
 }
 
 .p-header__hamburger {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 14px;
   margin-right: 10px;
+  margin-top: 3px;
 
   @include mq("md") {
+    width: 30px;
+    height: 25px;
+    --min-size: 0;
+    --max-size: 6;
+    --min-viewport: 768;
+    --max-viewport: 1366;
+    margin-top: var(--clamp-size);
     margin-right: re(60);
   }
 }
