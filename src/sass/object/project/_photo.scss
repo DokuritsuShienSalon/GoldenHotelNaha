@@ -36,6 +36,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    display: inline-block;
 
     @include mq("md") {
       top: vw(1366, 109);
@@ -53,6 +54,7 @@
     font-style: normal;
     font-weight: 200;
     line-height: normal;
+    display: inline-block;
 
     @include mq("md") {
       font-size: re(20);

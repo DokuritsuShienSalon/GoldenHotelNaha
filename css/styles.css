@@ -23,6 +23,7 @@ body {
 
 html {
   color: #29415f;
+  scroll-behavior: smooth;
   font-size: 16px;
 }
 @media (max-width: 375px) {
@@ -2152,6 +2153,7 @@ button {
 }
 
 .p-footer__title {
+  display: inline-block;
   color: #29415f;
   font-family: Imperial Script;
   font-size: 10.6666666667vw;
@@ -2160,6 +2162,9 @@ button {
   line-height: normal;
   margin-top: -1.8666666667vw;
   margin-right: 2.1333333333vw;
+}
+.p-footer__title:hover {
+  color: #fff;
 }
 @media screen and (min-width: 768px) {
   .p-footer__title {
@@ -2170,9 +2175,9 @@ button {
   }
 }
 
-.p-footer__adress,
+.p-footer__address,
 .p-footer__telephone,
-.p-footer__adressEng,
+.p-footer__addressEng,
 .p-footer__telephoneEng {
   display: block;
   color: #29415f;
@@ -2188,21 +2193,27 @@ button {
   font-weight: 400;
   line-height: normal;
 }
+.p-footer__address:hover,
+.p-footer__telephone:hover,
+.p-footer__addressEng:hover,
+.p-footer__telephoneEng:hover {
+  color: #fff;
+}
 @media screen and (min-width: 768px) {
-  .p-footer__adress,
+  .p-footer__address,
   .p-footer__telephone,
-  .p-footer__adressEng,
+  .p-footer__addressEng,
   .p-footer__telephoneEng {
     font-size: 1.25rem;
     margin-right: 9.8828696925vw;
   }
 }
 
-.p-footer__adressEng {
+.p-footer__addressEng {
   margin-top: 1.3333333333vw;
 }
 @media screen and (min-width: 768px) {
-  .p-footer__adressEng {
+  .p-footer__addressEng {
     margin-top: 2.196193265vw;
   }
 }
@@ -2283,6 +2294,13 @@ button {
   right: 5.3em;
 }
 
+.p-footer__toplink:hover {
+  color: #fff;
+}
+.p-footer__toplink:hover::before {
+  border-color: #fff;
+}
+
 .p-footer__scrollbtn {
   text-align: right;
   margin-right: 2.9333333333vw;
@@ -2306,13 +2324,16 @@ button {
   position: absolute;
   top: 29.648vw;
   left: 4.9786666667vw;
+  opacity: 0;
+  -webkit-animation: fade-anime 0.5s ease-in 1s forwards;
+          animation: fade-anime 0.5s ease-in 1s forwards;
 }
 @media screen and (min-width: 768px) {
   .FV__mask {
     width: 73.2064421669vw;
     height: 21.9619326501vw;
     padding: 0.878477306vw 3.2942898975vw;
-    top: 29.6486090776vw;
+    top: 40vh;
     left: 4.9780380673vw;
   }
 }
@@ -2333,6 +2354,31 @@ button {
   }
 }
 
+@-webkit-keyframes fade-anime {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(5vw);
+            transform: translateX(5vw);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes fade-anime {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(5vw);
+            transform: translateX(5vw);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
 .FV__anime {
   position: absolute;
   top: 0;
@@ -2344,6 +2390,8 @@ button {
      object-fit: cover;
   vertical-align: bottom;
   opacity: 0;
+  -webkit-animation: change-img-anime 12s infinite;
+          animation: change-img-anime 12s infinite;
 }
 
 .FV__img1 {
@@ -2363,26 +2411,26 @@ button {
 }
 
 .FV__img4 {
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
 }
 
 @-webkit-keyframes change-img-anime {
   0% {
     opacity: 0;
+    -webkit-transform: translateY(5vh);
+            transform: translateY(5vh);
   }
-  30% {
+  12% {
     opacity: 1;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
-  36% {
+  27% {
     opacity: 1;
   }
-  45% {
+  34% {
     opacity: 0;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
   }
   100% {
     opacity: 0;
@@ -2392,19 +2440,19 @@ button {
 @keyframes change-img-anime {
   0% {
     opacity: 0;
+    -webkit-transform: translateY(5vh);
+            transform: translateY(5vh);
   }
-  30% {
+  12% {
     opacity: 1;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
-  36% {
+  27% {
     opacity: 1;
   }
-  45% {
+  34% {
     opacity: 0;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
   }
   100% {
     opacity: 0;
@@ -2869,6 +2917,7 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  display: inline-block;
 }
 @media screen and (min-width: 768px) {
   .p-photo__text {
@@ -2887,6 +2936,7 @@ button {
   font-style: normal;
   font-weight: 200;
   line-height: normal;
+  display: inline-block;
 }
 @media screen and (min-width: 768px) {
   .p-photo__subtext {

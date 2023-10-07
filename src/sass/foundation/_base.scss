@@ -3,6 +3,7 @@
 
 html {
   color: $blue;
+  scroll-behavior: smooth;
   
   //~375px
   @media (max-width: 375px) {

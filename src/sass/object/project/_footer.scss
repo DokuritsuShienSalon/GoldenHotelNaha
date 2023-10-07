@@ -17,6 +17,7 @@
   }
 }
 .p-footer__title {
+  display: inline-block;
   color: $blue;
   font-family: Imperial Script;
   font-size: vw(375, 40);
@@ -25,6 +26,10 @@
   line-height: normal;
   margin-top: vw(375, -7);
   margin-right: vw(375, 8);
+  &:hover {
+    color: $white;
+  }
+
   @include mq("md") {
     font-size: re(64);
     margin-top: vw(1366, 339);
@@ -32,9 +37,9 @@
     margin-bottom: vw(1366, -7);
   }
 }
-.p-footer__adress,
+.p-footer__address,
 .p-footer__telephone,
-.p-footer__adressEng,
+.p-footer__addressEng,
 .p-footer__telephoneEng {
   display: block;
   color: $blue;
@@ -48,19 +53,24 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  &:hover {
+    color: $white;
+  }
 
   @include mq("md") {
     font-size: re(20);
     margin-right: vw(1366, 135);
   }
 }
-.p-footer__adressEng {
+.p-footer__addressEng {
   margin-top: vw(375, 5);
 
   @include mq("md") {
     margin-top: vw(1366, 30);
   }
 }
+
+
 .p-footer__facebook {
   width: re(38);
   height: re(38);
@@ -147,8 +157,15 @@
     right: 85px;
     right: 5.3em;
   }
-
 }
+.p-footer__toplink:hover {
+  color: $white;
+  &::before {
+    border-color: $white;
+  }
+}
+
+
 .p-footer__scrollbtn {
   // width: 20px;
   // height: 20px;
