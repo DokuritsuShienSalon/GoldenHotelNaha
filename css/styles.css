@@ -587,7 +587,7 @@ button {
   }
 }
 
-.header_button {
+.c-hamburger {
   display: block;
   width: 100%;
   height: 100%;
@@ -595,7 +595,7 @@ button {
   position: relative;
 }
 
-.header_button_bg {
+.c-hamburger__bg {
   width: 100%;
   height: 100%;
   background: #29415f;
@@ -604,7 +604,7 @@ button {
   left: 0;
 }
 
-.header_button_inner span {
+.c-hamburger__inner span {
   width: 100%;
   height: 2px;
   background-color: #fff;
@@ -614,32 +614,32 @@ button {
           transition-duration: 0.25s;
 }
 
-.header_button_inner > span:nth-child(1) {
+.c-hamburger__inner > span:nth-child(1) {
   top: 0;
 }
 
-.header_button_inner > span:nth-child(2) {
+.c-hamburger__inner > span:nth-child(2) {
   top: 50%;
 }
 
-.header_button_inner > span:nth-child(3) {
+.c-hamburger__inner > span:nth-child(3) {
   top: 100%;
 }
 
-.header_button_inner div > span:nth-child(1) {
+.c-hamburger__inner div > span:nth-child(1) {
   left: 0;
 }
 
-.header_button_inner div > span:nth-child(2) {
+.c-hamburger__inner div > span:nth-child(2) {
   left: 50%;
   margin: 0 0 0 -1px;
 }
 
-.header_button_inner div > span:nth-child(3) {
+.c-hamburger__inner div > span:nth-child(3) {
   right: 0;
 }
 
-.header_button_on .header_button_inner {
+.js-hamburger-on .c-hamburger__inner {
   width: 22px;
   height: 22px;
   position: fixed;
@@ -648,7 +648,7 @@ button {
   z-index: 1000;
 }
 @media screen and (min-width: 768px) {
-  .header_button_on .header_button_inner {
+  .js-hamburger-on .c-hamburger__inner {
     width: 42px;
     height: 35px;
     --min-size: 1;
@@ -660,27 +660,27 @@ button {
   }
 }
 
-.header_button_on .header_button_inner span {
+.js-hamburger-on .c-hamburger__inner span {
   height: 1px;
   margin: 0;
   top: 50%;
 }
 
-.header_button_on .header_button_inner > span:nth-child(1) {
+.js-hamburger-on .c-hamburger__inner > span:nth-child(1) {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-.header_button_on .header_button_inner > span:nth-child(2) {
+.js-hamburger-on .c-hamburger__inner > span:nth-child(2) {
   opacity: 0;
 }
 
-.header_button_on .header_button_inner > span:nth-child(3) {
+.js-hamburger-on .c-hamburger__inner > span:nth-child(3) {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.menu {
+.p-menu {
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -689,14 +689,14 @@ button {
   z-index: 100;
 }
 @media screen and (min-width: 768px) {
-  .menu {
+  .p-menu {
     width: 34%;
     min-width: 384px;
     max-width: 500px;
   }
 }
 
-.menu_inner {
+.p-menu__inner {
   width: 100%;
   height: 100%;
   text-align: center;
@@ -705,7 +705,7 @@ button {
   right: -100%;
 }
 
-.menu_bg {
+.p-menu__bg {
   width: 110%;
   height: 100%;
   position: absolute;
@@ -716,7 +716,7 @@ button {
           transform: skew(15deg);
 }
 
-.menu_block {
+.p-menu__block {
   display: inline-block;
   width: auto;
   height: auto;
@@ -725,7 +725,7 @@ button {
   left: 0;
 }
 
-.menu_list {
+.p-menu__list {
   display: block;
   width: auto;
   height: auto;
@@ -733,29 +733,29 @@ button {
   position: relative;
 }
 
-.menu_list > div {
+.p-menu__list > div {
   margin-top: 1em;
 }
 
-.menu_list > div:nth-child(1) {
+.p-menu__list > div:nth-child(1) {
   width: 130px;
   height: auto;
   float: left;
 }
 @media screen and (max-width: 375px) {
-  .menu_list > div:nth-child(1) {
+  .p-menu__list > div:nth-child(1) {
     width: 120px;
   }
 }
 
-.menu_list > div:nth-child(2) {
+.p-menu__list > div:nth-child(2) {
   width: auto;
   height: auto;
   float: left;
   position: relative;
 }
 
-.menu_list > div:nth-child(1) p {
+.p-menu__list > div:nth-child(1) p {
   color: #fff;
   font-size: 18px;
   font-family: Noto Serif JP, serif;
@@ -763,11 +763,11 @@ button {
   position: relative;
 }
 @media screen and (max-width: 375px) {
-  .menu_list > div:nth-child(1) p {
+  .p-menu__list > div:nth-child(1) p {
     font-size: 16px;
   }
 }
-.menu_list > div:nth-child(1) p::before {
+.p-menu__list > div:nth-child(1) p::before {
   content: "";
   width: 3px;
   height: 25px;
@@ -777,12 +777,12 @@ button {
   left: -13.5px;
 }
 @media screen and (max-width: 375px) {
-  .menu_list > div:nth-child(1) p::before {
+  .p-menu__list > div:nth-child(1) p::before {
     top: 1px;
   }
 }
 
-.menu_list > div:nth-child(2) p {
+.p-menu__list > div:nth-child(2) p {
   letter-spacing: 1px;
   color: #fff;
   font-size: 24px;
@@ -790,16 +790,16 @@ button {
   font-weight: 400;
 }
 @media screen and (max-width: 375px) {
-  .menu_list > div:nth-child(2) p {
+  .p-menu__list > div:nth-child(2) p {
     font-size: 22px;
   }
 }
 
-.menu_list > div:nth-child(2) > p {
+.p-menu__list > div:nth-child(2) > p {
   opacity: 0.2;
 }
 
-.menu_on .menu_inner {
+.js-menu-on .p-menu__inner {
   -webkit-animation: menu_on0 0.5s ease-in-out forwards;
           animation: menu_on0 0.5s ease-in-out forwards;
 }
@@ -825,7 +825,7 @@ button {
     opacity: 1;
   }
 }
-.menu_on .menu_bg {
+.js-menu-on .p-menu__bg {
   -webkit-animation: menu_on1 0.5s ease-in-out forwards;
           animation: menu_on1 0.5s ease-in-out forwards;
 }
@@ -855,7 +855,7 @@ button {
             transform: skew(0deg);
   }
 }
-.menu_on .menu_block {
+.js-menu-on .p-menu__block {
   -webkit-animation: menu_on2 0.5s ease-in-out 0.25s forwards;
           animation: menu_on2 0.5s ease-in-out 0.25s forwards;
 }
@@ -881,57 +881,57 @@ button {
             transform: scale(1);
   }
 }
-.menu_on .menu_block > .menu_list:nth-child(1) {
+.js-menu-on .p-menu__block > .p-menu__list:nth-child(1) {
   -webkit-animation: menu_on3 0.5s ease-in-out 0.25s forwards;
           animation: menu_on3 0.5s ease-in-out 0.25s forwards;
 }
 
-.menu_on .menu_block > .menu_list:nth-child(2) {
+.js-menu-on .p-menu__block > .p-menu__list:nth-child(2) {
   -webkit-animation: menu_on3 0.5s ease-in-out 0.3s forwards;
           animation: menu_on3 0.5s ease-in-out 0.3s forwards;
 }
 
-.menu_on .menu_block > .menu_list:nth-child(3) {
+.js-menu-on .p-menu__block > .p-menu__list:nth-child(3) {
   -webkit-animation: menu_on3 0.5s ease-in-out 0.35s forwards;
           animation: menu_on3 0.5s ease-in-out 0.35s forwards;
 }
 
-.menu_on .menu_block > .menu_list:nth-child(4) {
+.js-menu-on .p-menu__block > .p-menu__list:nth-child(4) {
   -webkit-animation: menu_on3 0.5s ease-in-out 0.4s forwards;
           animation: menu_on3 0.5s ease-in-out 0.4s forwards;
 }
 
-.menu_on .menu_block > .menu_list:nth-child(5) {
+.js-menu-on .p-menu__block > .p-menu__list:nth-child(5) {
   -webkit-animation: menu_on3 0.5s ease-in-out 0.45s forwards;
           animation: menu_on3 0.5s ease-in-out 0.45s forwards;
 }
 
-.menu_on .menu_block > .menu_list:nth-child(6) {
+.js-menu-on .p-menu__block > .p-menu__list:nth-child(6) {
   -webkit-animation: menu_on3 0.5s ease-in-out 0.5s forwards;
           animation: menu_on3 0.5s ease-in-out 0.5s forwards;
 }
 
-.menu_on .menu_block > .menu_list:nth-child(7) {
+.js-menu-on .p-menu__block > .p-menu__list:nth-child(7) {
   -webkit-animation: menu_on3 0.5s ease-in-out 0.55s forwards;
           animation: menu_on3 0.5s ease-in-out 0.55s forwards;
 }
 
-.menu_on .menu_block > .menu_list:nth-child(8) {
+.js-menu-on .p-menu__block > .p-menu__list:nth-child(8) {
   -webkit-animation: menu_on3 0.5s ease-in-out 0.6s forwards;
           animation: menu_on3 0.5s ease-in-out 0.6s forwards;
 }
 
-.menu_on .menu_block > .menu_list:nth-child(9) {
+.js-menu-on .p-menu__block > .p-menu__list:nth-child(9) {
   -webkit-animation: menu_on3 0.5s ease-in-out 0.65s forwards;
           animation: menu_on3 0.5s ease-in-out 0.65s forwards;
 }
 
-.menu_on .menu_block > .menu_list:nth-child(10) {
+.js-menu-on .p-menu__block > .p-menu__list:nth-child(10) {
   -webkit-animation: menu_on3 0.5s ease-in-out 0.7s forwards;
           animation: menu_on3 0.5s ease-in-out 0.7s forwards;
 }
 
-.menu_on .menu_block > .menu_list:nth-child(11) {
+.js-menu-on .p-menu__block > .p-menu__list:nth-child(11) {
   -webkit-animation: menu_on3 0.5s ease-in-out 0.75s forwards;
           animation: menu_on3 0.5s ease-in-out 0.75s forwards;
 }
@@ -961,7 +961,7 @@ button {
     opacity: 1;
   }
 }
-.menu_off .menu_inner {
+.js-menu-off .p-menu__inner {
   -webkit-animation: menu_off0 0.5s ease-in-out forwards;
           animation: menu_off0 0.5s ease-in-out forwards;
 }
@@ -987,7 +987,7 @@ button {
     opacity: 0;
   }
 }
-.menu_off .menu_bg {
+.js-menu-off .p-menu__bg {
   -webkit-animation: menu_off1 1s ease-in-out forwards;
           animation: menu_off1 1s ease-in-out forwards;
 }
@@ -1017,7 +1017,7 @@ button {
             transform: skew(-15deg);
   }
 }
-.menu_off .menu_block {
+.js-menu-off .p-menu__block {
   -webkit-animation: menu_off2 0.5s ease-in-out forwards;
           animation: menu_off2 0.5s ease-in-out forwards;
 }
@@ -1043,7 +1043,7 @@ button {
             transform: scale(1);
   }
 }
-.menu_off .menu_list {
+.js-menu-off .p-menu__list {
   -webkit-animation: menu_off3 0.5s ease-in-out forwards;
           animation: menu_off3 0.5s ease-in-out forwards;
 }
