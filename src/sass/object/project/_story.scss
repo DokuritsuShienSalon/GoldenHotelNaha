@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .p-story {
-  margin-top: vw(375, 11);
+  margin-top: vw(375, 21);
   text-align: center;
   @include mq("md") {
     margin-top: vw(1366, 125);

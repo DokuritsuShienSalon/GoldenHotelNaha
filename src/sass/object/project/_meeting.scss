@@ -136,7 +136,7 @@
 
 .p-meeting__button {
   // display: none;
-  margin-top: vw(375, 21);
+  margin-top: vw(375, 15);
   margin-inline: auto;
   @include mq("md") {
     margin-top: vw(1366, 21);

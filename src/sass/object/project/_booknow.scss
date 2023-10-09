@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .p-booknow {
-  margin-top: vw(375, 24);
+  margin-top: vw(375, 34);
   text-align: center;
 
   @include mq("md") {
@@ -224,7 +224,7 @@
   // border-color: $white;
   width: 200px;
   margin-inline: auto;
-  margin-top: vw(375, 20);
+  margin-top: vw(375, 30);
   @include mq("md") {
     margin-top: vw(1366, 0);
   }

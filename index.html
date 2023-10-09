@@ -65,13 +65,13 @@
         </ul>
       </div>
 
-      <div class="header p-header__hamburger">
-        <a class="header_button">
+      <div class="p-header__hamburger">
+        <div class="header_button">
           <div class="header_button_bg u-opa"></div>
-          <div class="header_button_inner">
-            <span></span><span></span><span></span>
-          </div>
-        </a>
+          <button class="header_button_inner">
+            <span></span><span></span><span></span><span class="u-visually-hidden">Menu</span>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -80,103 +80,66 @@
       <div class="menu_inner u-opa">
         <div class="menu_bg"></div>
         <div class="menu_block">
-          <a href="#" class="menu_list u-opa link">
-            <div><p class="kerning">ホーム</p></div>
+          <a href="#" class="menu_list u-opa">
+            <div><p class="menu__title">トップ</p></div>
             <div>
-              <p class="kerning en0">HOME</p>
-              <p class="kerning en0">HOME</p>
-              <p class="kerning en0"><span>HOME</span></p>
+              <p class="menu__title menu__title--eng">Top</p>
             </div>
-            <div class="clear"></div>
           </a>
-          <a href="#" class="menu_list u-opa link">
-            <div><p class="kerning">トップ</p></div>
+          <a href="#" class="menu_list u-opa">
+            <div><p class="menu__title">ご宿泊</p></div>
             <div>
-              <p class="kerning en0">Top</p>
-              <p class="kerning en0">Top</p>
-              <p class="kerning en0"><span>Top</span></p>
+              <p class="menu__title menu__title--eng">Stay</p>
             </div>
-            <div class="clear"></div>
           </a>
-          <a href="#" class="menu_list u-opa link">
-            <div><p class="kerning">ご宿泊</p></div>
+          <a href="#cuisine" class="menu_list u-opa">
+            <div><p class="menu__title">レストラン</p></div>
             <div>
-              <p class="kerning en0">Stay</p>
-              <p class="kerning en0">Stay</p>
-              <p class="kerning en0"><span>Stay</span></p>
+              <p class="menu__title menu__title--eng">Restaurant &amp; Bar</p>
             </div>
-            <div class="clear"></div>
           </a>
-          <a href="#" class="menu_list u-opa link">
-            <div><p class="kerning">レストラン</p></div>
+          <a href="#meeting" class="menu_list u-opa">
+            <div><p class="menu__title">ご宴会／会議</p></div>
             <div>
-              <p class="kerning en0">Restaurant &amp; Bar</p>
-              <p class="kerning en0">Restaurant &amp; Bar</p>
-              <p class="kerning en0"><span>Restaurant &amp; Bar</span></p>
+              <p class="menu__title menu__title--eng">Banquet/meeting</p>
             </div>
-            <div class="clear"></div>
           </a>
-          <a href="#" class="menu_list u-opa link">
-            <div><p class="kerning">ご宴会／会議</p></div>
+          <a href="#wedding" class="menu_list u-opa">
+            <div><p class="menu__title">ウェディング</p></div>
             <div>
-              <p class="kerning en0">Banquet/meeting</p>
-              <p class="kerning en0">Banquet/meeting</p>
-              <p class="kerning en0"><span>Banquet/meeting</span></p>
+              <p class="menu__title menu__title--eng">Wedding</p>
             </div>
-            <div class="clear"></div>
           </a>
-          <a href="#" class="menu_list u-opa link">
-            <div><p class="kerning">ウェディング</p></div>
+          <a href="#fitness" class="menu_list u-opa">
+            <div><p class="menu__title">フィットネス</p></div>
             <div>
-              <p class="kerning en0">Wedding</p>
-              <p class="kerning en0">Wedding</p>
-              <p class="kerning en0"><span>Wedding</span></p>
+              <p class="menu__title menu__title--eng">Fitness</p>
             </div>
-            <div class="clear"></div>
           </a>
-          <a href="#" class="menu_list u-opa link">
-            <div><p class="kerning">フィットネス</p></div>
+          <a href="#event" class="menu_list u-opa">
+            <div><p class="menu__title">イベント</p></div>
             <div>
-              <p class="kerning en0">Fitness</p>
-              <p class="kerning en0">Fitness</p>
-              <p class="kerning en0"><span>Fitness</span></p>
+              <p class="menu__title menu__title--eng">Event</p>
             </div>
-            <div class="clear"></div>
           </a>
-          <a href="#" class="menu_list u-opa link">
-            <div><p class="kerning">イベント</p></div>
+          <a href="#" class="menu_list u-opa">
+            <div><p class="menu__title">ホテル案内</p></div>
             <div>
-              <p class="kerning en0">Event</p>
-              <p class="kerning en0">Event</p>
-              <p class="kerning en0"><span>Event</span></p>
+              <p class="menu__title menu__title--eng">Guidance</p>
             </div>
-            <div class="clear"></div>
           </a>
-          <a href="#" class="menu_list u-opa link">
-            <div><p class="kerning">ホテル案内</p></div>
-            <div>
-              <p class="kerning en0">Guidance</p>
-              <p class="kerning en0">Guidance</p>
-              <p class="kerning en0"><span>Guidance</span></p>
-            </div>
-            <div class="clear"></div>
-          </a>
-          <!-- <a href="#" class="menu_list u-opa link">	
-					<div><p class="kerning">アクセス</p></div>
+          <a href="#" class="menu_list u-opa">	
+					<div><p class="menu__title">アクセス</p></div>
 					<div>
-						<p class="kerning en0">Access</p>
-						<p class="kerning en0">Access</p>
-						<p class="kerning en0"><span>Access</span></p>
-					</div><div class="clear"></div>												
+						<p class="menu__title menu__title--eng">Access</p>
+					</div>
 				</a>
-        <a href="#" class="menu_list u-opa link">	
-					<div><p class="kerning">FAQ</p></div>
+        <a href="#" class="menu_list u-opa">	
+					<div><p class="menu__title">FAQ</p></div>
 					<div>
-						<p class="kerning en0">FAQ</p>
-						<p class="kerning en0">FAQ</p>
-						<p class="kerning en0"><span>FAQ</span></p>
-					</div><div class="clear"></div>												
-				</a> -->
+						<p class="menu__title menu__title--eng">FAQ</p>
+					</div>
+				</a>
         </div>
       </div>
     </div>
@@ -433,7 +396,7 @@
       </div>
     </section>
 
-    <section class="p-news js-news">
+    <section id="event" class="p-news js-news">
       <h2 class="p-news__title c-h2__title">Event/News<span class="p-news__jptitle c-h2__subtitle">イベント情報／お知らせ</span></h2>
       <div class="p-news__flex">
         <div class="p-news__content">
@@ -482,7 +445,7 @@
       </div>
     </section>
 
-    <section class="p-cuisine">
+    <section id="cuisine" class="p-cuisine">
       <h2 class="p-cuisine__title c-h2__title js-cuisine">Cuisine<span class="p-cuisine__subtitle c-h2__subtitle">お食事</span></h2>
       <div class="p-cuisine__content-l  js-cuisine1">
         <div class="l-inner__cuisine p-cuisine__gallery">
@@ -569,7 +532,7 @@
       </div>
     </section>
 
-    <section class="p-fitness js-fitness">
+    <section id="fitness" class="p-fitness js-fitness">
       <h2 class="p-fitness__title c-h2__title">Fitness<span class="p-fitness__jptitle c-h2__subtitle">フィットネス</span></h2>
       <div class="p-fitness__container">
         <picture>
@@ -584,7 +547,7 @@
       </div>
     </section>
 
-    <section class="p-wedding js-wedding">
+    <section id="wedding" class="p-wedding js-wedding">
       <h2 class="p-wedding__title c-h2__title">Wedding<span class="p-wedding__jptitle c-h2__subtitle">ウェディング</span></h2>
       <div class="p-wedding__container">
         <p class="p-wedding__subtitle">一生忘れられない思い出を</p>
@@ -598,7 +561,7 @@
       </div>
     </section>
 
-    <section class="p-meeting js-meeting">
+    <section id="meeting" class="p-meeting js-meeting">
       <h2 class="p-meeting__title c-h2__title">Event/Meeting<span class="p-meeting__jptitle c-h2__subtitle">宴会場</span></h2>
       <div class="p-meeting__flex">
         <div class="p-meeting__content">

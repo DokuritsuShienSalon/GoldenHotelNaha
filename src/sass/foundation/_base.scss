@@ -55,3 +55,7 @@ a[href^="tel:"] {
 //     }
 //   }
 // }
+/* アンカーされている要素には余分なスクロールマージンが必要 */
+:target {
+  scroll-margin-block: 5em;
+}
