@@ -488,8 +488,8 @@ button {
 
 .c-language__list {
   background-color: #29415f;
-  height: 25px;
-  line-height: 25px;
+  height: 35px;
+  line-height: 35px;
   text-align: right;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -522,7 +522,7 @@ button {
   content: "";
   background-color: #fff;
   position: absolute;
-  top: 11px;
+  top: 16px;
   left: 10px;
   width: 7px;
   height: 5px;
