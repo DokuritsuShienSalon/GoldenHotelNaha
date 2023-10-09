@@ -1,4 +1,0 @@
-<IfModule mod_expires.c>
-ExpiresByType image/webp "access plus 1 months"
-<IfModule>
-

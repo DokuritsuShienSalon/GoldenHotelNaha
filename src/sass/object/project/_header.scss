@@ -9,6 +9,7 @@
   // align-items: center;
   gap: 10px;
   padding-top: 4px;
+  
   @include mq("md") {
     --min-size: 39;
     --max-size: 64;
