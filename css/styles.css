@@ -620,12 +620,10 @@ button {
 
 .header_button_inner > span:nth-child(2) {
   top: 50%;
-  margin: -1px 0 0 0;
 }
 
 .header_button_inner > span:nth-child(3) {
   top: 100%;
-  margin: -2px 0 0 0;
 }
 
 .header_button_inner div > span:nth-child(1) {
@@ -744,6 +742,11 @@ button {
   height: auto;
   float: left;
 }
+@media screen and (max-width: 375px) {
+  .menu_list > div:nth-child(1) {
+    width: 120px;
+  }
+}
 
 .menu_list > div:nth-child(2) {
   width: auto;
@@ -759,6 +762,11 @@ button {
   font-weight: 200;
   position: relative;
 }
+@media screen and (max-width: 375px) {
+  .menu_list > div:nth-child(1) p {
+    font-size: 16px;
+  }
+}
 .menu_list > div:nth-child(1) p::before {
   content: "";
   width: 3px;
@@ -768,6 +776,11 @@ button {
   top: 3px;
   left: -13.5px;
 }
+@media screen and (max-width: 375px) {
+  .menu_list > div:nth-child(1) p::before {
+    top: 1px;
+  }
+}
 
 .menu_list > div:nth-child(2) p {
   letter-spacing: 1px;
@@ -775,6 +788,11 @@ button {
   font-size: 24px;
   font-family: Imperial Script, serif;
   font-weight: 400;
+}
+@media screen and (max-width: 375px) {
+  .menu_list > div:nth-child(2) p {
+    font-size: 22px;
+  }
 }
 
 .menu_list > div:nth-child(2) > p {
@@ -2071,6 +2089,8 @@ button {
      object-fit: cover;
   vertical-align: bottom;
   opacity: 0;
+  -webkit-animation: change-img-anime 12s infinite;
+          animation: change-img-anime 12s infinite;
 }
 
 .FV__img1 {
