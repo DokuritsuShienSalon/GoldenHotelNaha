@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.FV {
+.p-FV {
   position: relative;
   width: 100%;
 
@@ -12,7 +12,7 @@
     // height: calc(100vh - 64px);
   }
 }
-.FV__mask  {
+.p-FV__mask  {
   width: vw(375, 274.524);
   height: vw(375, 82.357);
   background: rgba(41, 65, 95, 0.50);
@@ -32,7 +32,7 @@
     left: vw(1366, 68);
   }
 }
-.FV__title {
+.p-FV__title {
   color: $gold;
   font-size: vw(375, 24);
   font-weight: 200;
@@ -61,7 +61,7 @@
 
 
 
-.FV__anime {
+.p-FV__anime {
   position: absolute;
   top: 0;
   left: 0;
@@ -73,17 +73,17 @@
   opacity: 0;
   animation: change-img-anime 12s infinite;
 }
-.FV__img1 {
+.p-FV__img1 {
   opacity: 1;
   animation-delay: 0s;
 }
-.FV__img2 {
+.p-FV__img2 {
   animation-delay: 3s;
 }
-.FV__img3 {
+.p-FV__img3 {
   animation-delay: 6s;
 }
-.FV__img4 {
+.p-FV__img4 {
   animation-delay: 9s;
 }
 @keyframes change-img-anime {

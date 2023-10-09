@@ -2008,14 +2008,14 @@ button {
   margin-bottom: 8vw;
 }
 
-.FV {
+.p-FV {
   position: relative;
   width: 100%;
   aspect-ratio: 750/422;
   overflow: hidden;
   z-index: -1;
 }
-.FV__mask {
+.p-FV__mask {
   width: 73.2064vw;
   height: 21.9618666667vw;
   background: rgba(41, 65, 95, .5);
@@ -2028,7 +2028,7 @@ button {
           animation: fade-anime 0.5s ease-in 1s forwards;
 }
 @media screen and (min-width: 768px) {
-  .FV__mask {
+  .p-FV__mask {
     width: 73.2064421669vw;
     height: 21.9619326501vw;
     padding: 0.878477306vw 3.2942898975vw;
@@ -2037,7 +2037,7 @@ button {
   }
 }
 
-.FV__title {
+.p-FV__title {
   color: #cfab6e;
   font-size: 6.4vw;
   font-weight: 200;
@@ -2047,7 +2047,7 @@ button {
   margin-top: 0.5333333333vw;
 }
 @media screen and (min-width: 768px) {
-  .FV__title {
+  .p-FV__title {
     font-size: 6rem;
     margin-top: 0.1464128843vw;
   }
@@ -2078,7 +2078,7 @@ button {
             transform: translateX(0);
   }
 }
-.FV__anime {
+.p-FV__anime {
   position: absolute;
   top: 0;
   left: 0;
@@ -2093,23 +2093,23 @@ button {
           animation: change-img-anime 12s infinite;
 }
 
-.FV__img1 {
+.p-FV__img1 {
   opacity: 1;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
 }
 
-.FV__img2 {
+.p-FV__img2 {
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
 
-.FV__img3 {
+.p-FV__img3 {
   -webkit-animation-delay: 6s;
           animation-delay: 6s;
 }
 
-.FV__img4 {
+.p-FV__img4 {
   -webkit-animation-delay: 9s;
           animation-delay: 9s;
 }
