@@ -38,7 +38,10 @@
 
 .p-header__booknow--icon,
 .p-header__contact--icon {
+  display: none;
+
   @include mq("md") {
+    display: block;
     width: 24px;
     height: 24px;
   }
