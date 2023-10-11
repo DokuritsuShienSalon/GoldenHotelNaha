@@ -23,7 +23,7 @@
 
 .c-hamburger__inner span {
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: $white;
   position: absolute;
   left: 0;
@@ -60,12 +60,12 @@
 }
 
 .js-hamburger-on .c-hamburger__inner {
-  width: 22px;
-  height: 22px;
+  width: 33px;
+  height: 33px;
   // margin: -10px 0 0 -10px;
   position: fixed;
-  top: 3px;
-  right: 7px;
+  top: 5px;
+  right: 11px;
   z-index: 1000;
   @include mq("md") {
     width: 42px;

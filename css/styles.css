@@ -606,7 +606,7 @@ button {
 
 .c-hamburger__inner span {
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: #fff;
   position: absolute;
   left: 0;
@@ -640,11 +640,11 @@ button {
 }
 
 .js-hamburger-on .c-hamburger__inner {
-  width: 22px;
-  height: 22px;
+  width: 33px;
+  height: 33px;
   position: fixed;
-  top: 3px;
-  right: 7px;
+  top: 5px;
+  right: 11px;
   z-index: 1000;
 }
 @media screen and (min-width: 768px) {
@@ -2159,7 +2159,7 @@ button {
 }
 .p-header {
   width: 100%;
-  height: 29px;
+  height: 45px;
   background-color: #cfab6e;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2167,8 +2167,8 @@ button {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  gap: 10px;
-  padding-top: 4px;
+  gap: 20px;
+  padding-top: 6px;
 }
 @media screen and (min-width: 768px) {
   .p-header {
@@ -2212,7 +2212,7 @@ button {
 }
 
 .p-header__language {
-  font-size: 12px;
+  font-size: 18px;
 }
 @media screen and (min-width: 768px) {
   .p-header__language {
@@ -2225,8 +2225,8 @@ button {
 }
 
 .p-language__icon {
-  width: 13px;
-  height: 13px;
+  width: 18px;
+  height: 18px;
 }
 @media screen and (min-width: 768px) {
   .p-language__icon {
@@ -2236,10 +2236,10 @@ button {
 }
 
 .p-header__hamburger {
-  width: 16px;
-  height: 14px;
-  margin-right: 10px;
-  margin-top: 3px;
+  width: 24px;
+  height: 21px;
+  margin-right: 15px;
+  margin-top: 5px;
 }
 @media screen and (min-width: 768px) {
   .p-header__hamburger {
