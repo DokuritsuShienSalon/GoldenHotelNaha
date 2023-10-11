@@ -2668,9 +2668,7 @@ button {
     margin-top: 0.75rem;
   }
 }
-.p-photo__scroll::before {
-  position: absolute;
-}
+
 .p-special {
   margin-top: 8vw;
   text-align: center;
@@ -2987,7 +2985,8 @@ button {
   display: none !important;
 }
 .u-smallchar {
-  font-size: re(16);
+  font-size: 16px;
+  font-size: 1rem;
 }
 
 .u-visually-hidden {

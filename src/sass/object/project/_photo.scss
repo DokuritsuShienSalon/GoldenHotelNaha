@@ -66,19 +66,11 @@
     padding-bottom: re(28);
     padding-right: re(7.5);
 
-
     @include mq("md") {
       margin-left: re(-36);
       margin-top: re(12);
     }
-    &::before {
-      position: absolute;
 
-
-      @include mq("md") {
-
-      }
-    }
   }
   
 }

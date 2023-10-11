@@ -86,7 +86,7 @@ $mediaquerys: (
   --max-viewport: 768;
 
   /* a 傾き */
-  --slope: calc((var(--max-size) - var(--min-size))/ (var(--max-viewport) - var(--min-viewport)));
+  --slope: calc((var(--max-size) - var(--min-size)) / (var(--max-viewport) - var(--min-viewport)));
   /* b 切片 */
   --intercept: calc(var(--min-size) - var(--slope) * var(--min-viewport));
   /* y = ax + b 可変サイズ */
