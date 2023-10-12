@@ -46,7 +46,7 @@
 }
 .p-fitness__text {
   position: absolute;
-  top: vw(375, 66);
+  bottom: vw(375, 21);
   right: vw(375,15);
   z-index: 1;
   color: $white;
@@ -64,7 +64,7 @@
 
   @include mq("md") {
     font-size: re(32);
-    top: vw(1366, 325);
+    bottom: vw(1366, 150);
     right: vw(1366, 147);
   }
 }
