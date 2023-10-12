@@ -21,12 +21,11 @@
     <link rel="”icon”" href="" />
     <!-- css -->
     <link rel="stylesheet" href="./css/styles.css" />
- 
 
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&amp;family=Julius+Sans+One&amp;family=Noto+Serif+JP:wght@200;400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&amp;family=Julius+Sans+One&amp;family=Noto+Serif+JP:wght@200;400;500;600&amp;display=swap" rel="stylesheet" />
     <!-- flatpickr -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
     <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_blue.css" />
@@ -68,9 +67,7 @@
       <div class="p-header__hamburger">
         <div class="c-hamburger">
           <div class="c-hamburger__bg u-opa"></div>
-          <button class="c-hamburger__inner">
-            <span></span><span></span><span></span><span class="u-visually-hidden">Menu</span>
-          </button>
+          <button class="c-hamburger__inner"><span></span><span></span><span></span><span class="u-visually-hidden">Menu</span></button>
         </div>
       </div>
     </header>
@@ -128,471 +125,464 @@
               <p class="p-menu__title p-menu__title--eng">Guidance</p>
             </div>
           </a>
-          <a href="#" class="p-menu__list u-opa">	
-					<div><p class="p-menu__title">アクセス</p></div>
-					<div>
-						<p class="p-menu__title p-menu__title--eng">Access</p>
-					</div>
-				</a>
-        <a href="#" class="p-menu__list u-opa">	
-					<div><p class="p-menu__title">FAQ</p></div>
-					<div>
-						<p class="p-menu__title p-menu__title--eng">FAQ</p>
-					</div>
-				</a>
+          <a href="#" class="p-menu__list u-opa">
+            <div><p class="p-menu__title">アクセス</p></div>
+            <div>
+              <p class="p-menu__title p-menu__title--eng">Access</p>
+            </div>
+          </a>
+          <a href="#" class="p-menu__list u-opa">
+            <div><p class="p-menu__title">FAQ</p></div>
+            <div>
+              <p class="p-menu__title p-menu__title--eng">FAQ</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>
-
-    <section class="p-FV">
-      <picture>
-        <source srcset="images/FV-pc@2x.webp" media="(min-width: 768px)" />
-        <img src="images/FV-sp@2x.webp" alt="ホテル外観" class="p-FV__anime p-FV__img1" width="375" height="211" decoding="async" />
-      </picture>
-      <picture>
-        <source srcset="images/FV_2nd-pc@2x.webp" media="(min-width: 768px)" />
-        <img src="images/FV_2nd-sp@2x.webp" alt="ホテル夜景" class="p-FV__anime p-FV__img2" width="375" height="211" decoding="async" />
-      </picture>
-      <picture>
-        <source srcset="images/FV_3rd-pc@2x.webp" media="(min-width: 768px)" />
-        <img src="images/FV_3rd-sp@2x.webp" alt="ホテル客室" class="p-FV__anime p-FV__img3" width="375" height="211" decoding="async" />
-      </picture>
-      <picture>
-        <source srcset="images/FV_4th-pc@2x.webp" media="(min-width: 768px)" />
-        <img src="images/FV_4th-sp@2x.webp" alt="ホテル食事" class="p-FV__anime p-FV__img4" width="375" height="211" decoding="async" />
-      </picture>
-      <div class="p-FV__mask">
-        <h1 class="p-FV__title">welcome to<br />GoldenHotel NAHA</h1>
-      </div>
-    </section>
-    <div class="p-photo js-photo">
-      <div class="p-photo__imagebox">
+    <main>
+      <section class="p-FV">
         <picture>
-          <source srcset="images/Photo-pc@2x.webp" media="(min-width: 768px)" />
-          <img src="images/Photo-sp@2x.webp" alt="子供の写真" width="263" height="314" class="p-photo__image" decoding="async" />
+          <source srcset="images/FV-pc@2x.webp" media="(min-width: 768px)" />
+          <img src="images/FV-sp@2x.webp" alt="ホテル外観" class="p-FV__anime p-FV__img1" width="375" height="211" decoding="async" />
         </picture>
-        <p class="p-photo__text js-title">Stay more,<br />Experience more!</p>
-        <p class="p-photo__subtext js-title">素敵な旅をあなたと</p>
-      </div>
-      <div class="c-scrollbar-box">
-        <div class="p-photo__scroll c-scrollbar">scroll</div>
-      </div>
-    </div>
-    <section class="p-booknow js-booknow">
-      <h2 class="p-booknow__title c-h2__title">Book Now<span class="p-booknow__jptitle c-h2__subtitle">ご予約</span></h2>
-      <div class="p-booknow__tab">
-        <div class="c-tab">
-          <div>
-            <input class="c-tab__toggle" id="tab-1" type="radio" name="toggle" checked />
-            <label data-title="Tab 1" class="c-tab__label c-tab__label--borderleft" for="tab-1">宿泊</label>
-            <div class="c-tab__content p-tab__content">
-              <ul class="p-stay">
-                <li class="l-inner__tab p-stay__checkin c-calendar">
-                  <!-- 疑似要素での修飾のためにinputタグをdivで囲む必要がある→
-            すると並列にならないためlabelタグを使えない→
-            pタグとdivタグの並列にしてgridレイアウト -->
-                  <!-- <p class="p-checkin__label">チェックイン</p> -->
-                  <label for="stay-checkin" class="p-checkin__label">チェックイン</label>
-                  <div class="p-checkin__input c-selectorContainer">
-                    <input type="text" name="checkin" id="stay-checkin" placeholder="日付を選択" readonly="readonly" class="c-calendar__input p-checkin__dropdown" />
-                  </div>
-                </li>
-                <li class="l-inner__tab p-stay__checkout c-calendar">
-                  <!-- <p class="p-checkout__label">チェックアウト</p> -->
-                  <label for="stay-checkout" class="p-checkout__label">チェックアウト</label>
-                  <div class="p-checkout__input c-selectorContainer">
-                    <input type="text" name="checkout" id="stay-checkout" placeholder="日付を選択" readonly="readonly" class="c-calendar__input p-checkout__dropdown" />
-                  </div>
-                </li>
-                <li class="l-inner__tab p-stay__adults c-dropdown">
-                  <!-- <p class="p-adults__label">大人</p> -->
-                  <label for="stay__adults" class="p-adults__label">大人</label>
-                  <div class="p-adults__select c-selectorContainer">
-                    <select name="stay__adults" id="stay__adults" class="c-dropdown__list p-adults__dropdown">
-                      <option value="" selected disabled>人数を選択</option>
-                      <option value="1">１人</option>
-                      <option value="2">２人</option>
-                      <option value="3">３人</option>
-                      <option value="4">４人</option>
-                    </select>
-                  </div>
-                </li>
-                <li class="l-inner__tab p-stay__children c-dropdown">
-                  <!-- <p class="p-children__label">お子様<span class="u-smallchar">（12歳以下）</span></p> -->
-                  <label for="stay__children" class="p-children__label">お子様<span class="u-smallchar">（12歳以下）</span></label>
-                  <div class="p-children__select c-selectorContainer">
-                    <select name="stay__children" id="stay__children" class="c-dropdown__list p-children__dropdown">
-                      <option value="" selected disabled>人数を選択</option>
-                      <option value="1">０人</option>
-                      <option value="2">１人</option>
-                      <option value="3">２人</option>
-                      <option value="4">３人</option>
-                    </select>
-                  </div>
-                </li>
-                <li class="l-inner__tab p-stay__rooms c-dropdown">
-                  <!-- <p class="p-rooms__label">部屋数</p> -->
-                  <label for="stay__rooms" class="p-rooms__label">部屋数</label>
-                  <div class="p-rooms__select c-selectorContainer">
-                    <select name="stay__rooms" id="stay__rooms" class="c-dropdown__list p-rooms__dropdown">
-                      <option value="" selected disabled>室数を選択</option>
-                      <option value="1">１部屋</option>
-                      <option value="2">２部屋</option>
-                      <option value="3">３部屋</option>
-                    </select>
-                  </div>
-                </li>
-              </ul>
-              <div class="p-tab__buttons">
-                <div class="p-tab__searchbtn c-button c-button--white">
-                  <a class="c-button__tag">Search</a>
-                </div>
-                <div class="p-tab__planbtn c-button c-button--white">
-                  <a class="c-button__tag">View All Plan</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="c-tab__space1"></div>
-          <div>
-            <input class="c-tab__toggle" id="tab-2" type="radio" name="toggle" />
-            <label class="c-tab__label" for="tab-2">航空券付き</label>
-            <div class="c-tab__content p-tab__content">
-              <ul class="p-ticket">
-                <li class="l-inner__tab p-ticket__departure c-dropdown">
-                  <!-- <p class="p-departure__label">出発空港</p> -->
-                  <label for="ticket__departure" class="p-departure__label">出発空港</label>
-                  <div class="p-departure__select c-selectorContainer">
-                    <select name="ticket__departure" id="ticket__departure" class="c-dropdown__list p-departure__dropdown">
-                      <option value="" selected disabled>空港を選択</option>
-                      <option value="1">羽田空港</option>
-                      <option value="2">成田空港</option>
-                      <option value="3">中部空港</option>
-                      <option value="4">関西空港</option>
-                    </select>
-                  </div>
-                </li>
-                <li class="l-inner__tab p-ticket__checkin c-calendar">
-                  <!-- 疑似要素での修飾のためにinputタグをdivで囲む必要がある→
-              すると並列にならないためlabelタグを使えない→
-              pタグとdivタグの並列にしてgridレイアウト -->
-                  <!-- <p class="p-checkin__label">チェックイン</p> -->
-                  <label for="ticket-checkin" class="p-checkin__label">チェックイン</label>
-                  <div class="p-checkin__input c-selectorContainer">
-                    <input type="text" name="checkin" id="ticket-checkin" placeholder="日付を選択" readonly="readonly" class="c-calendar__input p-checkin__dropdown" />
-                  </div>
-                </li>
-                <li class="l-inner__tab p-ticket__checkout c-calendar">
-                  <!-- <p class="p-checkout__label">チェックアウト</p> -->
-                  <label for="ticket-checkout" class="p-checkout__label">チェックアウト</label>
-                  <div class="p-checkout__input c-selectorContainer">
-                    <input type="text" name="checkout" id="ticket-checkout" placeholder="日付を選択" readonly="readonly" class="c-calendar__input p-checkout__dropdown" />
-                  </div>
-                </li>
-                <li class="l-inner__tab p-ticket__adults c-dropdown">
-                  <!-- <p class="p-adults__label">大人</p> -->
-                  <label for="ticket__adults" class="p-adults__label">大人</label>
-                  <div class="p-adults__select c-selectorContainer">
-                    <select name="ticket__adults" id="ticket__adults" class="c-dropdown__list p-adults__dropdown">
-                      <option value="" selected disabled>人数を選択</option>
-                      <option value="1">１人</option>
-                      <option value="2">２人</option>
-                      <option value="3">３人</option>
-                      <option value="4">４人</option>
-                    </select>
-                  </div>
-                </li>
-                <li class="l-inner__tab p-ticket__children c-dropdown">
-                  <!-- <p class="p-children__label">お子様<span class="u-smallchar">（12歳以下）</span></p> -->
-                  <label for="ticket__children" class="p-children__label">お子様<span class="u-smallchar">（12歳以下）</span></label>
-                  <div class="p-children__select c-selectorContainer">
-                    <select name="ticket__children" id="ticket__children" class="c-dropdown__list p-children__dropdown">
-                      <option value="" selected disabled>人数を選択</option>
-                      <option value="1">０人</option>
-                      <option value="2">１人</option>
-                      <option value="3">２人</option>
-                      <option value="4">３人</option>
-                    </select>
-                  </div>
-                </li>
-                <li class="l-inner__tab p-ticket__rooms c-dropdown">
-                  <!-- <p class="p-rooms__label">室数</p> -->
-                  <label for="ticket__rooms" class="p-rooms__label">部屋数</label>
-                  <div class="p-rooms__select c-selectorContainer">
-                    <select name="ticket__rooms" id="ticket__rooms" class="c-dropdown__list p-rooms__dropdown">
-                      <option value="" selected disabled>室数を選択</option>
-                      <option value="1">１部屋</option>
-                      <option value="2">２部屋</option>
-                      <option value="3">３部屋</option>
-                    </select>
-                  </div>
-                </li>
-              </ul>
-              <div class="p-tab__buttons">
-                <div class="p-tab__searchbtn c-button c-button--white">
-                  <a class="c-button__tag">Search</a>
-                </div>
-                <div class="p-tab__planbtn c-button c-button--white">
-                  <a class="c-button__tag">View All Plan</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="c-tab__space2"></div>
-          <div>
-            <input class="c-tab__toggle" id="tab-3" type="radio" name="toggle" />
-            <label class="c-tab__label" for="tab-3">レストラン</label>
-            <div class="c-tab__content p-tab__content">
-              <ul class="p-restaurant">
-                <li class="l-inner__tab p-restaurant__date c-calendar">
-                  <!-- 疑似要素での修飾のためにinputタグをdivで囲む必要がある→
-              すると並列にならないためlabelタグを使えない→
-              pタグとdivタグの並列にしてgridレイアウト -->
-                  <!-- <p class="p-date__label">ご利用日</p> -->
-                  <label for="restaurant-date"  class="p-date__label">ご利用日</label>
-                  <div class="p-date__input c-selectorContainer">
-                    <input type="text" name="date" id="restaurant-date" placeholder="日付を選択" readonly="readonly" class="c-calendar__input p-date__dropdown" />
-                  </div>
-                </li>
-
-                <li class="l-inner__tab p-restaurant__adults c-dropdown">
-                  <!-- <p class="p-adults__label">大人</p> -->
-                  <label for="restaurant__adults" class="p-adults__label">大人</label>
-                  <div class="p-adults__select c-selectorContainer">
-                    <select name="restaurant__adults" id="restaurant__adults" class="c-dropdown__list p-adults__dropdown">
-                      <option value="" selected disabled>人数を選択</option>
-                      <option value="1">１人</option>
-                      <option value="2">２人</option>
-                      <option value="3">３人</option>
-                      <option value="4">４人</option>
-                    </select>
-                  </div>
-                </li>
-                <li class="l-inner__tab p-restaurant__children c-dropdown">
-                  <!-- <p class="p-children__label">お子様<span class="u-smallchar">（12歳以下）</span></p> -->
-                  <label for="restaurant__children" class="p-children__label">お子様<span class="u-smallchar">（12歳以下）</span></label>
-                  <div class="p-children__select c-selectorContainer">
-                    <select name="restaurant__children" id="restaurant__children" class="c-dropdown__list p-children__dropdown">
-                      <option value="" selected disabled>人数を選択</option>
-                      <option value="1">０人</option>
-                      <option value="2">１人</option>
-                      <option value="3">２人</option>
-                      <option value="4">３人</option>
-                    </select>
-                  </div>
-                </li>
-              </ul>
-              <div class="p-tab__buttons">
-                <div class="p-tab__searchbtn c-button c-button--white">
-                  <a class="c-button__tag">Search</a>
-                </div>
-                <div class="p-tab__planbtn c-button c-button--white">
-                  <a class="c-button__tag">View All Plan</a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <picture>
+          <source srcset="images/FV_2nd-pc@2x.webp" media="(min-width: 768px)" />
+          <img src="images/FV_2nd-sp@2x.webp" alt="ホテル夜景" class="p-FV__anime p-FV__img2" width="375" height="211" decoding="async" />
+        </picture>
+        <picture>
+          <source srcset="images/FV_3rd-pc@2x.webp" media="(min-width: 768px)" />
+          <img src="images/FV_3rd-sp@2x.webp" alt="ホテル客室" class="p-FV__anime p-FV__img3" width="375" height="211" decoding="async" />
+        </picture>
+        <picture>
+          <source srcset="images/FV_4th-pc@2x.webp" media="(min-width: 768px)" />
+          <img src="images/FV_4th-sp@2x.webp" alt="ホテル食事" class="p-FV__anime p-FV__img4" width="375" height="211" decoding="async" />
+        </picture>
+        <div class="p-FV__mask">
+          <h1 class="p-FV__title">welcome to<br />GoldenHotel NAHA</h1>
         </div>
-      </div>
-    </section>
-
-    <section id="event" class="p-news js-news">
-      <h2 class="p-news__title c-h2__title">Event/News<span class="p-news__jptitle c-h2__subtitle">イベント情報／お知らせ</span></h2>
-      <div class="p-news__flex">
-        <div class="p-news__content">
-          <div class="p-news__imagebox">
-            <picture class="p-news__image">
-              <source srcset="images/News_car-pc@2x.webp" media="(min-width: 768px)" />
-              <img src="images/News_car-sp@2x.webp" alt="レンタカー" width="255" height="182" decoding="async" />
-            </picture>
-          </div>
-          <div class="p-news__contentTitleBox">
-            <time datetime="2023-07-20" class="p-news__datetime c-datetime">2023/7/20</time>
-            <h3 class="p-news__contentTitle c-h3__title">レンタカー付き宿泊プランのご案内</h3>
-          </div>
-        </div>
-        <div class="p-news__content">
-          <div class="p-news__imagebox">
-            <picture class="p-news__image">
-              <source srcset="images/News_bus-pc@2x.webp" media="(min-width: 768px)" />
-              <img src="images/News_bus-sp@2x.webp" alt="シャトルバス" width="255" height="182" decoding="async" />
-            </picture>
-          </div>
-          <div class="p-news__contentTitleBox">
-            <time datetime="2023-07-20" class="p-news__datetime c-datetime">2023/7/20</time>
-            <h3 class="p-news__contentTitle c-h3__title">那覇空港直行シャトルバスのご案内</h3>
-          </div>
-        </div>
-      </div>
-      <div class="p-news__button c-button">
-        <a class="c-button__tag">View More</a>
-      </div>
-    </section>
-
-    <section class="p-story js-story">
-      <h2 class="p-story__title c-h2__title">Story<span class="p-story__jptitle c-h2__subtitle">~私たちができる5つのこと</span></h2>
-      <div class="p-story__flex">
-        <div class="p-story__content">
+      </section>
+      <div class="p-photo js-photo">
+        <div class="p-photo__imagebox">
           <picture>
-            <source srcset="images/Story-pc@2x.webp" media="(min-width: 768px)" />
-            <img src="images/Story-sp@2x.webp" alt="プールサイド" width="375" height="187" decoding="async" class="p-story__image" />
+            <source srcset="images/Photo-pc@2x.webp" media="(min-width: 768px)" />
+            <img src="images/Photo-sp@2x.webp" alt="子供の写真" width="263" height="314" class="p-photo__image" decoding="async" />
           </picture>
-          <p class="p-story__text">笑顔からはじまる、豊かな時間を大切に<br />GOLDEN HOTEL那覇で過ごす<br class="u-mobile" />大切な人との時間のために<br />私たちができる５つのこと<br />ここにしかない和やかで贅沢な時間を<br class="u-mobile" />お楽しみください</p>
+          <p class="p-photo__text js-title">Stay more,<br />Experience more!</p>
+          <p class="p-photo__subtext js-title">素敵な旅をあなたと</p>
         </div>
-        <div class="p-story__button c-button">
+        <div class="c-scrollbar-box">
+          <div class="p-photo__scroll c-scrollbar">scroll</div>
+        </div>
+      </div>
+      <section class="p-booknow js-booknow">
+        <h2 class="p-booknow__title c-h2__title">Book Now<span class="p-booknow__jptitle c-h2__subtitle">ご予約</span></h2>
+        <div class="p-booknow__tab">
+          <div class="c-tab">
+            <div>
+              <input class="c-tab__toggle" id="tab-1" type="radio" name="toggle" checked />
+              <label data-title="Tab 1" class="c-tab__label c-tab__label--borderleft" for="tab-1">宿泊</label>
+              <div class="c-tab__content p-tab__content">
+                <ul class="p-stay">
+                  <li class="l-inner__tab p-stay__checkin c-calendar">
+                    <!-- <p class="p-checkin__label">チェックイン</p> -->
+                    <label for="stay-checkin" class="p-checkin__label">チェックイン</label>
+                    <!-- 疑似要素での修飾のためにdivで囲う必要がある -->
+                    <div class="p-checkin__input c-selectorContainer">
+                      <input type="text" name="checkin" id="stay-checkin" placeholder="日付を選択" readonly="readonly" class="c-calendar__input p-checkin__dropdown" />
+                    </div>
+                  </li>
+                  <li class="l-inner__tab p-stay__checkout c-calendar">
+                    <!-- <p class="p-checkout__label">チェックアウト</p> -->
+                    <label for="stay-checkout" class="p-checkout__label">チェックアウト</label>
+                    <div class="p-checkout__input c-selectorContainer">
+                      <input type="text" name="checkout" id="stay-checkout" placeholder="日付を選択" readonly="readonly" class="c-calendar__input p-checkout__dropdown" />
+                    </div>
+                  </li>
+                  <li class="l-inner__tab p-stay__adults c-dropdown">
+                    <!-- <p class="p-adults__label">大人</p> -->
+                    <label for="stay__adults" class="p-adults__label">大人</label>
+                    <div class="p-adults__select c-selectorContainer">
+                      <select name="stay__adults" id="stay__adults" class="c-dropdown__list p-adults__dropdown">
+                        <option value="" selected disabled>人数を選択</option>
+                        <option value="1">１人</option>
+                        <option value="2">２人</option>
+                        <option value="3">３人</option>
+                        <option value="4">４人</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="l-inner__tab p-stay__children c-dropdown">
+                    <!-- <p class="p-children__label">お子様<span class="u-smallchar">（12歳以下）</span></p> -->
+                    <label for="stay__children" class="p-children__label">お子様<span class="u-smallchar">（12歳以下）</span></label>
+                    <div class="p-children__select c-selectorContainer">
+                      <select name="stay__children" id="stay__children" class="c-dropdown__list p-children__dropdown">
+                        <option value="" selected disabled>人数を選択</option>
+                        <option value="1">０人</option>
+                        <option value="2">１人</option>
+                        <option value="3">２人</option>
+                        <option value="4">３人</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="l-inner__tab p-stay__rooms c-dropdown">
+                    <!-- <p class="p-rooms__label">部屋数</p> -->
+                    <label for="stay__rooms" class="p-rooms__label">部屋数</label>
+                    <div class="p-rooms__select c-selectorContainer">
+                      <select name="stay__rooms" id="stay__rooms" class="c-dropdown__list p-rooms__dropdown">
+                        <option value="" selected disabled>室数を選択</option>
+                        <option value="1">１部屋</option>
+                        <option value="2">２部屋</option>
+                        <option value="3">３部屋</option>
+                      </select>
+                    </div>
+                  </li>
+                </ul>
+                <div class="p-tab__buttons">
+                  <div class="p-tab__searchbtn c-button c-button--white">
+                    <a class="c-button__tag">Search</a>
+                  </div>
+                  <div class="p-tab__planbtn c-button c-button--white">
+                    <a class="c-button__tag">View All Plan</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c-tab__space1"></div>
+            <div>
+              <input class="c-tab__toggle" id="tab-2" type="radio" name="toggle" />
+              <label class="c-tab__label" for="tab-2">航空券付き</label>
+              <div class="c-tab__content p-tab__content">
+                <ul class="p-ticket">
+                  <li class="l-inner__tab p-ticket__departure c-dropdown">
+                    <!-- <p class="p-departure__label">出発空港</p> -->
+                    <label for="ticket__departure" class="p-departure__label">出発空港</label>
+                    <div class="p-departure__select c-selectorContainer">
+                      <select name="ticket__departure" id="ticket__departure" class="c-dropdown__list p-departure__dropdown">
+                        <option value="" selected disabled>空港を選択</option>
+                        <option value="1">羽田空港</option>
+                        <option value="2">成田空港</option>
+                        <option value="3">中部空港</option>
+                        <option value="4">関西空港</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="l-inner__tab p-ticket__checkin c-calendar">
+                    <!-- <p class="p-checkin__label">チェックイン</p> -->
+                    <label for="ticket-checkin" class="p-checkin__label">チェックイン</label>
+                    <div class="p-checkin__input c-selectorContainer">
+                      <input type="text" name="checkin" id="ticket-checkin" placeholder="日付を選択" readonly="readonly" class="c-calendar__input p-checkin__dropdown" />
+                    </div>
+                  </li>
+                  <li class="l-inner__tab p-ticket__checkout c-calendar">
+                    <!-- <p class="p-checkout__label">チェックアウト</p> -->
+                    <label for="ticket-checkout" class="p-checkout__label">チェックアウト</label>
+                    <div class="p-checkout__input c-selectorContainer">
+                      <input type="text" name="checkout" id="ticket-checkout" placeholder="日付を選択" readonly="readonly" class="c-calendar__input p-checkout__dropdown" />
+                    </div>
+                  </li>
+                  <li class="l-inner__tab p-ticket__adults c-dropdown">
+                    <!-- <p class="p-adults__label">大人</p> -->
+                    <label for="ticket__adults" class="p-adults__label">大人</label>
+                    <div class="p-adults__select c-selectorContainer">
+                      <select name="ticket__adults" id="ticket__adults" class="c-dropdown__list p-adults__dropdown">
+                        <option value="" selected disabled>人数を選択</option>
+                        <option value="1">１人</option>
+                        <option value="2">２人</option>
+                        <option value="3">３人</option>
+                        <option value="4">４人</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="l-inner__tab p-ticket__children c-dropdown">
+                    <!-- <p class="p-children__label">お子様<span class="u-smallchar">（12歳以下）</span></p> -->
+                    <label for="ticket__children" class="p-children__label">お子様<span class="u-smallchar">（12歳以下）</span></label>
+                    <div class="p-children__select c-selectorContainer">
+                      <select name="ticket__children" id="ticket__children" class="c-dropdown__list p-children__dropdown">
+                        <option value="" selected disabled>人数を選択</option>
+                        <option value="1">０人</option>
+                        <option value="2">１人</option>
+                        <option value="3">２人</option>
+                        <option value="4">３人</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="l-inner__tab p-ticket__rooms c-dropdown">
+                    <!-- <p class="p-rooms__label">室数</p> -->
+                    <label for="ticket__rooms" class="p-rooms__label">部屋数</label>
+                    <div class="p-rooms__select c-selectorContainer">
+                      <select name="ticket__rooms" id="ticket__rooms" class="c-dropdown__list p-rooms__dropdown">
+                        <option value="" selected disabled>室数を選択</option>
+                        <option value="1">１部屋</option>
+                        <option value="2">２部屋</option>
+                        <option value="3">３部屋</option>
+                      </select>
+                    </div>
+                  </li>
+                </ul>
+                <div class="p-tab__buttons">
+                  <div class="p-tab__searchbtn c-button c-button--white">
+                    <a class="c-button__tag">Search</a>
+                  </div>
+                  <div class="p-tab__planbtn c-button c-button--white">
+                    <a class="c-button__tag">View All Plan</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c-tab__space2"></div>
+            <div>
+              <input class="c-tab__toggle" id="tab-3" type="radio" name="toggle" />
+              <label class="c-tab__label" for="tab-3">レストラン</label>
+              <div class="c-tab__content p-tab__content">
+                <ul class="p-restaurant">
+                  <li class="l-inner__tab p-restaurant__date c-calendar">
+                    <!-- <p class="p-date__label">ご利用日</p> -->
+                    <label for="restaurant-date" class="p-date__label">ご利用日</label>
+                    <div class="p-date__input c-selectorContainer">
+                      <input type="text" name="date" id="restaurant-date" placeholder="日付を選択" readonly="readonly" class="c-calendar__input p-date__dropdown" />
+                    </div>
+                  </li>
+
+                  <li class="l-inner__tab p-restaurant__adults c-dropdown">
+                    <!-- <p class="p-adults__label">大人</p> -->
+                    <label for="restaurant__adults" class="p-adults__label">大人</label>
+                    <div class="p-adults__select c-selectorContainer">
+                      <select name="restaurant__adults" id="restaurant__adults" class="c-dropdown__list p-adults__dropdown">
+                        <option value="" selected disabled>人数を選択</option>
+                        <option value="1">１人</option>
+                        <option value="2">２人</option>
+                        <option value="3">３人</option>
+                        <option value="4">４人</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="l-inner__tab p-restaurant__children c-dropdown">
+                    <!-- <p class="p-children__label">お子様<span class="u-smallchar">（12歳以下）</span></p> -->
+                    <label for="restaurant__children" class="p-children__label">お子様<span class="u-smallchar">（12歳以下）</span></label>
+                    <div class="p-children__select c-selectorContainer">
+                      <select name="restaurant__children" id="restaurant__children" class="c-dropdown__list p-children__dropdown">
+                        <option value="" selected disabled>人数を選択</option>
+                        <option value="1">０人</option>
+                        <option value="2">１人</option>
+                        <option value="3">２人</option>
+                        <option value="4">３人</option>
+                      </select>
+                    </div>
+                  </li>
+                </ul>
+                <div class="p-tab__buttons">
+                  <div class="p-tab__searchbtn c-button c-button--white">
+                    <a class="c-button__tag">Search</a>
+                  </div>
+                  <div class="p-tab__planbtn c-button c-button--white">
+                    <a class="c-button__tag">View All Plan</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="event" class="p-news js-news">
+        <h2 class="p-news__title c-h2__title">Event/News<span class="p-news__jptitle c-h2__subtitle">イベント情報／お知らせ</span></h2>
+        <div class="p-news__flex">
+          <div class="p-news__content">
+            <div class="p-news__imagebox">
+              <picture class="p-news__image">
+                <source srcset="images/News_car-pc@2x.webp" media="(min-width: 768px)" />
+                <img src="images/News_car-sp@2x.webp" alt="レンタカー" width="255" height="182" decoding="async" />
+              </picture>
+            </div>
+            <div class="p-news__contentTitleBox">
+              <time datetime="2023-07-20" class="p-news__datetime c-datetime">2023/7/20</time>
+              <h3 class="p-news__contentTitle c-h3__title">レンタカー付き宿泊プランのご案内</h3>
+            </div>
+          </div>
+          <div class="p-news__content">
+            <div class="p-news__imagebox">
+              <picture class="p-news__image">
+                <source srcset="images/News_bus-pc@2x.webp" media="(min-width: 768px)" />
+                <img src="images/News_bus-sp@2x.webp" alt="シャトルバス" width="255" height="182" decoding="async" />
+              </picture>
+            </div>
+            <div class="p-news__contentTitleBox">
+              <time datetime="2023-07-20" class="p-news__datetime c-datetime">2023/7/20</time>
+              <h3 class="p-news__contentTitle c-h3__title">那覇空港直行シャトルバスのご案内</h3>
+            </div>
+          </div>
+        </div>
+        <div class="p-news__button c-button">
           <a class="c-button__tag">View More</a>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="cuisine" class="p-cuisine">
-      <h2 class="p-cuisine__title c-h2__title js-cuisine">Cuisine<span class="p-cuisine__subtitle c-h2__subtitle">お食事</span></h2>
-      <div class="p-cuisine__content-l  js-cuisine1">
-        <div class="l-inner__cuisine p-cuisine__gallery">
-          <div class="p-cuisine__card c-card">
-            <div class="c-card__box">
-              <picture>
-                <source srcset="images/Cuisine_dining-pc@2x.webp" media="(min-width: 768px)" />
-                <img src="images/Cuisine_dining2-sp@2x.webp" alt="All Day Dining" width="154" height="98" class="c-card__image" decoding="async" />
-              </picture>
-            </div>
-            <h3 class="c-card__title">All Day Dining</h3>
-          </div>
-          <div class="p-cuisine__card p-cuisine__card--mirror c-card c-card--mirror p-cuisine__card--alone">
-            <div class="c-card__box c-card__box--mirror">
-              <picture>
-                <source srcset="images/Cuisine_lounge-pc@2x.webp" media="(min-width: 768px)" />
-                <img src="images/Cuisine_lounge2-sp@2x.webp" alt="Lobby Lounge" width="154" height="98" class="c-card__image" decoding="async" />
-              </picture>
-            </div>
-            <h3 class="c-card__title c-card__title--mirror">Lobby Lounge</h3>
-          </div>
-          <div class="p-cuisine__card c-card">
-            <div class="c-card__box">
-              <picture>
-                <source srcset="images/Cuisine_bar-pc@2x.webp" media="(min-width: 768px)" />
-                <img src="images/Cuisine_bar2-sp@2x.webp" alt="Main Bar" width="154" height="98" class="c-card__image" decoding="async" />
-              </picture>
-            </div>
-            <h3 class="c-card__title">Main Bar</h3>
-          </div>
-        </div>
-        <div class="p-cuisine__button c-button">
-          <a class="c-button__tag">View More</a>
-        </div>
-      </div>
-
-      <div class="p-cuisine__content-r js-cuisine2">
-        <div class="l-inner__cuisine p-cuisine__gallery">
-          <div class="p-cuisine__card p-cuisine__card--mirror c-card c-card--mirror">
-            <div class="c-card__box c-card__box--mirror">
-              <picture>
-                <source srcset="images/Cuisine_chinese-pc@2x.webp" media="(min-width: 768px)" />
-                <img src="images/Cuisine_chinese2-sp@2x.webp" alt="Chinese Cuisine" width="154" height="98" class="c-card__image" decoding="async" loading="lazy" />
-              </picture>
-            </div>
-            <h3 class="c-card__title c-card__title--mirror">Chinese Cuisine</h3>
-          </div>
-          <div class="p-cuisine__card c-card p-cuisine__card--alone">
-            <div class="c-card__box">
-              <picture>
-                <source srcset="images/Cuisine_teppan-pc@2x.webp" media="(min-width: 768px)" />
-                <img src="images/Cuisine_teppan2-sp@2x.webp" alt="Teppanyaki" width="154" height="98" class="c-card__image" decoding="async" loading="lazy" />
-              </picture>
-            </div>
-            <h3 class="c-card__title">Teppanyaki</h3>
-          </div>
-          <div class="p-cuisine__card p-cuisine__card--mirror c-card c-card--mirror">
-            <div class="c-card__box c-card__box--mirror">
-              <picture>
-                <source srcset="images/Cuisine_japanese-pc@2x.webp" media="(min-width: 768px)" />
-                <img src="images/Cuisine_japanese2-sp@2x.webp" alt="Japanese Cuisine" width="154" height="98" class="c-card__image" decoding="async" loading="lazy" />
-              </picture>
-            </div>
-            <h3 class="c-card__title c-card__title--mirror">Japanese cuisine</h3>
-          </div>
-        </div>
-        <div class="p-cuisine__button c-button">
-          <a class="c-button__tag">View More</a>
-        </div>
-        <div class="p-cuisine__scroll c-scrollbar u-desktop">scroll</div>
-      </div>
-    </section>
-
-    <section class="p-special js-special">
-      <div class="p-special__container">
-        <h2 class="p-special__title c-h2__title">Special Floor<span class="p-special__jptitle c-h2__subtitle">~ワンランク上のご宿泊を</span></h2>
-        <p class="p-special__subtitle">コンシェルジュ付特別フロアのご紹介</p>
-        <div class="p-special__button c-button u-desktop c-button--white">
-          <a class="c-button__tag">View More</a>
-        </div>
-      </div>
-      <div class="p-special__button c-button u-mobile">
-        <a class="c-button__tag">View More</a>
-      </div>
-    </section>
-
-    <section id="fitness" class="p-fitness js-fitness">
-      <h2 class="p-fitness__title c-h2__title">Fitness<span class="p-fitness__jptitle c-h2__subtitle">フィットネス</span></h2>
-      <div class="p-fitness__container">
-        <picture>
-          <source srcset="images/Fitness-pc@2x.webp" media="(min-width: 768px)" />
-          <img src="images/Fitness-sp@2x.webp" alt="ジム" width="235" height="145" class="p-fitness__image" decoding="async" loading="lazy" />
-        </picture>
-        <div class="p-fitness__textbox"></div>
-        <p class="p-fitness__text">18Fフィットネスクラブには<br />多彩なトレーニングマシーンと<br class="u-mobile" />広々としたプール<br />大浴場とサウナを完備</p>
-      </div>
-      <div class="p-fitness__button c-button">
-        <a class="c-button__tag">View More</a>
-      </div>
-    </section>
-
-    <section id="wedding" class="p-wedding js-wedding">
-      <h2 class="p-wedding__title c-h2__title">Wedding<span class="p-wedding__jptitle c-h2__subtitle">ウェディング</span></h2>
-      <div class="p-wedding__container">
-        <p class="p-wedding__subtitle">一生忘れられない思い出を</p>
-        <p class="p-wedding__eng">Time fries when you’re having fun<br />in GoldenHotel NAHA.</p>
-        <div class="p-wedding__button c-button c-button--white u-desktop">
-          <a class="c-button__tag">View More</a>
-        </div>
-      </div>
-      <div class="p-wedding__button c-button u-mobile">
-        <a class="c-button__tag">View More</a>
-      </div>
-    </section>
-
-    <section id="meeting" class="p-meeting js-meeting">
-      <h2 class="p-meeting__title c-h2__title">Event/Meeting<span class="p-meeting__jptitle c-h2__subtitle">宴会場</span></h2>
-      <div class="p-meeting__flex">
-        <div class="p-meeting__content">
-          <h3 class="p-meeting__subtitle">大宴会場</h3>
-          <div class="p-meeting__imagebox">
-            <picture class="p-meeting__image">
-              <source srcset="images/Meeting_dai-pc@2x.webp" media="(min-width: 768px)" />
-              <img src="images/Meeting_dai-sp@2x.webp" alt="大宴会場" width="300" height="214" decoding="async" loading="lazy" />
+      <section class="p-story js-story">
+        <h2 class="p-story__title c-h2__title">Story<span class="p-story__jptitle c-h2__subtitle">~私たちができる5つのこと</span></h2>
+        <div class="p-story__flex">
+          <div class="p-story__content">
+            <picture>
+              <source srcset="images/Story-pc@2x.webp" media="(min-width: 768px)" />
+              <img src="images/Story-sp@2x.webp" alt="プールサイド" width="375" height="187" decoding="async" class="p-story__image" />
             </picture>
+            <p class="p-story__text">笑顔からはじまる、豊かな時間を大切に<br />GOLDEN HOTEL那覇で過ごす<br class="u-mobile" />大切な人との時間のために<br />私たちができる５つのこと<br />ここにしかない和やかで贅沢な時間を<br class="u-mobile" />お楽しみください</p>
           </div>
-          <p class="p-meeting__contentTitle">大規模なレセプション等にご利用いただけます</p>
+          <div class="p-story__button c-button">
+            <a class="c-button__tag">View More</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="cuisine" class="p-cuisine">
+        <h2 class="p-cuisine__title c-h2__title js-cuisine">Cuisine<span class="p-cuisine__subtitle c-h2__subtitle">お食事</span></h2>
+        <div class="p-cuisine__content-l js-cuisine1">
+          <div class="l-inner__cuisine p-cuisine__gallery">
+            <div class="p-cuisine__card c-card">
+              <div class="c-card__box">
+                <picture>
+                  <source srcset="images/Cuisine_dining-pc@2x.webp" media="(min-width: 768px)" />
+                  <img src="images/Cuisine_dining2-sp@2x.webp" alt="All Day Dining" width="154" height="98" class="c-card__image" decoding="async" />
+                </picture>
+              </div>
+              <h3 class="c-card__title">All Day Dining</h3>
+            </div>
+            <div class="p-cuisine__card p-cuisine__card--mirror c-card c-card--mirror p-cuisine__card--alone">
+              <div class="c-card__box c-card__box--mirror">
+                <picture>
+                  <source srcset="images/Cuisine_lounge-pc@2x.webp" media="(min-width: 768px)" />
+                  <img src="images/Cuisine_lounge2-sp@2x.webp" alt="Lobby Lounge" width="154" height="98" class="c-card__image" decoding="async" />
+                </picture>
+              </div>
+              <h3 class="c-card__title c-card__title--mirror">Lobby Lounge</h3>
+            </div>
+            <div class="p-cuisine__card c-card">
+              <div class="c-card__box">
+                <picture>
+                  <source srcset="images/Cuisine_bar-pc@2x.webp" media="(min-width: 768px)" />
+                  <img src="images/Cuisine_bar2-sp@2x.webp" alt="Main Bar" width="154" height="98" class="c-card__image" decoding="async" />
+                </picture>
+              </div>
+              <h3 class="c-card__title">Main Bar</h3>
+            </div>
+          </div>
+          <div class="p-cuisine__button c-button">
+            <a class="c-button__tag">View More</a>
+          </div>
         </div>
 
-        <div class="p-meeting__content">
-          <h3 class="p-meeting__subtitle">中宴会場</h3>
-          <div class="p-meeting__imagebox">
-            <picture class="p-meeting__image">
-              <source srcset="images/Meeting_chu-pc@2x.webp" />
-              <img src="images/Meeting_chu-sp@2x.webp" alt="中宴会場" width="300" height="214" decoding="async" loading="lazy" />
-            </picture>
+        <div class="p-cuisine__content-r js-cuisine2">
+          <div class="l-inner__cuisine p-cuisine__gallery">
+            <div class="p-cuisine__card p-cuisine__card--mirror c-card c-card--mirror">
+              <div class="c-card__box c-card__box--mirror">
+                <picture>
+                  <source srcset="images/Cuisine_chinese-pc@2x.webp" media="(min-width: 768px)" />
+                  <img src="images/Cuisine_chinese2-sp@2x.webp" alt="Chinese Cuisine" width="154" height="98" class="c-card__image" decoding="async" loading="lazy" />
+                </picture>
+              </div>
+              <h3 class="c-card__title c-card__title--mirror">Chinese Cuisine</h3>
+            </div>
+            <div class="p-cuisine__card c-card p-cuisine__card--alone">
+              <div class="c-card__box">
+                <picture>
+                  <source srcset="images/Cuisine_teppan-pc@2x.webp" media="(min-width: 768px)" />
+                  <img src="images/Cuisine_teppan2-sp@2x.webp" alt="Teppanyaki" width="154" height="98" class="c-card__image" decoding="async" loading="lazy" />
+                </picture>
+              </div>
+              <h3 class="c-card__title">Teppanyaki</h3>
+            </div>
+            <div class="p-cuisine__card p-cuisine__card--mirror c-card c-card--mirror">
+              <div class="c-card__box c-card__box--mirror">
+                <picture>
+                  <source srcset="images/Cuisine_japanese-pc@2x.webp" media="(min-width: 768px)" />
+                  <img src="images/Cuisine_japanese2-sp@2x.webp" alt="Japanese Cuisine" width="154" height="98" class="c-card__image" decoding="async" loading="lazy" />
+                </picture>
+              </div>
+              <h3 class="c-card__title c-card__title--mirror">Japanese cuisine</h3>
+            </div>
           </div>
-          <p class="p-meeting__contentTitle">各種イベントでご利用いただけます</p>
+          <div class="p-cuisine__button c-button">
+            <a class="c-button__tag">View More</a>
+          </div>
+          <div class="p-cuisine__scroll c-scrollbar u-desktop">scroll</div>
         </div>
+      </section>
+
+      <section class="p-special js-special">
+        <div class="p-special__container">
+          <h2 class="p-special__title c-h2__title">Special Floor<span class="p-special__jptitle c-h2__subtitle">~ワンランク上のご宿泊を</span></h2>
+          <p class="p-special__subtitle">コンシェルジュ付特別フロアのご紹介</p>
+          <div class="p-special__button c-button u-desktop c-button--white">
+            <a class="c-button__tag">View More</a>
+          </div>
+        </div>
+        <div class="p-special__button c-button u-mobile">
+          <a class="c-button__tag">View More</a>
+        </div>
+      </section>
+
+      <section id="fitness" class="p-fitness js-fitness">
+        <h2 class="p-fitness__title c-h2__title">Fitness<span class="p-fitness__jptitle c-h2__subtitle">フィットネス</span></h2>
+        <div class="p-fitness__container">
+          <picture>
+            <source srcset="images/Fitness-pc@2x.webp" media="(min-width: 768px)" />
+            <img src="images/Fitness-sp@2x.webp" alt="ジム" width="235" height="145" class="p-fitness__image" decoding="async" loading="lazy" />
+          </picture>
+          <div class="p-fitness__textbox"></div>
+          <p class="p-fitness__text">18Fフィットネスクラブには<br />多彩なトレーニングマシーンと<br class="u-mobile" />広々としたプール<br />大浴場とサウナを完備</p>
+        </div>
+        <div class="p-fitness__button c-button">
+          <a class="c-button__tag">View More</a>
+        </div>
+      </section>
+
+      <section id="wedding" class="p-wedding js-wedding">
+        <h2 class="p-wedding__title c-h2__title">Wedding<span class="p-wedding__jptitle c-h2__subtitle">ウェディング</span></h2>
+        <div class="p-wedding__container">
+          <p class="p-wedding__subtitle">一生忘れられない思い出を</p>
+          <p class="p-wedding__eng">Time fries when you’re having fun<br />in GoldenHotel NAHA.</p>
+          <div class="p-wedding__button c-button c-button--white u-desktop">
+            <a class="c-button__tag">View More</a>
+          </div>
+        </div>
+        <div class="p-wedding__button c-button u-mobile">
+          <a class="c-button__tag">View More</a>
+        </div>
+      </section>
+
+      <section id="meeting" class="p-meeting js-meeting">
+        <h2 class="p-meeting__title c-h2__title">Event/Meeting<span class="p-meeting__jptitle c-h2__subtitle">宴会場</span></h2>
+        <div class="p-meeting__flex">
+          <div class="p-meeting__content">
+            <h3 class="p-meeting__subtitle">大宴会場</h3>
+            <div class="p-meeting__imagebox">
+              <picture class="p-meeting__image">
+                <source srcset="images/Meeting_dai-pc@2x.webp" media="(min-width: 768px)" />
+                <img src="images/Meeting_dai-sp@2x.webp" alt="大宴会場" width="300" height="214" decoding="async" loading="lazy" />
+              </picture>
+            </div>
+            <p class="p-meeting__contentTitle">大規模なレセプション等にご利用いただけます</p>
+          </div>
+
+          <div class="p-meeting__content">
+            <h3 class="p-meeting__subtitle">中宴会場</h3>
+            <div class="p-meeting__imagebox">
+              <picture class="p-meeting__image">
+                <source srcset="images/Meeting_chu-pc@2x.webp" />
+                <img src="images/Meeting_chu-sp@2x.webp" alt="中宴会場" width="300" height="214" decoding="async" loading="lazy" />
+              </picture>
+            </div>
+            <p class="p-meeting__contentTitle">各種イベントでご利用いただけます</p>
+          </div>
+        </div>
+        <div class="p-meeting__button c-button">
+          <a class="c-button__tag">View More</a>
+        </div>
+      </section>
+      <div class="p-footer__scrollbtn">
+        <a href="#header" class="c-scrollbtn u-mobile"><span class="u-visually-hidden">上に戻る</span></a>
       </div>
-      <div class="p-meeting__button c-button">
-        <a class="c-button__tag">View More</a>
-      </div>
-    </section>
-    <div class="p-footer__scrollbtn">
-      <a href="#header" class="c-scrollbtn u-mobile"><span class="u-visually-hidden">上に戻る</span></a>
-    </div>
+    </main>
     <footer class="p-footer">
       <a href="#" class="p-footer__title">Golden Hotel Naha</a>
       <a href="https://maps.app.goo.gl/67Bb46JKtFgdnf2z7" target="_blank" rel="noreferrer noopener" class="p-footer__address">〒123-4567 沖縄県那覇市XXX３</a>
