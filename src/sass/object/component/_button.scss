@@ -10,6 +10,7 @@
   height: 40px;
   line-height: 40px;
   text-transform: uppercase;
+  cursor: pointer;
 
   @include mq("md") {
     --min-size: 180;
@@ -42,6 +43,7 @@
   top: 50%;
   right: -7.5%;
   z-index: 1;
+
 }
 .c-button__tag {
   position: relative;

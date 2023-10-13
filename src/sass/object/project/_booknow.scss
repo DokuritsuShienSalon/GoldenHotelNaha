@@ -48,6 +48,9 @@
     font-size: re(20);
     font-size: clamp(14px, re(20), 20px);
   }
+  @include mq("se") {
+    font-size: 14px;
+  }
 }
 
 .p-restaurant,

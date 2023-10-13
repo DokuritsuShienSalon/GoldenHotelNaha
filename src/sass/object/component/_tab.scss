@@ -68,6 +68,9 @@
       font-size: re(32);
       font-weight: 500;
     }
+    @include mq("se") {
+      font-size: 14px;
+    }
 
     &.c-tab__label--borderleft { border-left: 2px solid $blue }
     &:hover {
