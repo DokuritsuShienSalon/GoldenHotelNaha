@@ -63,10 +63,10 @@
   width: 33px;
   height: 33px;
   // margin: -10px 0 0 -10px;
-  position: fixed;
+  // position: relative;
   top: 5px;
   right: 11px;
-  z-index: 1000;
+  // z-index: 1000;
   @include mq("md") {
     width: 42px;
     height: 35px;

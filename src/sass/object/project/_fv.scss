@@ -3,6 +3,7 @@
 .p-FV {
   position: relative;
   width: 100%;
+  top: 30px;
 
   aspect-ratio: 750 / 422;
   overflow: hidden;
@@ -89,7 +90,7 @@
 @keyframes change-img-anime {
   0% {
     opacity: 0;
-    transform: translateY(5vh);
+    transform: translateY(15px);
   }
   12% {
     opacity: 1;

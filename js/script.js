@@ -26,4 +26,7 @@ $(document).on("click", ".c-hamburger", menuAnimation);
 
 flatpickr(".c-calendar__input", {
     "locale": "ja",
-  });
+});
+
+
+

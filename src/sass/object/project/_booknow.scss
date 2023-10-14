@@ -187,7 +187,7 @@
 .p-adults__select,
 .p-checkout__input,
 .p-checkin__input {
-  display: block;
+  display: inline;
   grid-column: 3 / -2;
 
   @include mq("md") {

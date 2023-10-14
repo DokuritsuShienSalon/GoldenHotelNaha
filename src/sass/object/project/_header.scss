@@ -9,7 +9,9 @@
   // align-items: center;
   gap: 20px;
   padding-top: 6px;
-  
+  position: fixed;
+  z-index: 90;
+
   @include mq("md") {
     --min-size: 39;
     --max-size: 64;
@@ -49,7 +51,7 @@
 
 .p-header__language {
   font-size: 18px;
-  // margin-right: 35px;
+  margin-right: 55px;
 
   @include mq("md") {
     --min-size: 16;
@@ -58,7 +60,7 @@
     --max-viewport: 1366;
     font-size: var(--clamp-size);
     // font-size: 20px;
-    // margin-right: re(150);
+    margin-right: re(150);
   }
 }
 .p-language__icon {
@@ -74,18 +76,21 @@
 .p-header__hamburger {
   width: 24px;
   height: 21px;
-  margin-right: 15px;
-  margin-top: 5px;
-  // position: fixed;
+  // margin-right: 15px;
+  // margin-top: 5px;
+  position: fixed;
+  z-index: 1000;
+  top: 10px;
+  right: 15px;
 
   @include mq("md") {
     width: 30px;
     height: 25px;
-    --min-size: 0;
+    --min-size: -4;
     --max-size: 6;
     --min-viewport: 768;
     --max-viewport: 1366;
     margin-top: var(--clamp-size);
-    margin-right: re(60);
+    margin-right: re(30);
   }
 }

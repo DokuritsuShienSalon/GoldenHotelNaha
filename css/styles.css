@@ -643,10 +643,8 @@ button {
 .js-hamburger-on .c-hamburger__inner {
   width: 33px;
   height: 33px;
-  position: fixed;
   top: 5px;
   right: 11px;
-  z-index: 1000;
 }
 @media screen and (min-width: 768px) {
   .js-hamburger-on .c-hamburger__inner {
@@ -1169,6 +1167,9 @@ button {
   color: #999;
   background-color: #29415f;
   padding-left: 1em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .c-dropdown select {
@@ -1525,7 +1526,7 @@ button {
 .p-adults__select,
 .p-checkout__input,
 .p-checkin__input {
-  display: block;
+  display: inline;
   grid-column: 3/-2;
 }
 @media screen and (min-width: 768px) {
@@ -2022,6 +2023,7 @@ button {
 .p-FV {
   position: relative;
   width: 100%;
+  top: 30px;
   aspect-ratio: 750/422;
   overflow: hidden;
   z-index: -1;
@@ -2128,8 +2130,8 @@ button {
 @-webkit-keyframes change-img-anime {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(5vh);
-            transform: translateY(5vh);
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
   }
   12% {
     opacity: 1;
@@ -2150,8 +2152,8 @@ button {
 @keyframes change-img-anime {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(5vh);
-            transform: translateY(5vh);
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
   }
   12% {
     opacity: 1;
@@ -2180,6 +2182,8 @@ button {
           justify-content: flex-end;
   gap: 20px;
   padding-top: 6px;
+  position: fixed;
+  z-index: 90;
 }
 @media screen and (min-width: 768px) {
   .p-header {
@@ -2224,6 +2228,7 @@ button {
 
 .p-header__language {
   font-size: 18px;
+  margin-right: 55px;
 }
 @media screen and (min-width: 768px) {
   .p-header__language {
@@ -2232,6 +2237,7 @@ button {
     --min-viewport: 768;
     --max-viewport: 1366;
     font-size: var(--clamp-size);
+    margin-right: 9.375rem;
   }
 }
 
@@ -2249,19 +2255,21 @@ button {
 .p-header__hamburger {
   width: 24px;
   height: 21px;
-  margin-right: 15px;
-  margin-top: 5px;
+  position: fixed;
+  z-index: 1000;
+  top: 10px;
+  right: 15px;
 }
 @media screen and (min-width: 768px) {
   .p-header__hamburger {
     width: 30px;
     height: 25px;
-    --min-size: 0;
+    --min-size: -4;
     --max-size: 6;
     --min-viewport: 768;
     --max-viewport: 1366;
     margin-top: var(--clamp-size);
-    margin-right: 3.75rem;
+    margin-right: 1.875rem;
   }
 }
 
