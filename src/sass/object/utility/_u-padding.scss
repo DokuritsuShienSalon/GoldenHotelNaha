@@ -23,7 +23,10 @@
       display: none !important;
     }
     &smallchar {
-        font-size: re(16);
+        font-size: re(12);
+        @include mq("md") {
+          font-size: re(16);
+        }
     }
 }
 .u-visually-hidden {
