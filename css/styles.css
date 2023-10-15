@@ -1168,8 +1168,8 @@ button {
   background-color: #29415f;
   padding-left: 1em;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .c-dropdown select {
@@ -1186,6 +1186,7 @@ button {
   background-color: #29415f;
   padding-left: 1em;
   padding-right: 1em;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .c-dropdown__list {
@@ -1301,7 +1302,7 @@ button {
 .c-tab .c-tab__toggle.active + .c-tab__label, .c-tab .c-tab__toggle:checked + .c-tab__label {
   background: #29415f;
   color: #fff;
-  margin-top: 1px;
+  margin-top: 3px;
 }
 .c-tab .c-tab__toggle.active ~ .c-tab__content, .c-tab .c-tab__toggle:checked ~ .c-tab__content {
   display: block;
