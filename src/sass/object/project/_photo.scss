@@ -1,11 +1,11 @@
 @use "global" as *;
 
 .p-photo {
-  margin-top: vw(375, 30);
+  margin-top: vw(375, 60);
   display: flex;
 
   @include mq("md") {
-    margin-top: vw(1366, 173);
+    margin-top: vw(1366, 203);
   }
 
   &__imagebox {

@@ -2611,14 +2611,14 @@ button {
 }
 
 .p-photo {
-  margin-top: 8vw;
+  margin-top: 16vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 @media screen and (min-width: 768px) {
   .p-photo {
-    margin-top: 12.6647144949vw;
+    margin-top: 14.8609077599vw;
   }
 }
 .p-photo__imagebox {
