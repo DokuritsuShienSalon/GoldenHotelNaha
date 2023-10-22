@@ -63,8 +63,19 @@ li {
 
 /* ホバー */
 /* アンカーされている要素には余分なスクロールマージンが必要 */
-:target {
-  scroll-margin-block: 5em;
+html {
+  scroll-behavior: smooth;
+  --header-height: 45px;
+  scroll-padding-top: var(--header-height);
+}
+@media screen and (min-width: 768px) {
+  html {
+    --min-size: 39;
+    --max-size: 64;
+    --min-viewport: 768;
+    --max-viewport: 1366;
+    --header-height: var(--clamp-size);
+  }
 }
 
 /*****************************
@@ -2173,7 +2184,7 @@ button {
 }
 .p-header {
   width: 100%;
-  height: 45px;
+  height: var(--header-height);
   background-color: #cfab6e;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2188,11 +2199,6 @@ button {
 }
 @media screen and (min-width: 768px) {
   .p-header {
-    --min-size: 39;
-    --max-size: 64;
-    --min-viewport: 768;
-    --max-viewport: 1366;
-    height: var(--clamp-size);
     padding-top: 0.8em;
     gap: 3.75rem;
   }

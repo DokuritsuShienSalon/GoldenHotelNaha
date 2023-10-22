@@ -56,6 +56,18 @@ a[href^="tel:"] {
 //   }
 // }
 /* アンカーされている要素には余分なスクロールマージンが必要 */
-:target {
-  scroll-margin-block: 5em;
+// :target {
+//   scroll-margin-block: 5em;
+// }
+html {
+  scroll-behavior: smooth;
+  --header-height: 45px;
+  scroll-padding-top: var(--header-height);
+  @include mq("md") {
+    --min-size: 39;
+    --max-size: 64;
+    --min-viewport: 768;
+    --max-viewport: 1366;
+    --header-height: var(--clamp-size);
+  }
 }

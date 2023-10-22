@@ -2,7 +2,8 @@
 
 .p-header {
   width: 100%;
-  height: 45px;
+  // height: 45px;
+  height: var(--header-height);
   background-color: $gold;
   display: flex;
   justify-content: flex-end;
@@ -13,11 +14,11 @@
   z-index: 90;
 
   @include mq("md") {
-    --min-size: 39;
-    --max-size: 64;
-    --min-viewport: 768;
-    --max-viewport: 1366;
-    height: var(--clamp-size);
+    // --min-size: 39;
+    // --max-size: 64;
+    // --min-viewport: 768;
+    // --max-viewport: 1366;
+    // height: var(--clamp-size);
     // height: re(64);
     padding-top: 0.8em;
     gap: re(60);
